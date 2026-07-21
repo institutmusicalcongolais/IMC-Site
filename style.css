@@ -11,7 +11,7 @@
 
 
 body {
-    background: #ffffff;
+    background: #4DA6FF;
     color: #111;
     line-height: 1.6;
 }
@@ -438,8 +438,8 @@ width:100%;
     max-width:800px;
     margin:auto;
     padding:40px;
-    background:#050505;
-    color:white;
+    background:#E6F4FF;
+    color:black;
     border-radius:15px;
     text-align:center;
 
@@ -832,7 +832,7 @@ margin-bottom:15px;
 
 .classements h2{
     text-align:center;
-    color:#0057B8;
+    color:black;
     font-size:2rem;
     margin-bottom:10px;
 }
@@ -840,7 +840,7 @@ margin-bottom:15px;
 .classements p{
     text-align:center;
     margin:8px 0;
-    color:#555;
+    color:#black;
     font-size:16px;
 }
 
