@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Demande de Certification | IMC</title>
+
+<!-- Identité du site -->
 <link rel="icon" type="image/png" href="logo-imc.png">
+
+<meta name="description" content="Institut Musical Congolais (IMC), organisme de certification et de classement des performances musicales en République Démocratique du Congo.">
+
+<meta name="keywords" content="IMC, Institut Musical Congolais, certification musicale RDC, classement musique congolaise, artistes congolais">
+
+<meta name="author" content="Institut Musical Congolais">
+
+
+<!-- Partage réseaux sociaux -->
+<meta property="og:title" content="Institut Musical Congolais - IMC">
+
+<meta property="og:description" content="La référence de la certification musicale en République Démocratique du Congo.">
+
+<meta property="og:image" content="logo-imc.png">
+
+<meta property="og:type" content="website">
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+
+
 <header>
-<div class="logo"><img src="logo-imc.png" alt="Logo IMC"></div>
+
+<div class="logo">
+<img src="logo-imc.png" alt="Logo IMC">
+</div>
+
+<button class="menu-btn">
+☰
+</button>
+
+
 <nav>
+
 <a href="index.html">Accueil</a>
 <a href="a-propos.html">À propos</a>
 <a href="certification.html">Certification</a>
@@ -18,77 +55,304 @@
 <a href="methodologie.html">Méthodologie</a>
 <a href="demande-certification.html">Demande</a>
 <a href="contact.html">Contact</a>
+
 </nav>
+
 </header>
 
+
+
+
+
 <section class="hero-small">
-<h1>Demander une certification IMC</h1>
-<p>Soumettez votre œuvre pour une évaluation officielle par l’Institut Musical Congolais.</p>
+
+<h1>
+Demander une certification IMC
+</h1>
+
+<p>
+Soumettez votre œuvre pour une évaluation officielle par l’Institut Musical Congolais.
+</p>
+
 </section>
 
+
+
+
+
+
 <section class="form-section">
-<h2>Formulaire de demande</h2>
+
+
+<h2>
+Formulaire de demande
+</h2>
+
 
 <form action="https://formsubmit.co/institutmusicalcongolais@gmail.com" method="POST" enctype="multipart/form-data">
 
+
 <h3>Informations de l'artiste ou du demandeur</h3>
 
-<label>Nom de l’artiste ou du groupe</label>
-<input type="text" name="artiste" placeholder="Nom artistique" required>
 
-<label>Nom du label, producteur ou manager</label>
-<input type="text" name="label" placeholder="Nom du label (facultatif)">
+<label>
+Nom de l’artiste ou du groupe
+</label>
 
-<label>Adresse email</label>
-<input type="email" name="email" placeholder="Votre email" required>
+<input type="text" placeholder="Nom artistique" required>
 
-<label>Numéro WhatsApp / Téléphone</label>
-<input type="text" name="telephone" placeholder="Votre contact">
+
+
+<label>
+Nom du label, producteur ou manager
+</label>
+
+<input type="text" placeholder="Nom du label (facultatif)">
+
+
+
+<label>
+Adresse email
+</label>
+
+<input type="email" placeholder="Votre email" required>
+
+
+
+<label>
+Numéro WhatsApp / Téléphone
+</label>
+
+<input type="text" placeholder="Votre contact">
+
+
+
+
 
 <h3>Informations sur l’œuvre</h3>
 
-<label>Type de certification demandée</label>
-<select name="type_certification" required>
+
+<label>
+Type de certification demandée
+</label>
+
+
+<select required>
+
 <option>Single</option>
+
 <option>Album</option>
+
 </select>
 
-<label>Nom de l’œuvre</label>
-<input type="text" name="oeuvre" placeholder="Titre du single ou nom de l’album" required>
 
-<label>Date de sortie</label>
-<input type="date" name="date_sortie">
 
-<label>Plateformes disponibles</label>
-<textarea name="plateformes"></textarea>
+
+<label>
+Nom de l’œuvre
+</label>
+
+<input type="text" placeholder="Titre du single ou nom de l’album" required>
+
+
+
+
+<label>
+Date de sortie
+</label>
+
+<input type="date">
+
+
+
+
+
+<label>
+Plateformes disponibles
+</label>
+
+
+<textarea placeholder="
+Spotify
+Audiomack
+Apple Music
+Boomplay
+iTunes
+Amazon Music
+Bandcamp
+MD Music RDC
+"></textarea>
+
+
+
+
 
 <h3>Vérification des performances</h3>
 
-<label>Liens officiels de l’œuvre</label>
-<textarea name="liens_officiels"></textarea>
 
-<label>Preuves de performances</label>
+
+<label>
+Liens officiels de l’œuvre
+</label>
+
+
+<textarea placeholder="Collez les liens vers les plateformes"></textarea>
+
+
+
+
+
+<label>Document officiel (facultatif)</label>
 <input type="file" name="preuve">
 
-<label>Zone des performances</label>
-<select name="zone">
-<option>République Démocratique du Congo</option>
+<label>Lien vers les preuves (obligatoire)</label>
+<input type="url" name="lien_preuves" placeholder="https://drive.google.com/..." required>
+
+
+<input type="file">
+
+
+
+
+
+<label>
+Zone des performances
+</label>
+
+
+<select>
+
+<option>
+République Démocratique du Congo
+</option>
+
 </select>
+
+
+
+
 
 <h3>Informations complémentaires</h3>
 
-<label>Message pour l’IMC</label>
-<textarea name="message"></textarea>
 
-<label><input type="checkbox" required> Je confirme que les informations fournies sont exactes.</label>
+
+<label>
+Message pour l’IMC
+</label>
+
+
+<textarea placeholder="Informations supplémentaires concernant votre demande"></textarea>
+
+
+
+
+
+<label>
+
+<input type="checkbox" required>
+
+Je confirme que les informations fournies sont exactes et que les performances déclarées respectent les règles de certification IMC.
+
+</label>
+
+
+
+<button type="submit">
+Envoyer la demande de certification
+</button>
 
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_subject" value="Nouvelle demande de certification IMC">
 <input type="hidden" name="_next" value="https://institutmusicalcongolais.org/merci.html">
 
-<button type="submit">Envoyer la demande de certification</button>
 </form>
+
+
+
 </section>
 
-<footer><p>© 2026 Institut Musical Congolais - IMC</p></footer>
-</body></html>
+
+<section class="about">
+
+<h2>
+Processus de certification IMC
+</h2>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+1️⃣ Réception du dossier
+</h3>
+
+<p>
+L’IMC reçoit la demande et vérifie que toutes les informations nécessaires sont fournies.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+2️⃣ Analyse des données
+</h3>
+
+<p>
+Les performances musicales sont analysées selon la méthodologie officielle IMC.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+3️⃣ Validation
+</h3>
+
+<p>
+Après vérification, l’IMC confirme l’éligibilité de l’œuvre à une certification.
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+4️⃣ Publication
+</h3>
+
+<p>
+La certification est annoncée officiellement sur les plateformes de communication IMC.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<footer>
+
+<p>
+© 2026 Institut Musical Congolais - IMC
+</p>
+
+</footer>
+
+
+
+</body>
+
+</html>
