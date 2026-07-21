@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #050505;
+    background: #ffffff;
 }
 
 
@@ -811,5 +811,112 @@ box-shadow:0 5px 20px rgba(0,0,0,0.08);
 
 color:#f5c400;
 margin-bottom:15px;
+
+}
+
+
+
+/* ==========================
+   CLASSEMENTS IMC
+========================== */
+
+.classements{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+.classements h2{
+    text-align:center;
+    color:#0057B8;
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+.classements p{
+    text-align:center;
+    margin:8px 0;
+    color:#555;
+    font-size:16px;
+}
+
+.classements table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.classements th{
+    background:#0057B8;
+    color:#fff;
+    padding:15px;
+    font-size:17px;
+    text-transform:uppercase;
+}
+
+.classements td{
+    padding:14px;
+    border-bottom:1px solid #e5e5e5;
+    text-align:center;
+    font-size:16px;
+}
+
+.classements tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+.classements tr:hover{
+    background:#eaf4ff;
+    transition:0.3s;
+}
+
+/* Top 3 */
+
+.classements tr:nth-child(2){
+    background:#FFD700;
+    font-weight:bold;
+}
+
+.classements tr:nth-child(3){
+    background:#E5E5E5;
+    font-weight:bold;
+}
+
+.classements tr:nth-child(4){
+    background:#CD7F32;
+    color:white;
+    font-weight:bold;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.classements{
+    width:95%;
+    padding:15px;
+}
+
+.classements h2{
+    font-size:1.5rem;
+}
+
+.classements table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+.classements th,
+.classements td{
+    font-size:14px;
+    padding:10px;
+}
 
 }
