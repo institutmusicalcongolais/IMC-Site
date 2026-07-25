@@ -1,68 +1,1883 @@
-/* =========================
-   STYLE GENERAL IMC
-========================= */
+/* ==========================
+   INDEX - INSTITUT MUSICAL CONGOLAIS
+========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#111;
+    line-height:1.9;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+header{
+    background:#ffffff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.logo img{
+    width:180px;
+    max-width:90%;
+}
+
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    min-height:100vh;
+    padding:180px 20px 280px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    max-width:850px;
+    font-size:48px;
+    line-height:1.4;
+    margin-bottom:90px;
+}
+
+.hero p{
+    max-width:760px;
+    font-size:18px;
+    line-height:2;
+    margin-bottom:120px;
+}
+
+.hero a{
+    display:block;
+    margin:25px 0;
+    text-decoration:none;
+}
+
+button{
+    width:280px;
+    padding:18px;
+    border:none;
+    border-radius:35px;
+    background:#e30613;
+    color:white;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button.dark{
+    background:#f5c400;
+    color:#111;
+}
+
+button:hover{
+    transform:translateY(-4px);
+    opacity:.9;
+}
+
+/* ==========================
+   A PROPOS
+========================== */
+
+.about{
+    padding:260px 20px;
+    text-align:center;
+}
+
+.about h2{
+    font-size:36px;
+    margin-bottom:90px;
+}
+
+.about p{
+    max-width:850px;
+    margin:60px auto;
+    font-size:18px;
+    line-height:2;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+    background:#050505;
+    color:white;
+    text-align:center;
+    padding:180px 20px;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-bottom:60px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#f5c400;
+}
+
+footer p{
+    font-size:15px;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+header{
+    padding:70px 20px;
+}
+
+.logo img{
+    width:140px;
+}
+
+.hero{
+    min-height:90vh;
+    padding:100px 20px 160px;
+}
+
+.hero h1{
+    font-size:32px;
+    margin-bottom:50px;
+}
+
+.hero p{
+    font-size:16px;
+    margin-bottom:70px;
+}
+
+.hero a{
+    width:100%;
+    max-width:320px;
+}
+
+button{
+    width:100%;
+}
+
+.about{
+    padding:140px 20px;
+}
+
+.about h2{
+    font-size:28px;
+    margin-bottom:50px;
+}
+
+.about p{
+    font-size:16px;
+    margin:35px auto;
+}
+
+footer{
+    padding:100px 20px;
+}
+
+.footer-links{
+    flex-direction:column;
+    gap:20px;
+}
+
 }
 
 
-body {
-    background: #4DA6FF;
-    color: #111;
-    line-height: 1.6;
+
+/* ==========================
+   PAGE ACTUALITES IMC
+========================== */
+
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+
+.logo img{
+    width:180px;
 }
 
 
 
-header {
-    width: 100%;
-    padding: 20px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
+/* ==========================
+   HERO SMALL
+========================== */
+
+
+.hero-small{
+
+    min-height:70vh;
+    padding:150px 20px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
 }
 
 
 
-.logo img {
-    width: 120px;
+.hero-small h1{
+
+    font-size:48px;
+    margin-bottom:70px;
+
 }
 
 
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 25px;
-    font-size: 15px;
-}
+.hero-small p{
 
+    max-width:750px;
+    font-size:18px;
+    line-height:2;
 
-nav a:hover {
-    color: #f5c400;
 }
 
 
 
+/* ==========================
+   DERNIERE ACTUALITE
+========================== */
 
 
-/* =========================
-   SECTION HERO
-========================= */
+.latest-news{
+
+    padding:250px 20px;
+
+    text-align:center;
+
+}
 
 
-.hero {
 
-    min-height: 85vh;
-    padding: 80px 8%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.latest-news h2{
+
+    font-size:36px;
+    margin-bottom:100px;
+
+}
+
+
+
+.news-feature{
+
+    max-width:850px;
+    margin:auto;
+
+    background:#f8f8f8;
+
+    padding:60px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+
+.news-feature img{
+
+    width:100%;
+
+    max-height:400px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.news-feature h3{
+
+    font-size:28px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.news-feature p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:70px;
+
+}
+
+
+
+/* ==========================
+   BOUTONS MENU ACTUALITES
+========================== */
+
+
+.news-menu{
+
+    padding:200px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:50px;
+
+}
+
+
+
+.news-menu a{
+
+    text-decoration:none;
+
+}
+
+
+
+.news-menu button{
+
+    width:350px;
+
+    padding:20px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#e30613;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+
+.news-menu button:hover{
+
+    opacity:.85;
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* ==========================
+   INFORMATION OFFICIELLE
+========================== */
+
+
+.about{
+
+    padding:200px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.about p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+    background:#050505;
+
+    color:white;
+
+    text-align:center;
+
+    padding:150px 20px;
+
+}
+
+
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+
+.footer-links a:hover{
+
+    color:#f5c400;
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+
+@media(max-width:768px){
+
+
+header{
+
+    padding:70px 20px;
+
+}
+
+
+
+.logo img{
+
+    width:140px;
+
+}
+
+
+
+.hero-small{
+
+    min-height:60vh;
+
+    padding:100px 20px;
+
+}
+
+
+
+.hero-small h1{
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.latest-news{
+
+    padding:130px 20px;
+
+}
+
+
+
+.latest-news h2{
+
+    font-size:28px;
+
+    margin-bottom:60px;
+
+}
+
+
+
+.news-feature{
+
+    padding:35px 20px;
+
+}
+
+
+
+.news-feature h3{
+
+    font-size:22px;
+
+}
+
+
+
+.news-feature p{
+
+    font-size:16px;
+
+}
+
+
+
+.news-menu{
+
+    padding:120px 20px;
+
+}
+
+
+
+.news-menu button{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+
+
+}
+
+
+
+/* ==========================
+   PAGES ARTICLES ACTUALITES IMC
+========================== */
+
+
+body{
+    background:#ffffff;
+    color:#111;
+    line-height:1.9;
+}
+
+
+
+/* ==========================
+   HEADER ARTICLE
+========================== */
+
+
+header{
+
+    background:#ffffff;
+    text-align:center;
+    padding:90px 20px;
+
+}
+
+
+header h1{
+
+    font-size:28px;
+    font-weight:bold;
+
+}
+
+
+
+/* ==========================
+   CONTENU ARTICLE
+========================== */
+
+
+.article-page{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:120px 20px 250px;
+
+    text-align:center;
+
+}
+
+
+
+/* IMAGE ARTICLE */
+
+
+.image-article{
+
+    width:100%;
+
+    max-width:700px;
+
+    aspect-ratio:1 / 1;
+
+    object-fit:contain;
+
+    background:#f5f5f5;
+
+    border-radius:20px;
+
+    margin:0 auto 90px;
+
+    display:block;
+
+}
+
+
+
+/* TITRE ARTICLE */
+
+
+.article-page h1{
+
+    font-size:42px;
+
+    line-height:1.4;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* DATE */
+
+
+.date-article{
+
+    color:#555;
+
+    font-size:17px;
+
+    margin-bottom:90px;
+
+}
+
+
+
+/* TEXTE ARTICLE */
+
+
+.article-content{
+
+    text-align:left;
+
+    font-size:18px;
+
+    line-height:2.1;
+
+}
+
+
+
+.article-content p{
+
+    margin-bottom:60px;
+
+}
+
+
+
+/* SEPARATION */
+
+
+.article-page hr{
+
+    margin:120px 0;
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+
+
+/* PHRASE SIGNATURE */
+
+
+.valoriser{
+
+    font-size:17px;
+
+    color:#e30613;
+
+    letter-spacing:1px;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+    background:#050505;
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+
+}
+
+
+
+footer p{
+
+    font-size:15px;
+
+}
+
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+
+@media(max-width:768px){
+
+
+header{
+
+    padding:60px 20px;
+
+}
+
+
+header h1{
+
+    font-size:22px;
+
+}
+
+
+.article-page{
+
+    padding:80px 20px 150px;
+
+}
+
+
+.image-article{
+
+    height:250px;
+
+    margin-bottom:50px;
+
+}
+
+
+.article-page h1{
+
+    font-size:30px;
+
+}
+
+
+.date-article{
+
+    margin-bottom:50px;
+
+}
+
+
+.article-content{
+
+    font-size:16px;
+
+}
+
+
+.article-content p{
+
+    margin-bottom:40px;
+
+}
+
+
+}
+
+
+
+/* ==========================
+   ARCHIVES ACTUALITES
+========================== */
+
+
+.archives-intro{
+
+    padding:220px 20px;
+
+    text-align:center;
+
+}
+
+
+.archives-intro h1{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:42px;
+
+    line-height:1.5;
+
+}
+
+
+
+
+.archives-list{
+
+    padding:100px 20px 250px;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+
+.archive-item{
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+.archive-date{
+
+    color:#777;
+
+    font-size:17px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.archive-item h2{
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.archive-item button{
+
+    width:250px;
+
+}
+
+
+
+
+footer{
+
+    background:#050505;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.archives-intro{
+
+    padding:120px 20px;
+
+}
+
+
+.archives-intro h1{
+
+    font-size:30px;
+
+}
+
+
+.archive-item h2{
+
+    font-size:22px;
+
+}
+
+}
+
+
+/* ==========================
+   CERTIFICATIONS 2026 TABLEAU
+========================== */
+
+
+.certification-intro{
+
+    padding:220px 20px;
+
+    text-align:center;
+
+}
+
+
+.certification-intro h1{
+
+    max-width:900px;
+
+    margin:auto;
+
+    font-size:42px;
+
+    line-height:1.5;
+
+    margin-bottom:50px;
+
+}
+
+
+.certification-intro p{
+
+    max-width:750px;
+
+    margin:auto;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.certification-table-section{
+
+    padding:80px 20px 250px;
+
+    overflow-x:auto;
+
+}
+
+
+
+.certification-table{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+}
+
+
+
+.certification-table th{
+
+    background:#050505;
+
+    color:white;
+
+    padding:20px;
+
+    font-size:16px;
+
+}
+
+
+
+.certification-table td{
+
+    padding:20px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+    font-size:16px;
+
+}
+
+
+
+.certification-table tr:hover{
+
+    background:#f5f5f5;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.certification-intro{
+
+    padding:130px 20px;
+
+}
+
+
+.certification-intro h1{
+
+    font-size:30px;
+
+}
+
+
+
+.certification-table{
+
+    width:800px;
+
+}
+
+
+}
+
+
+
+/* ==========================
+   ARTISTES CERTIFIES
+========================== */
+
+
+.artists-intro{
+
+    padding:250px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.artists-intro h1{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    font-size:42px;
+
+    line-height:1.5;
+
+}
+
+
+
+
+.artists-search{
+
+    padding:80px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.artists-search input{
+
+    width:100%;
+
+    max-width:600px;
+
+    padding:20px;
+
+    border-radius:35px;
+
+    border:1px solid #ccc;
+
+    font-size:17px;
+
+}
+
+
+
+
+.artists-list{
+
+    padding:120px 20px 250px;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:40px;
+
+}
+
+
+
+.artists-list a{
+
+    text-decoration:none;
+
+}
+
+
+
+.artists-list button{
+
+    width:300px;
+
+    padding:20px;
+
+}
+
+
+
+
+footer{
+
+    background:#050505;
+
+    color:white;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+
+
+.footer-links{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:35px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.footer-links a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+
+
+.footer-links a:hover{
+
+    color:#f5c400;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.artists-intro{
+
+    padding:140px 20px;
+
+}
+
+
+.artists-intro h1{
+
+    font-size:30px;
+
+}
+
+
+
+.artists-list button{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+
+
+}
+
+
+
+/* ==========================
+   PAGE CLASSEMENTS
+========================== */
+
+
+.classements-intro{
+
+    padding:250px 20px;
+
+    text-align:center;
+
+}
+
+
+
+.classements-intro h1{
+
+    font-size:45px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.classements-intro p{
+
+    font-size:18px;
+
+}
+
+
+
+
+
+.classements-buttons{
+
+    min-height:700px;
+
+    padding:100px 20px 300px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+
+
+.classements-buttons a{
+
+    text-decoration:none;
+
+}
+
+
+
+.classements-buttons button{
+
+    width:450px;
+
+    padding:25px;
+
+    font-size:20px;
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.classements-intro{
+
+    padding:150px 20px;
+
+}
+
+
+
+.classements-intro h1{
+
+    font-size:32px;
+
+}
+
+
+
+.classements-buttons button{
+
+    width:100%;
+
+    max-width:350px;
+
+}
+
+
+}
+
+
+
+/* ==========================
+   TOP TITRES TABLEAU ADAPTATIF
+========================== */
+
+.top-intro{
+
+    padding:180px 20px 80px;
+
+    text-align:center;
+
+}
+
+
+
+.top-intro h1{
+
+    display:inline-block;
+
+    background:#e30613;
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    font-size:24px;
+
+    white-space:nowrap;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.top-table-section{
+
+    padding:50px 15px 250px;
+
+    width:100%;
+
+}
+
+
+
+.top-table{
+
+    width:100%;
+
+    max-width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    table-layout:fixed;
+
+}
+
+
+
+.top-table th{
+
+    background:#050505;
+
+    color:white;
+
+    padding:15px 5px;
+
+    font-size:14px;
+
+}
+
+
+
+.top-table td{
+
+    padding:12px 5px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+    font-size:13px;
+
+    word-wrap:break-word;
+
+}
+
+
+/* Largeur des colonnes */
+
+.top-table th:nth-child(1),
+.top-table td:nth-child(1){
+
+    width:10%;
+
+}
+
+
+.top-table th:nth-child(2),
+.top-table td:nth-child(2){
+
+    width:20%;
+
+}
+
+
+.top-table th:nth-child(3),
+.top-table td:nth-child(3){
+
+    width:30%;
+
+}
+
+
+.top-table th:nth-child(4),
+.top-table td:nth-child(4){
+
+    width:40%;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+.top-intro h1{
+
+    font-size:18px;
+
+    padding:10px 18px;
+
+}
+
+}
+
+
+.top-table th{
+
+    font-size:11px;
+
+}
+
+
+.top-table td{
+
+    font-size:11px;
+
+    padding:10px 3px;
+
+}
+
+
+}
+
+
+
+/* Couleur du tableau des classements */
+
+.top-table {
+
+    background:#4DA6FF;
+
+}
+
+
+/* Lignes du tableau */
+
+.top-table td {
+
+    background:#4DA6FF;
+    color:#111;
+
+}
+
+
+/* En-tête du tableau */
+
+.top-table th {
+
+    background:black;
+    color:white;
+
+}
+
+
+/* Effet au survol */
+
+.top-table tr:hover td {
+
+    background:#7CC4FF;
+
+}
+
+
+
+/* ==========================
+   PAGE METHODOLOGIE
+========================== */
+
+
+.methodologie-intro{
+
+    padding:250px 20px 100px;
+
+    text-align:center;
+
+}
+
+
+
+.methodologie-intro h1{
+
+    display:inline-block;
+
+    background:#e30613;
+
+    color:white;
+
+    padding:12px 30px;
+
+    border-radius:30px;
+
+    font-size:28px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.methodologie-intro p{
+
+    font-size:18px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+
+
+
+
+.methodologie-buttons{
+
+    min-height:700px;
+
+    padding:100px 20px 300px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+
+
+.methodologie-buttons a{
+
+    text-decoration:none;
+
+}
+
+
+
+.methodologie-buttons button{
+
+    width:420px;
+
+    padding:20px;
+
+    font-size:20px;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.methodologie-intro{
+
+    padding:150px 20px 80px;
+
+}
+
+
+.methodologie-intro h1{
+
+    font-size:22px;
+
+}
+
+
+
+.methodologie-buttons button{
+
+    width:320px;
+
+    font-size:17px;
+
+}
+
+
+}
+
+
+
+
+/* ==========================
+   METHODOLOGIE DETAIL
+========================== */
+
+
+.methodologie-detail{
+
+    padding:220px 20px 80px;
+
+    text-align:center;
+
+}
+
+
+.methodologie-detail h1{
+
+    display:inline-block;
+
+    background:#e30613;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:30px;
+
+    font-size:28px;
+
+}
+
+
+
+
+.methodologie-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:80px 20px 250px;
+
+    text-align:center;
+
+}
+
+
+
+.methodologie-content h2{
+
+    margin-top:80px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.methodologie-content h3{
+
+    margin-top:50px;
+
+    color:#0057B8;
+
+}
+
+
+
+.methodologie-content p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin:20px 0;
+
+}
+
+
+
+.highlight{
+
+    background:#4DA6FF;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    font-weight:bold;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.methodologie-detail{
+
+    padding-top:150px;
+
+}
+
+
+
+.methodologie-detail h1{
+
+    font-size:21px;
+
+}
+
+
+
+.methodologie-content{
+
+    padding-bottom:150px;
+
+}
+
+
+}
+
+
+
+/* =====================================
+   METHODOLOGIE CERTIFICATION IMC
+   STYLE UNIQUE - NE PAS IMPACTER LES AUTRES PAGES
+===================================== */
+
+
+.certif-page {
+    background:#4DA6FF;
+    padding:80px 8%;
+}
+
+
+
+.certif-hero {
 
     background:
     linear-gradient(
@@ -71,413 +1886,356 @@ nav a:hover {
     ),
     url("background.jpg");
 
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position:center;
 
-    color: white;
+    color:white;
+    text-align:center;
 
-}
-
-
-
-.hero h1 {
-
-    max-width: 900px;
-    font-size: 48px;
-    margin-bottom: 25px;
+    padding:100px 8%;
 
 }
 
 
 
-.hero p {
+.certif-hero h1 {
 
-    max-width: 750px;
-    font-size: 18px;
-    margin-bottom: 35px;
-
-}
-
-
-
-button {
-
-    width: fit-content;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 30px;
-    background: #e30613;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 15px;
+    font-size:45px;
+    margin-bottom:25px;
 
 }
 
 
 
-button.dark {
+.certif-hero p {
 
-    background: #f5c400;
-    color: black;
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
 
 }
 
 
 
 
+.certif-section {
 
-/* =========================
-   SECTIONS
-========================= */
+    background:white;
 
+    max-width:1100px;
 
-section {
+    margin:70px auto;
 
-    padding: 70px 8%;
+    padding:50px;
 
-}
+    border-radius:20px;
 
-
-h2 {
-
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
 
 }
 
 
 
-.about p {
+.certif-section h2 {
 
-    max-width: 900px;
-    margin: 15px auto;
-    text-align: center;
-    font-size: 18px;
+    text-align:center;
 
-}
+    font-size:32px;
 
+    margin-bottom:35px;
 
-
-
-
-/* =========================
-   CERTIFICATIONS
-========================= */
-
-
-.cards {
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+    color:#111;
 
 }
 
 
 
-.card {
+.certif-section p {
 
-    width: 220px;
-    padding: 35px 20px;
-    background: #f8f8f8;
-    text-align: center;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    font-size:18px;
 
-}
+    line-height:1.8;
 
-
-
-.card h3 {
-
-    font-size: 22px;
+    margin-bottom:25px;
 
 }
 
 
 
-
-
-/* =========================
-   CLASSEMENTS
-========================= */
-
-
-.ranking {
-
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-
-}
-
-
-
-.box {
-
-    width: 45%;
-    padding: 35px;
-    background: #050505;
-    color: white;
-    border-radius: 15px;
-
-}
-
-
-
-.box h3 {
-
-    color: #f5c400;
-    margin-bottom: 15px;
-
-}
-
-
-
-
-
-/* =========================
-   PLATEFORMES
-========================= */
-
-
-.platforms {
-
-    text-align: center;
-    background: #f5f5f5;
-
-}
-
-
-.platforms p {
-
-    font-size: 18px;
-    margin-bottom: 40px;
-
-}
-
-
-
-
-
-/* =========================
-   FOOTER
-========================= */
-
-
-footer {
-
-    background: #050505;
-    color: white;
-    text-align: center;
-    padding: 25px;
-
-}
-
-
-
-
-
-/* =========================
-   RESPONSIVE MOBILE
-========================= */
-
-
-@media(max-width:768px){
-
-
-header {
-
-    flex-direction: column;
-
-}
-
-
-nav {
-
-    margin-top:20px;
-
-}
-
-
-
-.hero h1 {
-
-    font-size: 32px;
-
-}
-
-
-
-.ranking {
-
-    flex-direction: column;
-
-}
-
-
-
-.box {
-
-    width:100%;
-
-}
-
-
-}
-
-/* =========================
-   DERNIERS CLASSEMENTS
-========================= */
-
-
-.latest-ranking {
-
-    background: #ffffff;
-
-}
-
-
-.ranking-table {
+.certif-cards {
 
     display:flex;
+
     justify-content:center;
-    gap:30px;
+
+    flex-wrap:wrap;
+
+    gap:25px;
 
 }
 
 
 
-.table-box {
+.certif-card {
 
-    width:45%;
-    padding:35px;
+    width:230px;
+
+    background:#E6F4FF;
+
+    padding:35px 20px;
+
     border-radius:15px;
-    background:#f8f8f8;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 
 }
 
 
 
-.table-box h3 {
+.certif-card h3 {
 
     color:#e30613;
+
     margin-bottom:15px;
 
 }
 
 
 
-.table-box ul {
-
-    list-style:none;
-    margin-top:20px;
-
-}
-
-
-
-.table-box li {
-
-    padding:10px;
-    border-bottom:1px solid #ddd;
-
-}
-
-
-
-@media(max-width:768px){
-
-.ranking-table{
-
-flex-direction:column;
-
-}
-
-
-.table-box{
-
-width:100%;
-
-}
-
-}
-
-
-.hero-small {
-
-    padding:80px 8%;
-    text-align:center;
-    background:#050505;
-    color:white;
-
-}
-
-
-.hero-small h1 {
-
-    font-size:45px;
-    margin-bottom:20px;
-
-}
-
-
-.hero-small p {
+.certif-card p {
 
     font-size:18px;
 
 }
 
 
-.box {
 
-    max-width:800px;
-    margin:auto;
-    padding:40px;
-    background:#E6F4FF;
-    color:black;
-    border-radius:15px;
-    text-align:center;
+
+.certif-section ul {
+
+    margin:25px 0;
+
+    padding-left:25px;
 
 }
 
 
-.box h3 {
 
-    color:#f5c400;
-    margin-bottom:20px;
+.certif-section li {
+
+    margin-bottom:15px;
+
+    font-size:17px;
 
 }
 
 
-.box strong {
+
+.certif-important {
+
+    background:#fff3cd;
+
+    border-left:5px solid #f5c400;
+
+    padding:25px;
+
+    margin-top:30px;
+
+    border-radius:10px;
+
+}
+
+
+
+
+.certif-button {
 
     display:block;
-    margin-top:15px;
+
+    width:max-content;
+
+    margin:40px auto;
+
+    padding:15px 35px;
+
+    background:#e30613;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-size:17px;
 
 }
+
+
+
+.certif-button:hover {
+
+    opacity:0.85;
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+.certif-hero {
+
+    padding:70px 6%;
+
+}
+
+
+
+.certif-hero h1 {
+
+    font-size:30px;
+
+}
+
+
+
+.certif-section {
+
+    padding:30px 20px;
+
+    margin:40px 15px;
+
+}
+
+
+
+.certif-section h2 {
+
+    font-size:25px;
+
+}
+
+
+
+.certif-card {
+
+    width:100%;
+
+}
+
+
+
+}
+
+
+
+/* =====================================
+   PAGE DEMANDE DE CERTIFICATION IMC
+   STYLE UNIQUE
+===================================== */
+
+
+.demande-page {
+
+    background:#4DA6FF;
+    padding:80px 8%;
+
+}
+
+
+
+.demande-hero {
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)
+    ),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:100px 8%;
+
+}
+
+
+
+.demande-hero h1 {
+
+    font-size:45px;
+    margin-bottom:25px;
+
+}
+
+
+
+.demande-hero p {
+
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+
+}
+
+
+
 
 
 .form-section {
 
-    padding:70px 8%;
-    background:#f5f5f5;
+    background:#4DA6FF;
+    padding:80px 8%;
 
 }
 
 
+
+.form-section h2 {
+
+    text-align:center;
+    font-size:32px;
+    margin-bottom:50px;
+
+}
+
+
+
 .form-section form {
 
-    max-width:700px;
+    max-width:800px;
+
     margin:auto;
+
     background:white;
-    padding:40px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+.form-section h3 {
+
+    margin-top:35px;
+
+    margin-bottom:20px;
+
+    color:#e30613;
+
+    font-size:22px;
 
 }
 
@@ -486,7 +2244,9 @@ width:100%;
 .form-section label {
 
     display:block;
+
     margin-top:20px;
+
     font-weight:bold;
 
 }
@@ -497,12 +2257,18 @@ width:100%;
 .form-section select,
 .form-section textarea {
 
+
     width:100%;
+
     padding:15px;
+
     margin-top:8px;
+
     border:1px solid #ccc;
-    border-radius:8px;
-    font-size:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
 
 }
 
@@ -510,413 +2276,764 @@ width:100%;
 
 .form-section textarea {
 
-    min-height:120px;
+    min-height:130px;
 
-}
-
-
-.contact-section {
-
-    padding:70px 8%;
-    text-align:center;
+    resize:vertical;
 
 }
 
 
 
-.contact-cards {
+.form-section input[type="file"] {
+
+    background:#f5f5f5;
+
+    padding:12px;
+
+}
+
+
+
+.form-section button {
+
+
+    display:block;
+
+    margin:40px auto 0;
+
+    padding:16px 35px;
+
+    background:#e30613;
+
+    color:white;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+
+.form-section button:hover {
+
+    opacity:0.85;
+
+}
+
+
+
+
+
+
+/* PROCESSUS */
+
+.processus-certification {
+
+
+    background:white;
+
+    max-width:1100px;
+
+    margin:80px auto;
+
+    padding:50px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+.processus-certification .cards {
+
 
     display:flex;
+
     justify-content:center;
-    gap:30px;
+
+    gap:25px;
+
     flex-wrap:wrap;
 
 }
 
 
 
-.contact-cards .card {
+.processus-certification .card {
 
-    width:280px;
+
+    background:#E6F4FF;
+
+    width:230px;
+
+    padding:35px 20px;
+
+    border-radius:15px;
+
+    text-align:center;
 
 }
 
 
-footer {
+
+
+
+@media(max-width:768px){
+
+
+.form-section {
+
+    padding:50px 5%;
+
+}
+
+
+
+.form-section form {
+
+    padding:30px 20px;
+
+}
+
+
+
+.demande-hero h1 {
+
+    font-size:30px;
+
+}
+
+
+
+}
+
+
+/* =====================================
+   PAGE CERTIFICATION IMC
+   STYLE UNIQUE
+===================================== */
+
+
+.certification-page {
+
+    background:#4DA6FF;
+    padding:80px 8%;
+
+}
+
+
+
+/* Hero certification */
+
+.certification-hero {
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.65),
+    rgba(0,0,0,0.65)
+    ),
+    url("background.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+    text-align:center;
+
+    padding:100px 8%;
+
+}
+
+
+
+.certification-hero h1 {
+
+    font-size:45px;
+    margin-bottom:25px;
+
+}
+
+
+
+.certification-hero p {
+
+    font-size:18px;
+    max-width:800px;
+    margin:auto;
+
+}
+
+
+
+
+/* Sections */
+
+.certification-info {
+
+    background:white;
+
+    max-width:1000px;
+
+    margin:80px auto;
+
+    padding:50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+
+}
+
+
+
+.certification-info h2 {
+
+    text-align:center;
+
+    font-size:32px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.certification-info p {
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+/* Boutons */
+
+.certification-buttons {
+
+    text-align:center;
+
+    margin-top:50px;
+
+}
+
+
+
+.certification-buttons a {
+
+    text-decoration:none;
+
+}
+
+
+
+.certification-buttons button {
+
+    background:#e30613;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    margin:15px;
+
+    cursor:pointer;
+
+}
+
+
+
+.certification-buttons button:hover {
+
+    opacity:0.85;
+
+}
+
+
+
+
+
+/* Footer */
+
+.certification-footer {
 
     background:#050505;
+
     color:white;
+
     text-align:center;
-    padding:35px 8%;
 
-}
-
-
-.footer-links {
-
-    margin-bottom:20px;
-
-}
-
-
-.footer-links a {
-
-    color:white;
-    text-decoration:none;
-    margin:0 10px;
-    font-size:14px;
-
-}
-
-
-.footer-links a:hover {
-
-    color:#f5c400;
-
-}
-
-
-/* MENU MOBILE */
-
-.menu-btn {
-
-display:none;
-background:#e30613;
-color:white;
-border:none;
-font-size:25px;
-padding:8px 15px;
-border-radius:8px;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-header {
-
-position:relative;
-
-}
-
-
-
-.menu-btn {
-
-display:block;
-
-}
-
-
-
-nav {
-
-display:none;
-flex-direction:column;
-background:#050505;
-width:100%;
-position:absolute;
-top:80px;
-left:0;
-padding:20px;
-
-}
-
-
-
-nav a {
-
-margin:15px 0;
-
-}
-
-
-
-.hero {
-
-min-height:70vh;
-padding:50px 6%;
-
-}
-
-
-
-.hero h1 {
-
-font-size:30px;
-
-}
-
-
-
-.hero p {
-
-font-size:16px;
-
-}
-
-
-
-section {
-
-padding:50px 6%;
-
-}
-
-
-
-.cards {
-
-flex-direction:column;
-align-items:center;
-
-}
-
-
-
-.card {
-
-width:100%;
-max-width:350px;
-
-}
-
-
-
-button {
-
-width:100%;
-margin-bottom:15px;
-
-}
-
-
-}
-
-
-.card,
-.box,
-button {
-
-transition:0.3s;
-
-}
-
-
-.card:hover {
-
-transform:translateY(-5px);
-
-}
-
-
-button:hover {
-
-opacity:0.85;
-
-}
-
-
-/* ACTUALITES */
-
-
-.news-section {
-
-padding:70px 8%;
-
-}
-
-
-
-.news-container {
-
-display:flex;
-justify-content:center;
-gap:30px;
-flex-wrap:wrap;
-
-}
-
-
-
-.news-card {
-
-width:300px;
-padding:30px;
-background:#f8f8f8;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-
-}
-
-
-
-.news-card h3 {
-
-color:#e30613;
-margin-bottom:15px;
-
-}
-
-
-
-.news-card a {
-
-color:#050505;
-font-weight:bold;
-text-decoration:none;
-
-}
-
-
-/* ARTISTES CERTIFIES */
-
-
-.certified-section {
-
-padding:70px 8%;
-text-align:center;
-
-}
-
-
-
-.certified-table {
-
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-margin-top:40px;
-
-}
-
-
-
-.certified-card {
-
-width:220px;
-padding:30px;
-background:#f8f8f8;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
-
-}
-
-
-
-.certified-card h3 {
-
-color:#f5c400;
-margin-bottom:15px;
-
-}
-
-
-
-/* ==========================
-   CLASSEMENTS IMC
-========================== */
-
-.classements{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
-    background:#ffffff;
     padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
 }
 
-.classements h2{
-    text-align:center;
-    color:black;
-    font-size:2rem;
-    margin-bottom:10px;
-}
 
-.classements p{
-    text-align:center;
-    margin:8px 0;
-    color:#black;
-    font-size:16px;
-}
 
-.classements table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:30px;
-    overflow:hidden;
-    border-radius:12px;
-}
 
-.classements th{
-    background:#0057B8;
-    color:#fff;
-    padding:15px;
-    font-size:17px;
-    text-transform:uppercase;
-}
-
-.classements td{
-    padding:14px;
-    border-bottom:1px solid #e5e5e5;
-    text-align:center;
-    font-size:16px;
-}
-
-.classements tr:nth-child(even){
-    background:#f8f8f8;
-}
-
-.classements tr:hover{
-    background:#eaf4ff;
-    transition:0.3s;
-}
-
-/* Top 3 */
-
-.classements tr:nth-child(2){
-    background:#FFD700;
-    font-weight:bold;
-}
-
-.classements tr:nth-child(3){
-    background:#E5E5E5;
-    font-weight:bold;
-}
-
-.classements tr:nth-child(4){
-    background:#CD7F32;
-    color:white;
-    font-weight:bold;
-}
-
-/* Responsive */
 
 @media(max-width:768px){
 
-.classements{
-    width:95%;
-    padding:15px;
+
+.certification-hero {
+
+    padding:70px 6%;
+
 }
 
-.classements h2{
-    font-size:1.5rem;
+
+
+.certification-hero h1 {
+
+    font-size:30px;
+
 }
 
-.classements table{
-    display:block;
-    overflow-x:auto;
-    white-space:nowrap;
+
+
+.certification-info {
+
+    margin:40px 15px;
+
+    padding:30px 20px;
+
 }
 
-.classements th,
-.classements td{
-    font-size:14px;
-    padding:10px;
+
+
+.certification-info h2 {
+
+    font-size:25px;
+
 }
+
+
+
+.certification-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 20px;
+}
+
+
+.main-button {
+
+    display: block;
+    background: white;
+    color: #111;
+    text-decoration: none;
+
+    padding: 18px 35px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+    width: 280px;
+
+    text-align: center;
+
+}
+
+
+.main-button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* PAGE CONTACT */
+
+.contact-page {
+
+    padding: 80px 20px;
+    text-align: center;
+
+}
+
+
+.contact-page h2 {
+
+    font-size: 28px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.contact-box {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+}
+
+
+
+.contact-item {
+
+    background: white;
+
+    width: 90%;
+    max-width: 400px;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+.contact-item h3 {
+
+    margin-bottom: 15px;
+
+}
+
+
+
+.contact-button {
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+}
+
+
+
+.contact-button a {
+
+    display: inline-block;
+
+    background: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* PAGE MENTIONS LEGALES */
+
+.mentions-section {
+
+    padding: 80px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 40px;
+
+}
+
+
+
+.mentions-card {
+
+    background: white;
+
+    width: 90%;
+
+    max-width: 800px;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+
+.mentions-card h2 {
+
+    text-align: center;
+
+    margin-bottom: 25px;
+
+    font-size: 25px;
+
+}
+
+
+
+.mentions-card p {
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+}
+
+
+
+.contact-mentions {
+
+    text-align: center;
+
+}
+
+
+.contact-mentions a {
+
+    display: inline-block;
+
+    background: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 15px 45px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* PAGE MERCI */
+
+.merci-section {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 25px;
+
+}
+
+
+
+.merci-section h1 {
+
+    font-size: 32px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.merci-section p {
+
+    max-width: 600px;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    margin-bottom: 50px;
+
+}
+
+
+
+.merci-button {
+
+    display: inline-block;
+
+    background: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    padding: 15px 45px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* PAGE PARTENAIRES */
+
+
+.partenaires-section {
+
+    padding: 80px 20px;
+
+    text-align: center;
+
+}
+
+
+
+.partenaires-section h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 30px;
+
+}
+
+
+
+.partenaires-section > p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.8;
+
+}
+
+
+
+
+.partenaires-cards {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 35px;
+
+    margin-top: 60px;
+
+}
+
+
+
+
+.partenaire-card {
+
+    background: white;
+
+    width: 90%;
+
+    max-width: 500px;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+
+}
+
+
+
+.partenaire-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.partenaire-card strong {
+
+    display: block;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.partenaire-card p {
+
+    line-height: 1.8;
+
+}
+
+
+
+
+
+.devenir-partenaire {
+
+    padding-top: 40px;
+
+}
+
+
+
+.devenir-partenaire a {
+
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 15px 45px;
+
+    background: white;
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 
 }
