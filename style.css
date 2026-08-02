@@ -1434,7 +1434,7 @@ footer{
 .top-intro h1{
     display:inline-block;
     background:#e30613;
-    color:#fff;
+    color:black;
     padding:12px 25px;
     border-radius:30px;
     font-size:24px;
@@ -3043,4 +3043,40 @@ margin:0 auto 15px;
     height:50px;
     object-fit:cover;
     border-radius:6px;
+}
+
+
+.top-badge{
+    display:inline-block;
+    background:#2bbcff;
+    color:black;
+    padding:10px 24px;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin-bottom:18px;
+}
+
+
+
+.up{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.down{
+    color:#dc2626;
+    font-weight:bold;
+}
+
+.same{
+    color:#666;
+    font-weight:bold;
+}
+
+.new{
+    color:#0066cc;
+    font-weight:bold;
 }
