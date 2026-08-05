@@ -18,11 +18,22 @@
 <body>
 
 
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
@@ -30,7 +41,43 @@
 
 
 
-<section class="methodologie-detail">
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+Certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+<section class="methodologie-card">
 
 
 <h1>
@@ -46,7 +93,7 @@ Méthodologie du classement hebdomadaire IMC
 
 
 
-<section class="methodologie-content">
+<section class="methodologie-card">
 
 
 <h2>
@@ -59,33 +106,106 @@ Les classements hebdomadaires IMC sont établis à partir des performances enreg
 </p>
 
 
+
+
 <div class="plateformes-grid">
 
+
 <div class="plateforme">
+
+
+<div class="plateforme-image">
+
 <img src="youtube.png" alt="YouTube">
-<p>YouTube</p>
+
 </div>
 
+
+<p>
+YouTube
+</p>
+
+
+</div>
+
+
+
+
+
 <div class="plateforme">
+
+
+<div class="plateforme-image">
+
 <img src="boomplay.png" alt="Boomplay">
-<p>Boomplay</p>
+
 </div>
 
+
+<p>
+Boomplay
+</p>
+
+
+</div>
+
+
+
+
+
 <div class="plateforme">
+
+
+<div class="plateforme-image">
+
 <img src="applemusic.png" alt="Apple Music">
-<p>Apple Music</p>
+
 </div>
+
+
+<p>
+Apple Music
+</p>
+
+
+</div>
+
+
+
+
 
 <div class="plateforme">
+
+
+<div class="plateforme-image">
+
 <img src="audiomack.png" alt="Audiomack">
-<p>Audiomack</p>
-</div>
 
 </div>
 
 
+<p>
+Audiomack
+</p>
 
 
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -93,9 +213,11 @@ Système de points
 </h2>
 
 
+
 <p>
 Les points sont attribués selon les positions occupées dans les différents classements pris en compte par l’IMC.
 </p>
+
 
 
 
@@ -113,6 +235,7 @@ Les points sont distribués du 1er au 30e rang des classements journaliers Apple
 <p>
 Le premier obtient <strong>300 points</strong> et le dernier obtient <strong>10 points</strong>, avec une différence de <strong>10 points entre chaque position.</strong>
 </p>
+
 
 
 
@@ -155,8 +278,16 @@ Les vues hebdomadaires du Top 20 YouTube RDC sont converties en points.
 
 
 
+</section>
 
 
+
+
+
+
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -174,6 +305,7 @@ Le total des points permet d’établir le classement final hebdomadaire IMC des
 </p>
 
 
+
 <p>
 Le système de classement hebdomadaire IMC est inspiré des méthodes utilisées par les grands classements musicaux internationaux, notamment Billboard, en combinant plusieurs indicateurs de performance afin d'établir un classement représentatif de la consommation musicale.
 </p>
@@ -186,36 +318,15 @@ Le système de classement hebdomadaire IMC est inspiré des méthodes utilisées
 
 
 
+</main>
+
+
+
+
+
 
 
 <footer>
-
-
-<div class="footer-links">
-
-
-<a href="index.html">
-Accueil
-</a>
-
-
-<a href="actualites.html">
-Actualités
-</a>
-
-
-<a href="classements.html">
-Voir les classements
-</a>
-
-
-<a href="certification.html">
-Certification
-</a>
-
-
-</div>
-
 
 
 <p>
@@ -224,6 +335,23 @@ Certification
 
 
 </footer>
+
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
 
 
 

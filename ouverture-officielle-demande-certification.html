@@ -6,63 +6,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>LES DEMANDES DE CERTIFICATION IMC SONT OFFICIELLEMENT OUVERTES</title>
+<title>Les demandes de certification IMC sont officiellement ouvertes</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/png" href="logo-imc.png">
+
+<link rel="stylesheet" href="article.css">
 
 </head>
 
+
 <body>
 
+
+
+
 <header>
-    <h1>Institut Musical Congolais</h1>
+
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+<div class="logo">
+
+<img src="logo-imc.png" alt="Logo IMC">
+
+</div>
+
+
 </header>
+
+
+
+
+
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="certification.html">
+La certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
 
 
 <main class="article-page">
 
-    <img class="image-article" src="ouverture-officielle-demandes-certification.jpg" alt="Description de l'image">
 
-    <h1>Les demandes de certification IMC sont officiellement ouvertes</h1>
-
-    <p class="date-article">
-        <strong>1er Août 2026</strong>
-    </p>
+<article class="article-card">
 
 
-    <div class="article-content">
 
-        <p>
-        À partir d'aujourd'hui, les artistes, producteurs et labels peuvent soumettre leurs œuvres afin d'obtenir une certification officielle basée sur leurs performances réalisées en République Démocratique du Congo.
-        </p>
+<h1>
+Les demandes de certification IMC sont officiellement ouvertes
+</h1>
 
-        <p>
-        Toutes les informations relatives aux certifications sont disponibles sur le site web dans l'onglet certification.
-        </p>
-        
-        <p>
+
+
+
+
+<img class="image-article"
+src="ouverture-officielle-demandes-certification.jpg"
+alt="Les demandes de certification IMC sont officiellement ouvertes">
+
+
+
+
+
+<p class="date-article">
+1er Août 2026
+</p>
+
+
+
+
+
+
+<div class="article-content">
+
+
+<p>
+À partir d'aujourd'hui, les artistes, producteurs et labels peuvent soumettre leurs œuvres afin d'obtenir une certification officielle basée sur leurs performances réalisées en République Démocratique du Congo.
+</p>
+
+
+
+
+<p>
+Toutes les informations relatives aux certifications sont disponibles sur le site web dans l'onglet <strong>Certification</strong>.
+</p>
+
+
+
+
+<p>
 L'IMC rappelle que toutes les demandes feront l'objet d'une vérification avant toute attribution d'une certification officielle.
 </p>
 
-    </div>
 
 
-    <hr>
 
-    <p class="valoriser">
-        <strong>•VALORISER LES PERFORMANCES QUI FAÇONNENT LA MUSIQUE CONGOLAISE•</strong>
-    </p>
+</div>
+
+
+
+
+
+
+<p class="valoriser">
+
+<strong>
+• VALORISER LES PERFORMANCES QUI FAÇONNENT LA MUSIQUE CONGOLAISE •
+</strong>
+
+</p>
+
+
+
+
+</article>
+
 
 </main>
 
 
+
+
+
+
+
+
 <footer>
+
 
 <p>
 © Institut Musical Congolais - IMC
 </p>
 
+
 </footer>
+
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
+
+
+
+
 
 </body>
 

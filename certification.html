@@ -18,42 +18,74 @@
 <body>
 
 
+
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
 
 
 
-<section class="hero-small">
+
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="certification-page">
+
+
+
+<section class="certification-card">
+
+
 
 <h1>
-Certification IMC
+Qu'est-ce que la certification IMC ?
 </h1>
 
-
-<p>
-La reconnaissance officielle des succès musicaux en République Démocratique du Congo.
-</p>
-
-
-</section>
-
-
-
-
-
-
-<section class="about">
-
-
-<h2>
-Qu'est-ce que la certification IMC ?
-</h2>
 
 
 <p>
@@ -61,11 +93,15 @@ La certification IMC récompense les œuvres musicales ayant atteint les seuils 
 </p>
 
 
+
+
 <p>
 Elle permet de valoriser les artistes, producteurs et labels ayant réalisé des performances significatives auprès du public congolais.
 </p>
 
 
+
+
 </section>
 
 
@@ -73,21 +109,30 @@ Elle permet de valoriser les artistes, producteurs et labels ayant réalisé des
 
 
 
+<section class="certification-action">
 
-<section class="certification-buttons">
 
-
-<a href="methodologie-certification.html" class="main-button">
+<a href="methodologie-certification.html">
 Méthodologie de certification
 </a>
 
 
-<a href="demande-certification.html" class="main-button">
+<a class="btn" href="demande-certification.html">
+
 Demander une certification
+
 </a>
 
 
 </section>
+
+
+
+
+
+
+</main>
+
 
 
 
@@ -97,12 +142,54 @@ Demander une certification
 <footer>
 
 
+<div class="footer-links">
+
+
+<a href="contact.html">
+Contact
+</a>
+
+
+<a href="partenaires.html">
+Partenaires
+</a>
+
+
+<a href="mentions-legales.html">
+Mentions légales
+</a>
+
+
+</div>
+
+
+
 <p>
 © 2026 Institut Musical Congolais - IMC
 </p>
 
 
+
 </footer>
+
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
+
+
 
 
 

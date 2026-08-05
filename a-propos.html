@@ -18,11 +18,22 @@
 <body>
 
 
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
@@ -30,15 +41,55 @@
 
 
 
-<section class="hero-small">
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+Certification IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+
+
+<section class="methodologie-card">
+
 
 <h1>
 À propos de l'IMC
 </h1>
 
+
 <p>
 L'organisation de référence pour la reconnaissance des performances musicales en République Démocratique du Congo.
 </p>
+
 
 </section>
 
@@ -47,7 +98,9 @@ L'organisation de référence pour la reconnaissance des performances musicales 
 
 
 
-<section class="about">
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -55,9 +108,11 @@ Qui sommes-nous ?
 </h2>
 
 
+
 <p>
 L’Institut Musical Congolais (IMC) est une organisation dédiée à la mesure, la reconnaissance et la valorisation des performances musicales en République Démocratique du Congo.
 </p>
+
 
 
 <p>
@@ -65,12 +120,16 @@ L’Institut Musical Congolais (IMC) est une organisation dédiée à la mesure,
 </p>
 
 
+
+
 <p>
 La méthodologie des classements IMC est inspirée des standards internationaux du Billboard, tandis que la méthodologie de certification s’inspire des modèles reconnus du SNEP et de la RIAA, tout en étant adaptée aux réalités du marché musical de la République Démocratique du Congo.
 </p>
 
 
+
 </section>
+
 
 
 
@@ -80,8 +139,13 @@ La méthodologie des classements IMC est inspirée des standards internationaux 
 <section class="certification-buttons">
 
 
-<a href="methodologie.html" class="main-button">
-Méthodologie IMC
+<a href="methodologie-classement.html" class="btn">
+Méthodologie classements IMC
+</a>
+
+
+<a href="methodologie-certification.html" class="btn">
+Méthodologie certification IMC
 </a>
 
 
@@ -92,13 +156,40 @@ Méthodologie IMC
 
 
 
+
+</main>
+
+
+
+
+
+
 <footer>
+
 
 <p>
 © 2026 Institut Musical Congolais - IMC
 </p>
 
+
 </footer>
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
+
 
 
 

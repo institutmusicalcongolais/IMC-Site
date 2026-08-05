@@ -18,11 +18,24 @@
 <body>
 
 
+
+
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
@@ -31,12 +44,57 @@
 
 
 
-<section class="merci-section">
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+Certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+
+
+<section class="methodologie-card">
 
 
 <h1>
 Demande envoyée avec succès
 </h1>
+
 
 
 <p>
@@ -45,9 +103,12 @@ Votre dossier a bien été transmis à l’Institut Musical Congolais. Notre éq
 
 
 
-<a href="index.html" class="merci-button">
+
+
+<a href="index.html" class="main-button">
 Retour à l'accueil
 </a>
+
 
 
 </section>
@@ -57,13 +118,40 @@ Retour à l'accueil
 
 
 
+</main>
+
+
+
+
+
+
+
 <footer>
+
 
 <p>
 © 2026 Institut Musical Congolais - IMC
 </p>
 
+
 </footer>
+
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
 
 
 

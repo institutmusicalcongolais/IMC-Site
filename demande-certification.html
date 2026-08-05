@@ -17,14 +17,27 @@
 </head>
 
 
+
 <body>
+
+
 
 
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
@@ -32,15 +45,56 @@
 
 
 
-<section class="demande-hero">
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+
+
+<section class="methodologie-card">
+
 
 <h1>
 Demander une certification IMC
 </h1>
 
+
 <p>
 Soumettez votre œuvre pour une évaluation officielle par l’Institut Musical Congolais.
 </p>
+
 
 </section>
 
@@ -50,7 +104,10 @@ Soumettez votre œuvre pour une évaluation officielle par l’Institut Musical 
 
 
 
-<section class="form-section">
+
+
+<section class="methodologie-card form-section">
+
 
 
 <h2>
@@ -59,7 +116,10 @@ Formulaire de demande
 
 
 
+
 <form action="https://formsubmit.co/institutmusicalcongolais@gmail.com" method="POST" enctype="multipart/form-data">
+
+
 
 
 
@@ -68,11 +128,14 @@ Informations de l'artiste ou du demandeur
 </h3>
 
 
+
 <label>
 Nom de l’artiste ou du groupe
 </label>
 
 <input type="text" name="artiste" placeholder="Nom artistique" required>
+
+
 
 
 
@@ -84,11 +147,15 @@ Nom du label, producteur ou manager
 
 
 
+
+
 <label>
 Adresse email
 </label>
 
 <input type="email" name="email" placeholder="Votre email" required>
+
+
 
 
 
@@ -103,15 +170,20 @@ Numéro WhatsApp / Téléphone
 
 
 
+
 <h3>
 Informations sur l’œuvre
 </h3>
 
 
 
+
+
+
 <label>
 Type de certification demandée
 </label>
+
 
 <select name="type_certification" required>
 
@@ -124,11 +196,15 @@ Type de certification demandée
 
 
 
+
 <label>
 Nom de l’œuvre
 </label>
 
+
 <input type="text" name="oeuvre" placeholder="Titre du single ou nom de l’album" required>
+
+
 
 
 
@@ -136,6 +212,7 @@ Nom de l’œuvre
 <label>
 Date de sortie
 </label>
+
 
 <input type="date" name="date_sortie">
 
@@ -172,6 +249,8 @@ Vérification des performances
 
 
 
+
+
 <label>
 Liens officiels de l’œuvre
 </label>
@@ -183,9 +262,11 @@ Liens officiels de l’œuvre
 
 
 
+
 <label>
 Document officiel (facultatif)
 </label>
+
 
 <input type="file" name="preuve">
 
@@ -197,8 +278,8 @@ Document officiel (facultatif)
 Lien vers les preuves (obligatoire)
 </label>
 
-<input type="url" name="lien_preuves" placeholder="https://drive.google.com/..." required>
 
+<input type="url" name="lien_preuves" placeholder="https://drive.google.com/..." required>
 
 
 
@@ -209,13 +290,17 @@ Zone des performances
 </label>
 
 
+
 <select name="zone">
+
 
 <option>
 République Démocratique du Congo
 </option>
 
+
 </select>
+
 
 
 
@@ -225,6 +310,8 @@ République Démocratique du Congo
 <h3>
 Informations complémentaires
 </h3>
+
+
 
 
 
@@ -242,11 +329,14 @@ Message pour l’IMC
 
 
 
-<label>
+<label class="checkbox">
+
 
 <input type="checkbox" required>
 
+
 Je confirme que les informations fournies sont exactes et que les performances déclarées respectent les règles de certification IMC.
+
 
 </label>
 
@@ -262,6 +352,8 @@ Envoyer la demande de certification
 
 
 
+
+
 <input type="hidden" name="_captcha" value="false">
 
 <input type="hidden" name="_subject" value="Nouvelle demande de certification IMC">
@@ -270,7 +362,11 @@ Envoyer la demande de certification
 
 
 
+
+
 </form>
+
+
 
 
 </section>
@@ -281,7 +377,9 @@ Envoyer la demande de certification
 
 
 
-<section class="processus-certification">
+
+
+<section class="methodologie-card processus-certification">
 
 
 <h2>
@@ -290,11 +388,14 @@ Processus de certification IMC
 
 
 
-<div class="cards">
+
+<div class="certif-cards">
 
 
 
-<div class="card">
+
+
+<div class="certif-card">
 
 <h3>
 1️⃣ Réception du dossier
@@ -310,7 +411,9 @@ L’IMC reçoit la demande et vérifie que toutes les informations nécessaires 
 
 
 
-<div class="card">
+
+
+<div class="certif-card">
 
 <h3>
 2️⃣ Analyse des données
@@ -326,7 +429,9 @@ Les performances musicales sont analysées selon la méthodologie officielle IMC
 
 
 
-<div class="card">
+
+
+<div class="certif-card">
 
 <h3>
 3️⃣ Validation
@@ -342,7 +447,9 @@ Après vérification, l’IMC confirme l’éligibilité de l’œuvre à une ce
 
 
 
-<div class="card">
+
+
+<div class="certif-card">
 
 <h3>
 4️⃣ Publication
@@ -356,10 +463,21 @@ La certification est annoncée officiellement sur les plateformes de communicati
 
 
 
+
+
+
 </div>
 
 
+
 </section>
+
+
+
+
+
+
+</main>
 
 
 
@@ -376,6 +494,25 @@ La certification est annoncée officiellement sur les plateformes de communicati
 
 
 </footer>
+
+
+
+
+
+
+
+<script>
+
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+
+</script>
+
 
 
 

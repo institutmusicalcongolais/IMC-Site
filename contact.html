@@ -18,11 +18,23 @@
 <body>
 
 
+
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
@@ -30,15 +42,62 @@
 
 
 
-<section class="hero-small">
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+Certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+
+
+
+<section class="methodologie-card">
+
 
 <h1>
 Contactez l'IMC
 </h1>
 
+
 <p>
 Une question, une demande de partenariat ou une demande d'information ?
 </p>
+
 
 </section>
 
@@ -47,7 +106,9 @@ Une question, une demande de partenariat ou une demande d'information ?
 
 
 
-<section class="contact-page">
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -56,53 +117,69 @@ Nos coordonnées
 
 
 
-<div class="contact-box">
 
+<div class="contact-card">
 
-<div class="contact-item">
 
 <h3>
 📧 Email officiel
 </h3>
 
+
 <p>
 institutmusicalcongolais@gmail.com
 </p>
+
+
 
 </div>
 
 
 
 
-<div class="contact-item">
+
+
+<div class="contact-card">
+
 
 <h3>
 📱 Réseau social
 </h3>
 
+
 <p>
 Institut Musical Congolais
 </p>
+
+
 
 </div>
 
 
 
 
-<div class="contact-item">
+
+
+
+<div class="contact-card">
+
 
 <h3>
 🏛️ Localisation
 </h3>
 
+
 <p>
 République Démocratique du Congo
 </p>
 
-</div>
 
 
 </div>
+
+
+
+
 
 
 </section>
@@ -112,15 +189,9 @@ République Démocratique du Congo
 
 
 
-<section class="contact-button">
 
+</main>
 
-<a href="index.html">
-Accueil
-</a>
-
-
-</section>
 
 
 
@@ -129,11 +200,28 @@ Accueil
 
 <footer>
 
+
 <p>
 © 2026 Institut Musical Congolais - IMC
 </p>
 
+
 </footer>
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
 
 
 

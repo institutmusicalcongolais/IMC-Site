@@ -18,35 +18,133 @@
 <body>
 
 
+
+
+<!-- HEADER -->
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
 
 
 
-<section class="top-intro">
 
-<div class="top-badge">
-TOP TITRES RDC DE LA SEMAINE
+
+
+<!-- MENU PRINCIPAL -->
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+La certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+
+<!-- SELECTEUR DES TOPS -->
+
+<section class="top-selector">
+
+
+<button onclick="toggleTopMenu()">
+
+Top Titres RDC ▼
+
+</button>
+
+
+
+<div id="top-menu">
+
+
+<a href="top-albums.html">
+Top Albums RDC de la semaine
+</a>
+
+
+<a href="top-titres.html">
+Top Titres RDC de la semaine
+</a>
+
+
+<a href="methodologie-classement.html">
+À propos du Top RDC
+</a>
+
+
 </div>
 
-<h1>
-24 – 30 JUILLET 2026
-</h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- INFORMATIONS CLASSEMENT -->
+
+
+<section class="ranking-info">
 
 
 <p>
-<strong>Dernière mise à jour :</strong> Lundi 3 Août 2026
+
+<strong>Classement de la semaine :</strong>
+24 – 30 juillet 2026
+
 </p>
 
 
+
 <p>
-<strong>Prochaine mise à jour :</strong> Lundi 10 Août 2026
+
+<strong>Prochaine mise à jour :</strong>
+Lundi 10 août 2026
+
 </p>
 
 
@@ -55,6 +153,13 @@ TOP TITRES RDC DE LA SEMAINE
 
 
 
+
+
+
+
+
+
+<!-- TABLEAU TOP TITRES -->
 
 
 <section class="top-table-section">
@@ -65,25 +170,32 @@ TOP TITRES RDC DE LA SEMAINE
 
 <thead>
 
+
 <tr>
-    <th>Place</th>
-    <th>Pochette</th>
-    <th>Évolution</th>
-    <th>Titre</th>
-    <th>Artiste</th>
+
+<th>#</th>
+
+<th>-</th>
+
+<th>Pochette</th>
+
+<th>Titre</th>
+
+<th>Artiste</th>
+
 </tr>
+
 
 </thead>
 
 
 
 <tbody>
-
-
+  
 <tr>
-    <td>1</td>
-    <td><img src="xxdelirium.jpg" alt="KITAMATA" class="cover"></td>
+<td>1</td>
 <td class="up">⬆ +2</td>
+<td><img src="xxdelirium.jpg" alt="KITAMATA" class="cover"></td>
 <td>KITAMATA</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -91,8 +203,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>2</td>
-<td><img src="xx.jpg" alt="PÉPÉLÉ" class="cover"></td>
 <td class="same">➖</td>
+<td><img src="xx.jpg" alt="PÉPÉLÉ" class="cover"></td>
 <td>PÉPÉLÉ</td>
 <td>Fally Ipupa & Guy2BezBar</td>
 </tr>
@@ -100,17 +212,17 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>3</td>
+<td class="down">⬇ -2</td>
 <td><img src="xx.jpg" alt="LOST" class="cover"></td>
-    <td class="down">⬇ -2</td>
-    <td>LOST</td>
-    <td>Fally Ipupa</td>
+<td>LOST</td>
+<td>Fally Ipupa</td>
 </tr>
 
 
 <tr>
 <td>4</td>
-<td><img src="deuxetres.jpg" alt="DEUX ÊTRES" class="cover"></td>
 <td class="same">➖</td>
+<td><img src="deuxetres.jpg" alt="DEUX ÊTRES" class="cover"></td>
 <td>DEUX ÊTRES</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -118,8 +230,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>5</td>
-<td><img src="melodecale.jpg" alt="MELO DÉCALÉ" class="cover"></td>
 <td class="up">⬆ +5</td>
+<td><img src="melodecale.jpg" alt="MELO DÉCALÉ" class="cover"></td>
 <td>MELO DÉCALÉ</td>
 <td>Tiakola</td>
 </tr>
@@ -127,8 +239,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>6</td>
-<td><img src="pineapple.jpg" alt="PINEAPPLE" class="cover"></td>
 <td class="up">⬆ +4</td>
+<td><img src="pineapple.jpg" alt="PINEAPPLE" class="cover"></td>
 <td>PINEAPPLE</td>
 <td>Leto</td>
 </tr>
@@ -136,8 +248,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>7</td>
-<td><img src="sexynana.jpg" alt="SEXY NANA" class="cover"></td>
 <td class="up">⬆ +13</td>
+<td><img src="sexynana.jpg" alt="SEXY NANA" class="cover"></td>
 <td>SEXY NANA</td>
 <td>Aya Nakamura & La Rvfleuse</td>
 </tr>
@@ -145,8 +257,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>8</td>
-<td><img src="xx.jpg" alt="JAM" class="cover"></td>
 <td class="down">⬇ -3</td>
+<td><img src="xx.jpg" alt="JAM" class="cover"></td>
 <td>JAM</td>
 <td>Fally Ipupa & Wizkid</td>
 </tr>
@@ -154,8 +266,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>9</td>
-<td><img src="numberone.jpg" alt="ESILI" class="cover"></td>
 <td class="down">⬇ -3</td>
+<td><img src="numberone.jpg" alt="ESILI" class="cover"></td>
 <td>ESILI</td>
 <td>Moïse Mbiye</td>
 </tr>
@@ -163,8 +275,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>10</td>
-<td><img src="xx.jpg" alt="DOUCEMENT" class="cover"></td>
 <td class="up">⬆ +1</td>
+<td><img src="xx.jpg" alt="DOUCEMENT" class="cover"></td>
 <td>DOUCEMENT</td>
 <td>Fally Ipupa & Joé Dwèt Filé</td>
 </tr>
@@ -172,8 +284,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>11</td>
-<td><img src="oyobisobinza.jpg" alt="OYO BIZO BINZA" class="cover"></td>
 <td class="down">⬇ -2</td>
+<td><img src="oyobisobinza.jpg" alt="OYO BISO BINZA" class="cover"></td>
 <td>OYO BISO BINZA</td>
 <td>Transco Léopard</td>
 </tr>
@@ -181,8 +293,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>12</td>
-<td><img src="grandmonde.jpg" alt="GRAND MONDE" class="cover"></td>
 <td class="down">⬇ -4</td>
+<td><img src="grandmonde.jpg" alt="GRAND MONDE" class="cover"></td>
 <td>GRAND MONDE</td>
 <td>Transco Léopard</td>
 </tr>
@@ -190,8 +302,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>13</td>
-<td><img src="xx.jpg" alt="MA DIVA" class="cover"></td>
 <td class="down">⬇ -6</td>
+<td><img src="xx.jpg" alt="MA DIVA" class="cover"></td>
 <td>MA DIVA</td>
 <td>Fally Ipupa & SDM</td>
 </tr>
@@ -199,8 +311,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>14</td>
-<td><img src="prototypeindusa.jpg" alt="KONDOKO" class="cover"></td>
 <td class="down">⬇ -2</td>
+<td><img src="prototypeindusa.jpg" alt="KONDOKO" class="cover"></td>
 <td>KONDOKO</td>
 <td>Gaz Mawete, Suintement, Werrason & Chily</td>
 </tr>
@@ -208,8 +320,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>15</td>
-<td><img src="histoireremix.jpg" alt="HISTOIRE REMIX" class="cover"></td>
 <td class="down">⬇ -1</td>
+<td><img src="histoireremix.jpg" alt="HISTOIRE REMIX" class="cover"></td>
 <td>HISTOIRE REMIX</td>
 <td>Bantu B & V.A</td>
 </tr>
@@ -217,8 +329,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>16</td>
-<td><img src="lumiere.jpg" alt="PRIX DE LA VIE" class="cover"></td>
 <td class="down">⬇ -1</td>
+<td><img src="lumiere.jpg" alt="PRIX DE LA VIE" class="cover"></td>
 <td>PRIX DE LA VIE</td>
 <td>Zakalara</td>
 </tr>
@@ -226,8 +338,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>17</td>
-<td><img src="xx.jpg" alt="LOIN DES YEUX" class="cover"></td>
 <td class="up">⬆ +2</td>
+<td><img src="xx.jpg" alt="LOIN DES YEUX" class="cover"></td>
 <td>LOIN DES YEUX</td>
 <td>Fally Ipupa & Calema</td>
 </tr>
@@ -235,8 +347,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>18</td>
-<td><img src="lumiere.jpg" alt="MAMAN" class="cover"></td>
 <td class="down">⬇ -2</td>
+<td><img src="lumiere.jpg" alt="MAMAN" class="cover"></td>
 <td>MAMAN</td>
 <td>Zakalara</td>
 </tr>
@@ -244,8 +356,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>19</td>
-<td><img src="sanslimite.jpg" alt="SANS LIMITE" class="cover"></td>
 <td class="up">⬆ +2</td>
+<td><img src="sanslimite.jpg" alt="SANS LIMITE" class="cover"></td>
 <td>SANS LIMITE</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -253,8 +365,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>20</td>
-<td><img src="maladie.jpg" alt="MALADIE" class="cover"></td>
 <td class="up">⬆ +2</td>
+<td><img src="maladie.jpg" alt="MALADIE" class="cover"></td>
 <td>MALADIE</td>
 <td>Mauvais Djo</td>
 </tr>
@@ -262,8 +374,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>21</td>
-<td><img src="xxdelirium.jpg" alt="COMPLICES" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="xxdelirium.jpg" alt="COMPLICES" class="cover"></td>
 <td>COMPLICES</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -271,8 +383,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>22</td>
-<td><img src="vivelamonnaie.jpg" alt="VIVE LA MONNAIE" class="cover"></td>
 <td class="up">⬆ +7</td>
+<td><img src="vivelamonnaie.jpg" alt="VIVE LA MONNAIE" class="cover"></td>
 <td>VIVE LA MONNAIE</td>
 <td>Gims & Mauvais Djo</td>
 </tr>
@@ -280,8 +392,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>23</td>
-<td><img src="message.jpg" alt="MESSAGE" class="cover"></td>
 <td class="up">⬆ +4</td>
+<td><img src="message.jpg" alt="MESSAGE" class="cover"></td>
 <td>MESSAGE</td>
 <td>Bantu B</td>
 </tr>
@@ -289,8 +401,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>24</td>
-<td><img src="basangomalamu.jpg" alt="BA SANGO MALAMU" class="cover"></td>
 <td class="same">➖</td>
+<td><img src="basangomalamu.jpg" alt="BA SANGO MALAMU" class="cover"></td>
 <td>BA SANGO MALAMU</td>
 <td>Moïse Mbiye</td>
 </tr>
@@ -298,8 +410,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>25</td>
-<td><img src="auclairdelalune.jpg" alt="AU CLAIR DE LA LUNE" class="cover"></td>
 <td class="up">⬆ +3</td>
+<td><img src="auclairdelalune.jpg" alt="AU CLAIR DE LA LUNE" class="cover"></td>
 <td>AU CLAIR DE LA LUNE</td>
 <td>Jaguaman & The Mingongo</td>
 </tr>
@@ -307,8 +419,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>26</td>
-<td><img src="bilolo.jpg" alt="BILOLO" class="cover"></td>
 <td class="same">➖</td>
+<td><img src="bilolo.jpg" alt="BILOLO" class="cover"></td>
 <td>BILOLO</td>
 <td>Transco Léopard</td>
 </tr>
@@ -316,8 +428,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>27</td>
-<td><img src="xx.jpg" alt="S'IL ÉTAIT POSSIBLE" class="cover"></td>
 <td class="same">➖</td>
+<td><img src="xx.jpg" alt="S'IL ÉTAIT POSSIBLE" class="cover"></td>
 <td>S'IL ÉTAIT POSSIBLE</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -325,8 +437,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>28</td>
-<td><img src="xx.jpg" alt="PETIT CŒUR" class="cover"></td>
 <td class="down">⬇ -11</td>
+<td><img src="xx.jpg" alt="PETIT CŒUR" class="cover"></td>
 <td>PETIT CŒUR</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -334,16 +446,17 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>29</td>
-<td><img src="sublime.jpg" alt="SUBLIME" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="sublime.jpg" alt="SUBLIME" class="cover"></td>
 <td>SUBLIME</td>
 <td>The Mingongo</td>
 </tr>
 
+
 <tr>
 <td>30</td>
-<td><img src="holygod.jpg" alt="HOLYGOD" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="holygod.jpg" alt="HOLYGOD" class="cover"></td>
 <td>HOLYGOD</td>
 <td>Bantu B</td>
 </tr>
@@ -351,8 +464,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>31</td>
-<td><img src="prototypeindusa.jpg" alt="LOKETO" class="cover"></td>
 <td class="down">⬇ -1</td>
+<td><img src="prototypeindusa.jpg" alt="LOKETO" class="cover"></td>
 <td>LOKETO</td>
 <td>Gaz Mawete & Yhello Yizi</td>
 </tr>
@@ -360,8 +473,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>32</td>
-<td><img src="lumiere.jpg" alt="L'ARGENT" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="lumiere.jpg" alt="L'ARGENT" class="cover"></td>
 <td>L'ARGENT</td>
 <td>Zakalara & Babydaiz</td>
 </tr>
@@ -369,8 +482,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>33</td>
-<td><img src="numberone.jpg" alt="DANS MA TÊTE" class="cover"></td>
 <td class="down">⬇ -15</td>
+<td><img src="numberone.jpg" alt="DANS MA TÊTE" class="cover"></td>
 <td>DANS MA TÊTE</td>
 <td>Moïse Mbiye</td>
 </tr>
@@ -378,8 +491,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>34</td>
-<td><img src="xxdelirium.jpg" alt="WANNA DANCE" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="xxdelirium.jpg" alt="WANNA DANCE" class="cover"></td>
 <td>WANNA DANCE</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -387,8 +500,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>35</td>
-<td><img src="tosambelanabiso.jpg" alt="TOSAMBELA NA BISO" class="cover"></td>
 <td class="down">⬇ -12</td>
+<td><img src="tosambelanabiso.jpg" alt="TOSAMBELA NA BISO" class="cover"></td>
 <td>TOSAMBELA NA BISO</td>
 <td>Eunice Manyanga</td>
 </tr>
@@ -396,8 +509,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>36</td>
-<td><img src="bonmood.jpg" alt="BON MOOD" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="bonmood.jpg" alt="BON MOOD" class="cover"></td>
 <td>BON MOOD</td>
 <td>Døpelym</td>
 </tr>
@@ -405,8 +518,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>37</td>
-<td><img src="prototypeindusa.jpg" alt="MAMAN EH" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="prototypeindusa.jpg" alt="MAMAN EH" class="cover"></td>
 <td>MAMAN EH</td>
 <td>Gaz Mawete & Joe Like</td>
 </tr>
@@ -414,8 +527,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>38</td>
-<td><img src="letemps.jpg" alt="LE TEMPS" class="cover"></td>
 <td class="down">⬇ -13</td>
+<td><img src="letemps.jpg" alt="LE TEMPS" class="cover"></td>
 <td>LE TEMPS</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -423,16 +536,17 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>39</td>
-<td><img src="auclairdelaluneremix.jpg" alt="AU CLAIR DE LA LUNE REMIX" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="auclairdelaluneremix.jpg" alt="AU CLAIR DE LA LUNE REMIX" class="cover"></td>
 <td>AU CLAIR DE LA LUNE REMIX</td>
 <td>Jaguaman, The Mingongo & Innoss'B</td>
 </tr>
 
+
 <tr>
 <td>40</td>
-<td><img src="xx.jpg" alt="CINÉMA" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="xx.jpg" alt="CINÉMA" class="cover"></td>
 <td>CINÉMA</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -440,8 +554,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>41</td>
-<td><img src="xx.jpg" alt="DEUXIEME MAMAN" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="xx.jpg" alt="DEUXIÈME MAMAN" class="cover"></td>
 <td>DEUXIÈME MAMAN</td>
 <td>Fally Ipupa</td>
 </tr>
@@ -449,8 +563,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>42</td>
-<td><img src="bayo.jpg" alt="BAYO" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="bayo.jpg" alt="BAYO" class="cover"></td>
 <td>BAYO</td>
 <td>Pson</td>
 </tr>
@@ -458,8 +572,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>43</td>
-<td><img src="zoshi.jpg" alt="FURAHA" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="zoshi.jpg" alt="FURAHA" class="cover"></td>
 <td>FURAHA</td>
 <td>Gloria Bash & The Mingongo</td>
 </tr>
@@ -467,8 +581,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>44</td>
-<td><img src="elombe.jpg" alt="ELOMBE" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="elombe.jpg" alt="ELOMBE" class="cover"></td>
 <td>ELOMBE</td>
 <td>Eunice Manyanga</td>
 </tr>
@@ -476,8 +590,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>45</td>
-<td><img src="bahi.jpg" alt="BAHI" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="bahi.jpg" alt="BAHI" class="cover"></td>
 <td>BAHI</td>
 <td>Wantché & Og Mahilet</td>
 </tr>
@@ -485,8 +599,8 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>46</td>
-<td><img src="loveyars.jpg" alt="LOVE YA RS" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="loveyars.jpg" alt="LOVE YA RS" class="cover"></td>
 <td>LOVE YA RS</td>
 <td>Innoss'B</td>
 </tr>
@@ -494,17 +608,17 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>47</td>
-<td><img src="numberone.jpg" alt="COURONNE" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="numberone.jpg" alt="COURONNE" class="cover"></td>
 <td>COURONNE</td>
-<td>Moise Mbiye & Chœur De Koré</td>
+<td>Moïse Mbiye & Chœur De Koré</td>
 </tr>
 
 
 <tr>
 <td>48</td>
-<td><img src="ngolu.jpg" alt="NGOLU" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="ngolu.jpg" alt="NGOLU" class="cover"></td>
 <td>NGOLU</td>
 <td>David Ize</td>
 </tr>
@@ -512,17 +626,17 @@ TOP TITRES RDC DE LA SEMAINE
 
 <tr>
 <td>49</td>
-<td><img src="mils3.jpg" alt="TOUT EN GUCCI" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="mils3.jpg" alt="TOUT EN GUCCI" class="cover"></td>
 <td>TOUT EN GUCCI</td>
-<td>ninho</td>
+<td>Ninho</td>
 </tr>
 
 
 <tr>
 <td>50</td>
-<td><img src="sorryimbad.jpg" alt="BITCH & MONEY" class="cover"></td>
 <td class="new">🆕</td>
+<td><img src="sorryimbad.jpg" alt="BITCH & MONEY" class="cover"></td>
 <td>BITCH & MONEY</td>
 <td>Himra, Babydaiz & Zlatan</td>
 </tr>
@@ -530,9 +644,19 @@ TOP TITRES RDC DE LA SEMAINE
 
 </tbody>
 
-
 </table>
 
+</section>
+
+
+
+
+
+<section class="ranking-description">
+
+<p>
+Le classement officiel des tendances musicales en République Démocratique du Congo
+</p>
 
 </section>
 
@@ -543,25 +667,34 @@ TOP TITRES RDC DE LA SEMAINE
 
 <footer>
 
-
-<div class="footer-links">
-
-<a href="index.html">Accueil</a>
-
-<a href="methodologie.html">Méthodologie</a>
-
-<a href="certification.html">Certifications</a>
-
-
-</div>
-
-
 <p>
-© 2026 Institut Musical Congolais - IMC
+© Institut Musical Congolais - IMC
 </p>
 
-
 </footer>
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+
+
+function toggleTopMenu(){
+
+document.getElementById("top-menu").classList.toggle("active");
+
+}
+
+</script>
 
 
 

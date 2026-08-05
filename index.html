@@ -2,147 +2,379 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Institut Musical Congolais | IMC</title>
-    
-    <!-- Identité du site -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Institut Musical Congolais | IMC</title>
+
 <link rel="icon" type="image/png" href="logo-imc.png">
+<link rel="stylesheet" href="style.css">
 
-<meta name="description" content="Institut Musical Congolais (IMC), organisme de certification et de classement des performances musicales en République Démocratique du Congo.">
+<meta name="description" content="Institut Musical Congolais - Certification et classements de la musique en République Démocratique du Congo.">
 
-<meta name="keywords" content="IMC, Institut Musical Congolais, certification musicale RDC, classement musique congolaise, artistes congolais">
-
-<meta name="author" content="Institut Musical Congolais">
-
-
-<!-- Partage réseaux sociaux -->
-<meta property="og:title" content="Institut Musical Congolais - IMC">
-
-<meta property="og:description" content="La référence de la certification musicale en République Démocratique du Congo.">
-
-<meta property="og:image" content="logo-imc.png">
-
-<meta property="og:type" content="website">
-
-    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+<!-- ================= HEADER ================= -->
 
 <header>
 
-<div class="logo">
-    <img src="logo-imc.png" alt="Logo IMC">
-</div>
-
-</header>
-
-<div class="hero-buttons">
-
-
-
-
-
-</div>
-
-</header>
-
-
-
-<section class="hero">
-
-    <h1>
-        La référence de la certification musicale en République Démocratique du Congo
-    </h1>
-
-
-    <p>
-        L’Institut Musical Congolais (IMC) reconnaît les performances des artistes congolais grâce aux données numériques et aux ventes musicales enregistrées en RDC.
-    </p>
-
-
-    <a href="actualites.html">
-<button>Actualités</button>
-</a>
-
-    <a href="classements.html">
-<button class="dark">
-Voir les classements
+<button class="menu-btn" onclick="toggleMenu()">
+☰
 </button>
+
+<div class="logo">
+<img src="logo-imc.png" alt="Logo IMC">
+</div>
+
+</header>
+
+<!-- ================= MENU ================= -->
+
+<nav id="menu">
+
+<a href="top-albums.html">
+Les Tops RDC de la semaine
 </a>
 
-<a href="methodologie.html">
-<button>Méthodologie</button>
+<a href="actualites.html">
+Actualités IMC
 </a>
 
 <a href="certification.html">
-<button>Certification</button>
+La certification IMC
 </a>
 
+<a href="a-propos.html">
+À propos de l'IMC
+</a>
 
-</section>
+</nav>
 
+<!-- ================= CONTENU ================= -->
 
+<main>
 
+<!-- ================= TOP ALBUMS ================= -->
 
-<section class="about">
+<section class="card">
 
 <h2>
-À propos de l'IMC
+Top Albums RDC de la semaine
 </h2>
 
+<table class="mini-ranking">
 
-<p>
-L’Institut Musical Congolais est une organisation dédiée à la valorisation de la musique congolaise.
-</p>
+<thead>
 
+<tr>
 
-<p>
-L’IMC établit des certifications officielles et publie des classements basés sur les performances musicales réalisées en République Démocratique du Congo.
-</p>
+<th>#</th>
+<th>-</th>
+<th>Pochette</th>
+<th>Album</th>
+<th>Artiste</th>
 
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td class="same">➖</td>
+
+<td>
+<img src="xx.jpg" class="mini-cover" alt="">
+</td>
+
+<td>XX</td>
+
+<td>Fally Ipupa</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td class="up">⬆ +2</td>
+
+<td>
+<img src="prototypeindusa.jpg" class="mini-cover" alt="">
+</td>
+
+<td>PROTOTYPE (INDUSA)</td>
+
+<td>Gaz Mawete</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td class="same">➖</td>
+
+<td>
+<img src="mils4.jpg" class="mini-cover" alt="">
+</td>
+
+<td>M.I.L.S 4</td>
+
+<td>Ninho</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td class="down">⬇ -2</td>
+
+<td>
+<img src="numberone.jpg" class="mini-cover" alt="">
+</td>
+
+<td>NUMBER ONE</td>
+
+<td>Moïse Mbiye</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td class="up">⬆ +2</td>
+
+<td>
+<img src="hatelove.jpg" class="mini-cover" alt="">
+</td>
+
+<td>HATELOVE</td>
+
+<td>Joé Dwèt Filé</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<a href="top-albums.html" class="btn">
+Voir le Top complet
+</a>
 
 </section>
 
 
+<!-- ================= TOP TITRES ================= -->
 
+<section class="card">
 
+<h2>
+Top Titres RDC de la semaine
+</h2>
+
+<table class="mini-ranking">
+
+<thead>
+
+<tr>
+
+<th>#</th>
+<th>-</th>
+<th>Pochette</th>
+<th>Titre</th>
+<th>Artiste</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>1</td>
+
+<td class="up">⬆ +2</td>
+
+<td>
+<img src="xxdelirium.jpg" class="mini-cover" alt="">
+</td>
+
+<td>KITAMATA</td>
+
+<td>Fally Ipupa</td>
+
+</tr>
+
+<tr>
+
+<td>2</td>
+
+<td class="same">➖</td>
+
+<td>
+<img src="xx.jpg" class="mini-cover" alt="">
+</td>
+
+<td>PÉPÉLÉ</td>
+
+<td>Fally Ipupa & Guy2BezBar</td>
+
+</tr>
+
+<tr>
+
+<td>3</td>
+
+<td class="down">⬇ -2</td>
+
+<td>
+<img src="xx.jpg" class="mini-cover" alt="">
+</td>
+
+<td>LOST</td>
+
+<td>Fally Ipupa</td>
+
+</tr>
+
+<tr>
+
+<td>4</td>
+
+<td class="same">➖</td>
+
+<td>
+<img src="deuxetres.jpg" class="mini-cover" alt="">
+</td>
+
+<td>DEUX ÊTRES</td>
+
+<td>Fally Ipupa</td>
+
+</tr>
+
+<tr>
+
+<td>5</td>
+
+<td class="up">⬆ +5</td>
+
+<td>
+<img src="melodecale.jpg" class="mini-cover" alt="">
+</td>
+
+<td>MÉLO DÉCALÉ</td>
+
+<td>Tiakola</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<a href="top-titres-rdc.html" class="btn">
+Voir le Top complet
+</a>
+
+</section>
+
+<!-- ================= ACTUALITÉ ================= -->
+
+<section class="card">
+
+<img src="ouverture-officielle-demandes-certification.jpg" class="news-image" alt="Actualité">
+
+<h2 class="news-title">
+
+Les demandes de certification IMC sont officiellement ouvertes
+
+</h2>
+
+<p class="news-date">
+
+1 Août 2026
+
+</p>
+
+<p class="news-text">
+
+À partir d'aujourd'hui, les artistes, producteurs et labels peuvent soumettre leurs œuvres afin d'obtenir une certification officielle basée sur leurs performances réalisées en République Démocratique du Congo.
+
+</p>
+
+<a href="ouverture-officielle-demandes-certification.html" class="btn">
+
+Voir plus
+
+</a>
+
+</section>
+
+<!-- ================= A PROPOS ================= -->
+
+<section class="card">
+
+<h2>
+
+À propos de l'IMC
+
+</h2>
+
+<p>
+
+L'Institut Musical Congolais est une organisation dédiée à la valorisation de la musique congolaise grâce à la publication de classements hebdomadaires et à la certification des performances musicales réalisées en République Démocratique du Congo.
+
+</p>
+
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
-<div class="footer-links">
+<a href="contact.html">
+Contact
+</a>
 
-<a href="index.html">Accueil</a>
+<a href="partenaires.html">
+Partenaires
+</a>
 
-<a href="actualites.html">Actualités</a>
-
-<a href="classements.html">Voir les classements</a>
-
-<a href="methodologie.html">Méthodologie</a>
-
-<a href="certification.html">Certification</a>
-
-<a href="contact.html">Contact</a>
-
-<a href="mentions-legales.html">Mentions légales</a>
-
-<a href="a-propos.html">À propos de l'IMC</a>
-
-</div>
-
+<a href="mentions-legales.html">
+Mentions légales
+</a>
 
 <p>
-© 2026 Institut Musical Congolais - IMC
+© Institut Musical Congolais - IMC
 </p>
-
 
 </footer>
 
+<!-- ================= SCRIPT ================= -->
 
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
 
 </body>
 

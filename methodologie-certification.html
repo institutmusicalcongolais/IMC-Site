@@ -18,26 +18,80 @@
 <body>
 
 
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
 
 
 
-<section class="certif-hero">
+
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+
+
+<section class="methodologie-card">
+
 
 <h1>
 Méthodologie Certification IMC
 </h1>
 
+
 <p>
 Les règles officielles de calcul et d'attribution des certifications musicales de l'Institut Musical Congolais.
 </p>
+
 
 </section>
 
@@ -46,7 +100,10 @@ Les règles officielles de calcul et d'attribution des certifications musicales 
 
 
 
-<section class="certif-section">
+
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -55,7 +112,7 @@ Unités de mesure IMC
 
 
 <p>
-L’Institut Musical Congolais utilise deux unités principales pour mesurer les performances musicales : les IES et les IEV.
+L’Institut Musical Congolais utilise deux unités principales pour mesurer les performances musicales : les IEU et les IEV.
 </p>
 
 
@@ -67,15 +124,18 @@ L’Institut Musical Congolais utilise deux unités principales pour mesurer les
 
 
 
-<section class="certif-section">
+
+<section class="methodologie-card">
 
 
 <h2>
-IES — IMC Équivalents Streams
+IEU — IMC Équivalents Unités
 </h2>
 
 
+
 <div class="certif-cards">
+
 
 
 <div class="certif-card">
@@ -85,10 +145,11 @@ Stream Premium
 </h3>
 
 <p>
-1 stream = 5 IES
+1 stream = 5 IEU
 </p>
 
 </div>
+
 
 
 
@@ -99,10 +160,11 @@ Stream Freemium
 </h3>
 
 <p>
-1 stream = 1 IES
+1 stream = 1 IEU
 </p>
 
 </div>
+
 
 
 
@@ -113,10 +175,11 @@ Vente Album
 </h3>
 
 <p>
-1 vente = 7.500 IES
+1 vente = 7.500 IEU
 </p>
 
 </div>
+
 
 
 
@@ -127,10 +190,11 @@ Vente Single
 </h3>
 
 <p>
-1 vente = 750 IES
+1 vente = 750 IEU
 </p>
 
 </div>
+
 
 
 </div>
@@ -145,7 +209,8 @@ Vente Single
 
 
 
-<section class="certif-section">
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -153,22 +218,29 @@ IEV — IMC Équivalents Ventes
 </h2>
 
 
+
 <p>
 Les IEV permettent de déterminer les certifications albums après conversion des IEU générés.
 </p>
 
 
+
+
 <div class="certif-card">
+
 
 <h3>
 Conversion
 </h3>
 
+
 <p>
-1 IEV = 1.500 IES
+1 IEV = 1.500 IEU
 </p>
 
+
 </div>
+
 
 
 </section>
@@ -179,21 +251,19 @@ Conversion
 
 
 
-<section class="certif-section">
+
+
+<section class="methodologie-card">
 
 
 <h2>
-Certifications Albums (IEV)
+Certifications Albums
 </h2>
+
 
 
 <div class="certif-cards">
 
-
-<div class="certif-card">
-<h3>🥈 Argent</h3>
-<p>2.500 IEV</p>
-</div>
 
 
 <div class="certif-card">
@@ -202,16 +272,33 @@ Certifications Albums (IEV)
 </div>
 
 
+
 <div class="certif-card">
 <h3>💿 Platine</h3>
 <p>10.000 IEV</p>
 </div>
 
 
+
+<div class="certif-card">
+<h3>💿💿 Multi Platine</h3>
+<p>20.000 IEV...</p>
+</div>
+
+
+
 <div class="certif-card">
 <h3>💎 Diamant</h3>
 <p>50.000 IEV</p>
 </div>
+
+
+
+<div class="certif-card">
+<h3>💎💎 Multi Diamant</h3>
+<p>100.000 IEV...</p>
+</div>
+
 
 
 </div>
@@ -226,12 +313,14 @@ Certifications Albums (IEV)
 
 
 
-<section class="certif-section">
+
+<section class="methodologie-card">
 
 
 <h2>
-Certifications Singles (IEU)
+Certifications Singles
 </h2>
+
 
 
 <div class="certif-cards">
@@ -242,7 +331,7 @@ Certifications Singles (IEU)
 <h3>🥇 Or</h3>
 
 <p>
-2.500.000 IES
+2.500.000 IEU
 </p>
 
 </div>
@@ -254,7 +343,7 @@ Certifications Singles (IEU)
 <h3>💿 Platine</h3>
 
 <p>
-5.000.000 IES
+5.000.000 IEU
 </p>
 
 </div>
@@ -266,7 +355,7 @@ Certifications Singles (IEU)
 <h3>💎 Diamant</h3>
 
 <p>
-8.500.000 IES
+8.500.000 IEU
 </p>
 
 </div>
@@ -275,6 +364,7 @@ Certifications Singles (IEU)
 </div>
 
 
+
 </section>
 
 
@@ -283,7 +373,9 @@ Certifications Singles (IEU)
 
 
 
-<section class="certif-section">
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -291,49 +383,128 @@ Plateformes prises en compte
 </h2>
 
 
+
 <div class="plateformes-grid">
 
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="spotify.png" alt="Spotify">
-<p>Spotify</p>
 </div>
 
+<p>
+Spotify
+</p>
+
+</div>
+
+
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="audiomack.png" alt="Audiomack">
-<p>Audiomack</p>
 </div>
 
+<p>
+Audiomack
+</p>
+
+</div>
+
+
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="applemusic.png" alt="Apple Music">
-<p>Apple Music</p>
 </div>
 
+<p>
+Apple Music
+</p>
+
+</div>
+
+
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="boomplay.png" alt="Boomplay">
-<p>Boomplay</p>
 </div>
 
+<p>
+Boomplay
+</p>
+
+</div>
+
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="itunes.png" alt="iTunes">
-<p>iTunes</p>
 </div>
 
+<p>
+iTunes
+</p>
+
+</div>
+
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="amazonmusic.png" alt="Amazon Music">
-<p>Amazon Music</p>
 </div>
 
+<p>
+Amazon Music
+</p>
+
+</div>
+
+
+
 <div class="plateforme">
+
+<div class="plateforme-image">
 <img src="bandcamp.png" alt="Bandcamp">
-<p>Bandcamp</p>
 </div>
+
+<p>
+Bandcamp
+</p>
+
+</div>
+
+
 
 <div class="plateforme">
-<img src="mdmusic.png" alt="MD Music RDC">
-<p>MD Music RDC</p>
+
+<div class="plateforme-image">
+<img src="mdmusic.png" alt="MD Music">
 </div>
 
+<p>
+MD Music RDC
+</p>
+
 </div>
+
+
+
+</div>
+
 
 
 </section>
@@ -345,7 +516,8 @@ Plateformes prises en compte
 
 
 
-<section class="certif-section">
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -381,7 +553,9 @@ Les données utilisées proviennent uniquement des plateformes reconnues par l�
 
 
 
-<section class="certif-section">
+
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -390,18 +564,15 @@ Règle spécifique aux albums
 
 
 <p>
-Lorsqu’un album est analysé, si la chanson la plus consommée représente plus de la moitié des IEU générés par l’ensemble de l’album, la moitié des IEU de cette chanson est retirée du calcul afin de garantir une évaluation équitable.
+Lorsqu’un album est analysé, si la chanson la plus consommée représente plus de la moitié des IEU générés par l’ensemble de l’album, une partie des IEU de cette chanson est retirée du calcul afin de garantir une évaluation équitable.
 </p>
 
-
-<p>
-Calcul final :
-</p>
 
 
 <h3>
-Nombre d’IEV = Nombre d’IES ÷ 1.500
+Nombre d’IEV = Nombre d’IEU ÷ 1.500
 </h3>
+
 
 
 </section>
@@ -413,7 +584,8 @@ Nombre d’IEV = Nombre d’IES ÷ 1.500
 
 
 
-<section class="certif-section">
+
+<section class="methodologie-card">
 
 
 <h2>
@@ -421,36 +593,42 @@ Documents et preuves nécessaires
 </h2>
 
 
+
 <p>
 Toute demande de certification doit être accompagnée d’éléments permettant de vérifier les performances déclarées.
 </p>
 
 
-<h2>1. Document principal (facultatif)</h2>
+
+
+<h3>
+Document principal
+</h3>
+
 
 <p>
-Le demandeur peut joindre un document officiel lié à l'œuvre, notamment :
+Attestation de sortie, document fourni par le label ou tout élément permettant d’identifier clairement l’œuvre.
 </p>
 
-<ul>
-<li>Attestation de sortie ou document fourni par le label ;</li>
-<li>Document de distribution numérique ;</li>
-<li>Tout autre document permettant d'identifier clairement l'œuvre.</li>
-</ul>
 
 
-<h2>2. Dossier de preuves (obligatoire)</h2>
+
+<h3>
+Dossier de preuves obligatoire
+</h3>
+
 
 <p>
-Un lien vers un dossier Google Drive, Dropbox ou OneDrive doit être fourni
-dans le formulaire de demande de certification.
-Ce dossier doit contenir les éléments nécessaires à la vérification.
+Un lien vers un dossier Google Drive, Dropbox ou OneDrive doit être fourni dans le formulaire de demande.
 </p>
+
 
 
 <p>
 Les preuves acceptées comprennent notamment :
 </p>
+
+
 
 <ul>
 
@@ -458,15 +636,24 @@ Les preuves acceptées comprennent notamment :
 Captures d'écran des statistiques des plateformes.
 </li>
 
-<li>Relevés ou rapports officiels fournis par les plateformes ou distributeurs ;</li>
 
-<li>Données de consommation lorsque disponibles ;</li>
+<li>
+Rapports officiels des plateformes ou distributeurs.
+</li>
 
-<li>Liens directs vers l'œuvre sur les plateformes concernées ;</li>
 
-<li>Tout document complémentaire permettant de confirmer les performances.</li>
+<li>
+Données de consommation disponibles.
+</li>
+
+
+<li>
+Liens directs vers les œuvres.
+</li>
+
 
 </ul>
+
 
 
 
@@ -474,10 +661,12 @@ Captures d'écran des statistiques des plateformes.
 
 <strong>Important :</strong>
 
-Les preuves fournies doivent être lisibles, authentiques et accessibles.
+Les preuves doivent être lisibles, authentiques et accessibles.
 L’IMC peut demander des informations complémentaires avant validation définitive.
 
 </div>
+
+
 
 
 </section>
@@ -488,10 +677,18 @@ L’IMC peut demander des informations complémentaires avant validation défini
 
 
 
-<a class="certif-button" href="demande-certification.html">
+<a class="btn" href="demande-certification.html">
+
 Demander une certification
+
 </a>
 
+
+
+
+
+
+</main>
 
 
 
@@ -501,12 +698,29 @@ Demander une certification
 
 <footer>
 
+
 <p>
 © 2026 Institut Musical Congolais - IMC
 </p>
 
 
 </footer>
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
 
 
 

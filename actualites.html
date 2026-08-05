@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Actualités | Institut Musical Congolais</title>
+<title>Actualités IMC | Institut Musical Congolais</title>
 
 <link rel="icon" type="image/png" href="logo-imc.png">
 
@@ -18,65 +18,155 @@
 <body>
 
 
+
+
+<!-- HEADER -->
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
 
 
 
+
+
+<!-- MENU PRINCIPAL -->
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="certification.html">
+La certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+
+<!-- INTRODUCTION -->
+
+
 <section class="hero-small">
+
 
 <h1>
 Actualités IMC
 </h1>
 
+
 <p>
 Retrouvez toutes les informations officielles de l’Institut Musical Congolais.
 </p>
 
+
 </section>
 
 
 
 
 
-<section class="latest-news">
+
+
+
+
+<!-- ACTUALITES -->
+
+
+<section class="news-container">
+
+
+
+
+
+<a href="ouverture-officielle-demande-certification" class="news-card">
+
+
+<span>
+01 août 2026
+</span>
 
 
 <h2>
-Dernière actualité
+Lancement officiel du système de certification musicale IMC.
 </h2>
 
 
-<div class="news-feature">
-
-
-<img src="ouverture-officielle-demandes-certification.jpg" alt="Actualité IMC">
-
-
-<h3>
-Les demandes de certification IMC sont officiellement ouvertes.
-</h3>
-
-
-<p>
-À partir d'aujourd'hui, les artistes, producteurs et labels peuvent soumettre leurs œuvres afin d'obtenir une certification officielle basée sur leurs performances réalisées en République Démocratique du Congo.
-</p>
-
-
-<a href="ouverture-officielle-demande-certification.html">
-<button>
-Voir plus
-</button>
 </a>
 
 
-</div>
+
+
+
+<a href="ouverture-demandes-certification" class="news-card">
+
+
+<span>
+25 juillet 2026
+</span>
+
+
+<h2>
+Les modalités de demande de certification sont désormais disponibles.
+</h2>
+
+
+</a>
+
+
+
+
+<a href="annonce-seuils-de-certification" class="news-card">
+
+
+<span>
+4 juillet 2026
+</span>
+
+
+<h2>
+Les seuils officiels de certfication IMC sont desormais disponibles
+</h2>
+
+
+</a>
+
+
 
 
 </section>
@@ -86,52 +176,10 @@ Voir plus
 
 
 
-<section class="news-menu">
-
-
-<a href="archives-actualites.html">
-<button>
-Archives des actualités
-</button>
-</a>
 
 
 
-<a href="certifications-2026.html">
-<button>
-Certification 2026
-</button>
-</a>
-
-
-
-<a href="artistes-certifies.html">
-<button>
-Artistes certifiés
-</button>
-</a>
-
-
-</section>
-
-
-
-
-
-
-<section class="about">
-
-
-<p>
-Les communiqués officiels, annonces et informations publiées sur cette page sont validés par l’Institut Musical Congolais.
-</p>
-
-
-</section>
-
-
-
-
+<!-- FOOTER -->
 
 
 <footer>
@@ -140,24 +188,16 @@ Les communiqués officiels, annonces et informations publiées sur cette page so
 <div class="footer-links">
 
 
-<a href="index.html">
-Accueil
-</a>
-
-
-<a href="methodologie.html">
-Méthodologie
-</a>
-
-
-<a href="classements.html">
-Voir les classements
-</a>
-
-
 <a href="contact.html">
 Contact
 </a>
+
+
+
+<a href="partenaires.html">
+Partenaires
+</a>
+
 
 
 <a href="mentions-legales.html">
@@ -165,16 +205,39 @@ Mentions légales
 </a>
 
 
+
 </div>
 
 
 
+
 <p>
-© 2026 Institut Musical Congolais - IMC
+© Institut Musical Congolais - IMC
 </p>
 
 
 </footer>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+
+</script>
+
 
 
 </body>

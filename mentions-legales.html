@@ -18,11 +18,24 @@
 <body>
 
 
+
+
+
 <header>
 
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+
 <div class="logo">
+
 <img src="logo-imc.png" alt="Logo IMC">
+
 </div>
+
 
 </header>
 
@@ -30,7 +43,53 @@
 
 
 
-<section class="hero-small">
+
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="classements.html">
+Les Tops RDC de la semaine
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+Certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+
+<main class="methodologie-page">
+
+
+
+
+
+
+<section class="methodologie-card">
+
 
 <h1>
 Mentions légales
@@ -49,111 +108,20 @@ Informations officielles relatives au site de l'Institut Musical Congolais.
 
 
 
-<section class="mentions-section">
 
 
 
-<div class="mentions-card">
+<section class="methodologie-card">
+
 
 <h2>
 Présentation du site
 </h2>
 
+
 <p>
 Le site officiel de l’Institut Musical Congolais (IMC) présente les activités de l’organisation, ses certifications, ses classements et ses informations relatives à l’industrie musicale congolaise.
 </p>
-
-</div>
-
-
-
-
-
-<div class="mentions-card">
-
-<h2>
-Objet de l’IMC
-</h2>
-
-<p>
-L’Institut Musical Congolais a pour objectif de mesurer et reconnaître les performances musicales réalisées en République Démocratique du Congo à travers un système basé sur des données numériques et des ventes musicales.
-</p>
-
-</div>
-
-
-
-
-
-<div class="mentions-card">
-
-<h2>
-Données et méthodologie
-</h2>
-
-<p>
-Les certifications et classements IMC sont établis selon les règles officielles publiées par l’Institut Musical Congolais.
-</p>
-
-<p>
-Seules les données provenant des plateformes reconnues par l’IMC et correspondant aux performances réalisées sur le territoire congolais sont prises en compte.
-</p>
-
-</div>
-
-
-
-
-
-<div class="mentions-card">
-
-<h2>
-Éligibilité
-</h2>
-
-<p>
-Tous les artistes, producteurs et labels peuvent être éligibles aux certifications IMC selon les critères établis.
-</p>
-
-</div>
-
-
-
-
-
-<div class="mentions-card">
-
-<h2>
-Mise à jour des informations
-</h2>
-
-<p>
-L’Institut Musical Congolais se réserve le droit de mettre à jour ses règles, seuils et informations afin de suivre l’évolution de l’industrie musicale.
-</p>
-
-</div>
-
-
-
-
-
-<div class="mentions-card contact-mentions">
-
-<a href="contact.html">
-Contact
-</a>
-
-</div>
-
-
-<div class="mentions-card contact-mentions">
-
-<a href="partenaires.html">
-Partenaires
-</a>
-
-</div>
-
 
 
 </section>
@@ -163,13 +131,160 @@ Partenaires
 
 
 
+
+
+
+<section class="methodologie-card">
+
+
+<h2>
+Objet de l’IMC
+</h2>
+
+
+<p>
+L’Institut Musical Congolais a pour objectif de mesurer et reconnaître les performances musicales réalisées en République Démocratique du Congo à travers un système basé sur des données numériques et des ventes musicales.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="methodologie-card">
+
+
+<h2>
+Données et méthodologie
+</h2>
+
+
+<p>
+Les certifications et classements IMC sont établis selon les règles officielles publiées par l’Institut Musical Congolais.
+</p>
+
+
+<p>
+Seules les données provenant des plateformes reconnues par l’IMC et correspondant aux performances réalisées sur le territoire congolais sont prises en compte.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="methodologie-card">
+
+
+<h2>
+Éligibilité
+</h2>
+
+
+<p>
+Tous les artistes, producteurs et labels peuvent être éligibles aux certifications IMC selon les critères établis.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="methodologie-card">
+
+
+<h2>
+Mise à jour des informations
+</h2>
+
+
+<p>
+L’Institut Musical Congolais se réserve le droit de mettre à jour ses règles, seuils et informations afin de suivre l’évolution de l’industrie musicale.
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="certification-buttons">
+
+
+<a href="contact.html" class="btn">
+Contact
+</a>
+
+
+
+<a href="partenaires.html" class="btn">
+Partenaires
+</a>
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+
+
+
+
 <footer>
+
 
 <p>
 © 2026 Institut Musical Congolais - IMC
 </p>
 
+
 </footer>
+
+
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+</script>
+
 
 
 

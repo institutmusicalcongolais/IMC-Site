@@ -1,267 +1,867 @@
-/* ==========================
-   INDEX - INSTITUT MUSICAL CONGOLAIS
-========================== */
+/* ===========================
+   STYLE GÉNÉRAL
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f7c948;
+color:#000;
+line-height:1.6;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+background:#fff;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.logo img{
+height:55px;
+}
+
+.menu-btn{
+background:none;
+border:none;
+font-size:34px;
+cursor:pointer;
+color:#000;
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+#menu{
+display:none;
+flex-direction:column;
+background:#071b34;
+}
+
+#menu.active{
+display:flex;
+}
+
+#menu a{
+color:#fff;
+text-decoration:none;
+padding:18px;
+font-size:17px;
+border-bottom:1px solid rgba(255,255,255,.15);
+transition:.3s;
+}
+
+#menu a:hover{
+background:#0d2d55;
+}
+
+/* ===========================
+   CONTENU
+=========================== */
+
+main{
+width:95%;
+max-width:900px;
+margin:25px auto;
+}
+
+/* ===========================
+   CARTES
+=========================== */
+
+.card{
+background:#fff;
+border-radius:18px;
+padding:20px;
+margin-bottom:25px;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+}
+
+.card h2{
+text-align:center;
+margin-bottom:18px;
+font-size:24px;
+}
+
+/* ===========================
+   TABLEAU
+=========================== */
+
+.mini-ranking{
+width:100%;
+border-collapse:collapse;
+margin-bottom:20px;
+table-layout:fixed;
+}
+
+.mini-ranking th{
+background:#000;
+color:#fff;
+padding:12px 8px;
+font-size:15px;
+}
+
+.mini-ranking td{
+background:#EAF6FF;
+padding:10px 6px;
+text-align:center;
+font-size:14px;
+color:#000;
+word-break:break-word;
+}
+
+.mini-cover{
+width:55px;
+height:55px;
+object-fit:cover;
+border-radius:8px;
+}
+
+.up{
+color:#008000;
+font-weight:bold;
+}
+
+.down{
+color:#d40000;
+font-weight:bold;
+}
+
+.same{
+color:#444;
+font-weight:bold;
+}
+
+/* ===========================
+   BOUTONS
+=========================== */
+
+.btn{
+display:block;
+width:max-content;
+margin:20px auto 0;
+background:#071b34;
+color:#fff;
+text-decoration:none;
+padding:12px 28px;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+background:#0d2d55;
+}
+
+/* ===========================
+   ACTUALITÉ
+=========================== */
+
+.news-image{
+width:100%;
+border-radius:15px;
+margin-bottom:15px;
+display:block;
+}
+
+.news-title{
+color:#000;
+margin-bottom:10px;
+}
+
+.news-date{
+color:#777;
+font-size:14px;
+margin-bottom:15px;
+}
+
+.news-text{
+color:#000;
+text-align:justify;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+background:#0d2d55;
+display:flex;
+justify-content:center;
+gap:25px;
+padding:20px;
+flex-wrap:wrap;
+box-shadow:0 -2px 8px rgba(0,0,0,.1);
+}
+
+footer a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+footer a:hover{
+text-decoration:underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+padding:12px 15px;
+}
+
+.logo img{
+height:45px;
+}
+
+.card{
+padding:15px;
+}
+
+.card h2{
+font-size:20px;
+}
+
+.mini-ranking{
+display:block;
+overflow-x:auto;
+white-space:nowrap;
+}
+
+.mini-ranking table{
+min-width:650px;
+}
+
+.mini-ranking th,
+.mini-ranking td{
+font-size:13px;
+padding:8px;
+}
+
+.mini-cover{
+width:45px;
+height:45px;
+}
+
+.btn{
+width:100%;
+text-align:center;
+}
+
+footer{
+flex-direction:column;
+align-items:center;
+gap:15px;
+}
+
+}
+
+
+/* =========================
+   RESET
+========================= */
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
-html{
-    scroll-behavior:smooth;
-}
 
 body{
-    background:#ffffff;
-    color:#111;
-    line-height:1.9;
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6c443;
+    color:#000;
+
 }
 
-/* ==========================
+
+/* =========================
    HEADER
-========================== */
+========================= */
+
 
 header{
-    background:#ffffff;
-    text-align:center;
-    padding:100px 20px;
+
+    background:#fff;
+    height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+    position:relative;
+
 }
+
 
 .logo img{
-    width:180px;
-    max-width:90%;
+
+    width:55px;
+    height:55px;
+    object-fit:contain;
+
 }
 
-/* ==========================
-   HERO
-========================== */
 
-.hero{
-    min-height:100vh;
-    padding:180px 20px 280px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
+.menu-btn{
 
-    background:
-    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-    url("background.jpg");
-
-    background-size:cover;
-    background-position:center;
-    color:white;
-}
-
-.hero h1{
-    max-width:850px;
-    font-size:48px;
-    line-height:1.4;
-    margin-bottom:90px;
-}
-
-.hero p{
-    max-width:760px;
-    font-size:18px;
-    line-height:2;
-    margin-bottom:120px;
-}
-
-.hero a{
-    display:block;
-    margin:25px 0;
-    text-decoration:none;
-}
-
-button{
-    width:280px;
-    padding:18px;
+    background:none;
     border:none;
-    border-radius:35px;
-    background:#e30613;
-    color:white;
-    font-size:17px;
+    font-size:32px;
+    color:#000;
     cursor:pointer;
-    transition:.3s;
+
 }
 
-button.dark{
-    background:#f5c400;
-    color:#111;
+
+
+
+
+/* =========================
+   MENU PRINCIPAL
+========================= */
+
+
+#menu{
+
+    display:none;
+    flex-direction:column;
+    background:#071827;
+
 }
 
-button:hover{
-    transform:translateY(-4px);
-    opacity:.9;
+
+#menu.active{
+
+    display:flex;
+
 }
 
-/* ==========================
-   A PROPOS
-========================== */
 
-.about{
-    padding:260px 20px;
+#menu a{
+
+    color:white;
+    text-decoration:none;
+    padding:18px 20px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =========================
+   SELECTEUR TOPS
+========================= */
+
+
+.top-selector{
+
+    width:100%;
     text-align:center;
+    margin-top:25px;
 }
 
-.about h2{
-    font-size:36px;
-    margin-bottom:90px;
+
+.top-selector button{
+
+    background:#f6c443;
+    border:none;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+    padding:12px 25px;
+
 }
 
-.about p{
-    max-width:850px;
-    margin:60px auto;
-    font-size:18px;
-    line-height:2;
+
+
+#top-menu{
+
+    display:none;
+    background:#0d2d55;
+    flex-direction:column;
+    width:100%;
 }
 
-/* ==========================
+
+#top-menu.active{
+
+    display:flex;
+
+}
+
+
+#top-menu a{
+
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    font-weight:bold;
+
+}
+
+
+
+/* =========================
+   INFORMATIONS
+========================= */
+
+
+.ranking-info{
+
+    background:white;
+    margin:20px auto;
+    width:90%;
+    max-width:700px;
+    padding:15px;
+    border-radius:15px;
+    color:#777;
+    text-align:center;
+
+}
+
+
+.ranking-info strong{
+
+    color:#555;
+
+}
+
+
+
+
+/* =========================
+   TABLEAU
+========================= */
+
+
+.top-table-section{
+
+    width:95%;
+    margin:auto;
+
+}
+
+
+
+.top-table{
+
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+
+}
+
+
+
+.top-table th{
+
+    background:#000;
+    color:white;
+    padding:12px 5px;
+    font-size:15px;
+
+}
+
+
+
+.top-table td{
+
+    background:#EAF6FF;
+    color:#000;
+    text-align:center;
+    padding:8px 4px;
+    font-size:14px;
+
+}
+
+
+/* largeur des colonnes */
+
+.top-table th:nth-child(1),
+.top-table td:nth-child(1){
+
+    width:8%;
+
+}
+
+
+.top-table th:nth-child(2),
+.top-table td:nth-child(2){
+
+    width:12%;
+
+}
+
+
+.top-table th:nth-child(3),
+.top-table td:nth-child(3){
+
+    width:18%;
+
+}
+
+
+.top-table th:nth-child(4),
+.top-table td:nth-child(4){
+
+    width:32%;
+
+}
+
+
+.top-table th:nth-child(5),
+.top-table td:nth-child(5){
+
+    width:30%;
+
+}
+
+
+
+.cover{
+
+    width:55px;
+    height:55px;
+    object-fit:cover;
+    border-radius:8px;
+
+}
+
+
+
+
+/* Coupe les textes trop longs */
+
+.top-table td:nth-child(4),
+.top-table td:nth-child(5){
+
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+
+}
+
+
+
+
+/* Evolution */
+
+
+.up{
+
+    color:green;
+    font-weight:bold;
+
+}
+
+
+.down{
+
+    color:red;
+    font-weight:bold;
+
+}
+
+
+.same{
+
+    color:#555;
+    font-weight:bold;
+
+}
+
+
+.new{
+
+    color:#005eff;
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =========================
+   TEXTE FINAL
+========================= */
+
+
+.ranking-description{
+
+    width:90%;
+    margin:30px auto;
+    text-align:center;
+    color:#555;
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =========================
    FOOTER
-========================== */
+========================= */
+
 
 footer{
-    background:#050505;
-    color:white;
+
+    background:#0d2d55;
     text-align:center;
-    padding:180px 20px;
+    padding:20px;
+    margin-top:30px;
+
 }
 
-.footer-links{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:30px;
-    margin-bottom:60px;
-}
-
-.footer-links a{
-    color:white;
-    text-decoration:none;
-    font-size:16px;
-    transition:.3s;
-}
-
-.footer-links a:hover{
-    color:#f5c400;
-}
 
 footer p{
-    font-size:15px;
+
+    color:#ffffff;
+    font-weight:bold;
+
 }
 
-/* ==========================
-   RESPONSIVE
-========================== */
 
-@media (max-width:768px){
+
+
+
+/* =========================
+   MOBILE ANDROID
+========================= */
+
+
+@media(max-width:768px){
+
 
 header{
-    padding:70px 20px;
+
+    height:65px;
+
 }
+
 
 .logo img{
-    width:140px;
+
+    width:45px;
+    height:45px;
+
 }
 
-.hero{
-    min-height:90vh;
-    padding:100px 20px 160px;
-}
 
-.hero h1{
-    font-size:32px;
-    margin-bottom:50px;
-}
+.menu-btn{
 
-.hero p{
-    font-size:16px;
-    margin-bottom:70px;
-}
-
-.hero a{
-    width:100%;
-    max-width:320px;
-}
-
-button{
-    width:100%;
-}
-
-.about{
-    padding:140px 20px;
-}
-
-.about h2{
     font-size:28px;
-    margin-bottom:50px;
-}
-
-.about p{
-    font-size:16px;
-    margin:35px auto;
-}
-
-footer{
-    padding:100px 20px;
-}
-
-.footer-links{
-    flex-direction:column;
-    gap:20px;
-}
 
 }
 
 
 
-/* ==========================
-   PAGE ACTUALITES IMC
-========================== */
+.top-selector button{
+
+    font-size:18px;
+
+}
 
 
-/* HEADER */
+
+.ranking-info{
+
+    width:95%;
+    font-size:14px;
+
+}
+
+
+
+.top-table-section{
+
+    width:100%;
+    padding:0 5px;
+
+}
+
+
+
+.top-table th{
+
+    font-size:12px;
+
+}
+
+
+
+.top-table td{
+
+    font-size:12px;
+    padding:6px 2px;
+
+}
+
+
+
+.cover{
+
+    width:40px;
+    height:40px;
+
+}
+
+
+
+.top-table th:nth-child(4),
+.top-table td:nth-child(4){
+
+    max-width:90px;
+
+}
+
+
+
+.top-table th:nth-child(5),
+.top-table td:nth-child(5){
+
+    max-width:80px;
+
+}
+
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6c443;
+    color:#000;
+
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
 
 header{
-    background:#ffffff;
-    text-align:center;
-    padding:100px 20px;
+
+    height:75px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 20px;
+
 }
 
 
 .logo img{
-    width:180px;
+
+    width:55px;
+    height:55px;
+    object-fit:contain;
+
+}
+
+
+.menu-btn{
+
+    background:none;
+    border:none;
+    font-size:32px;
+    color:black;
+    cursor:pointer;
+
 }
 
 
 
-/* ==========================
-   HERO SMALL
-========================== */
+
+/* =========================
+   MENU
+========================= */
+
+
+#menu{
+
+    display:none;
+    flex-direction:column;
+    background:#071827;
+
+}
+
+
+
+#menu.active{
+
+    display:flex;
+
+}
+
+
+
+#menu a{
+
+    color:white;
+    text-decoration:none;
+    padding:18px 20px;
+    border-bottom:1px solid rgba(255,255,255,0.15);
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+/* =========================
+   INTRODUCTION
+========================= */
 
 
 .hero-small{
 
-    min-height:70vh;
-    padding:150px 20px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
     text-align:center;
-
-    background:
-    linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-    url("background.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    color:white;
+    padding:45px 20px;
 
 }
 
@@ -269,8 +869,8 @@ header{
 
 .hero-small h1{
 
-    font-size:48px;
-    margin-bottom:70px;
+    font-size:30px;
+    margin-bottom:15px;
 
 }
 
@@ -278,147 +878,51 @@ header{
 
 .hero-small p{
 
-    max-width:750px;
-    font-size:18px;
-    line-height:2;
+    font-size:16px;
+    line-height:1.6;
 
 }
 
 
 
-/* ==========================
-   DERNIERE ACTUALITE
-========================== */
-
-
-.latest-news{
-
-    padding:250px 20px;
-
-    text-align:center;
-
-}
 
 
 
-.latest-news h2{
 
-    font-size:36px;
-    margin-bottom:100px;
-
-}
+/* =========================
+   CARTES ACTUALITES
+========================= */
 
 
+.news-container{
 
-.news-feature{
-
-    max-width:850px;
+    width:90%;
+    max-width:700px;
     margin:auto;
-
-    background:#f8f8f8;
-
-    padding:60px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 
 }
 
 
 
-.news-feature img{
+.news-card{
 
-    width:100%;
-
-    max-height:400px;
-
-    object-fit:cover;
-
+    display:block;
+    background:#071827;
+    color:white;
+    text-decoration:none;
+    padding:25px 20px;
     border-radius:15px;
 
-    margin-bottom:50px;
+    transition:0.3s;
 
 }
 
 
 
-.news-feature h3{
-
-    font-size:28px;
-
-    margin-bottom:40px;
-
-}
-
-
-
-.news-feature p{
-
-    font-size:18px;
-
-    line-height:2;
-
-    margin-bottom:70px;
-
-}
-
-
-
-/* ==========================
-   BOUTONS MENU ACTUALITES
-========================== */
-
-
-.news-menu{
-
-    padding:200px 20px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:50px;
-
-}
-
-
-
-.news-menu a{
-
-    text-decoration:none;
-
-}
-
-
-
-.news-menu button{
-
-    width:350px;
-
-    padding:20px;
-
-    border:none;
-
-    border-radius:40px;
-
-    background:#e30613;
-
-    color:white;
-
-    font-size:17px;
-
-    cursor:pointer;
-
-}
-
-
-
-.news-menu button:hover{
-
-    opacity:.85;
+.news-card:hover{
 
     transform:translateY(-3px);
 
@@ -426,49 +930,41 @@ header{
 
 
 
-/* ==========================
-   INFORMATION OFFICIELLE
-========================== */
+.news-card span{
 
-
-.about{
-
-    padding:200px 20px;
-
-    text-align:center;
+    color:#ddd;
+    font-size:14px;
+    display:block;
+    margin-bottom:12px;
 
 }
 
 
 
-.about p{
+.news-card h2{
 
-    max-width:800px;
-
-    margin:auto;
-
-    font-size:18px;
-
-    line-height:2;
+    font-size:20px;
+    line-height:1.4;
 
 }
 
 
 
-/* ==========================
+
+
+
+
+/* =========================
    FOOTER
-========================== */
+========================= */
 
 
 footer{
 
-    background:#050505;
-
-    color:white;
-
+    background:#071827;
+    margin-top:50px;
+    padding:25px 15px;
     text-align:center;
-
-    padding:150px 20px;
 
 }
 
@@ -477,14 +973,10 @@ footer{
 .footer-links{
 
     display:flex;
-
     justify-content:center;
-
     flex-wrap:wrap;
-
-    gap:35px;
-
-    margin-bottom:60px;
+    gap:20px;
+    margin-bottom:20px;
 
 }
 
@@ -493,306 +985,8 @@ footer{
 .footer-links a{
 
     color:white;
-
     text-decoration:none;
-
-}
-
-
-
-.footer-links a:hover{
-
-    color:#f5c400;
-
-}
-
-
-
-/* ==========================
-   MOBILE
-========================== */
-
-
-@media(max-width:768px){
-
-
-header{
-
-    padding:70px 20px;
-
-}
-
-
-
-.logo img{
-
-    width:140px;
-
-}
-
-
-
-.hero-small{
-
-    min-height:60vh;
-
-    padding:100px 20px;
-
-}
-
-
-
-.hero-small h1{
-
-    font-size:32px;
-
-    margin-bottom:40px;
-
-}
-
-
-
-.latest-news{
-
-    padding:130px 20px;
-
-}
-
-
-
-.latest-news h2{
-
-    font-size:28px;
-
-    margin-bottom:60px;
-
-}
-
-
-
-.news-feature{
-
-    padding:35px 20px;
-
-}
-
-
-
-.news-feature h3{
-
-    font-size:22px;
-
-}
-
-
-
-.news-feature p{
-
-    font-size:16px;
-
-}
-
-
-
-.news-menu{
-
-    padding:120px 20px;
-
-}
-
-
-
-.news-menu button{
-
-    width:100%;
-
-    max-width:320px;
-
-}
-
-
-
-}
-
-
-
-/* ==========================
-   PAGES ARTICLES ACTUALITES IMC
-========================== */
-
-
-body{
-    background:#ffffff;
-    color:#111;
-    line-height:1.9;
-}
-
-
-
-/* ==========================
-   HEADER ARTICLE
-========================== */
-
-
-header{
-
-    background:#ffffff;
-    text-align:center;
-    padding:90px 20px;
-
-}
-
-
-header h1{
-
-    font-size:28px;
     font-weight:bold;
-
-}
-
-
-
-/* ==========================
-   CONTENU ARTICLE
-========================== */
-
-
-.article-page{
-
-    max-width:900px;
-
-    margin:auto;
-
-    padding:120px 20px 250px;
-
-    text-align:center;
-
-}
-
-
-
-/* IMAGE ARTICLE */
-
-
-.image-article{
-
-    width:100%;
-
-    max-width:700px;
-
-    aspect-ratio:1 / 1;
-
-    object-fit:contain;
-
-    background:#f5f5f5;
-
-    border-radius:20px;
-
-    margin:0 auto 90px;
-
-    display:block;
-
-}
-
-
-
-/* TITRE ARTICLE */
-
-
-.article-page h1{
-
-    font-size:42px;
-
-    line-height:1.4;
-
-    margin-bottom:40px;
-
-}
-
-
-
-/* DATE */
-
-
-.date-article{
-
-    color:#555;
-
-    font-size:17px;
-
-    margin-bottom:90px;
-
-}
-
-
-
-/* TEXTE ARTICLE */
-
-
-.article-content{
-
-    text-align:left;
-
-    font-size:18px;
-
-    line-height:2.1;
-
-}
-
-
-
-.article-content p{
-
-    margin-bottom:60px;
-
-}
-
-
-
-/* SEPARATION */
-
-
-.article-page hr{
-
-    margin:120px 0;
-
-    border:none;
-
-    border-top:1px solid #ddd;
-
-}
-
-
-
-/* PHRASE SIGNATURE */
-
-
-.valoriser{
-
-    font-size:17px;
-
-    color:#e30613;
-
-    letter-spacing:1px;
-
-}
-
-
-
-/* ==========================
-   FOOTER
-========================== */
-
-
-footer{
-
-    background:#050505;
-
-    color:white;
-
-    text-align:center;
-
-    padding:100px 20px;
 
 }
 
@@ -800,449 +994,86 @@ footer{
 
 footer p{
 
-    font-size:15px;
+    color:white;
+    font-size:14px;
 
 }
 
 
 
-/* ==========================
+
+
+
+
+/* =========================
    MOBILE
-========================== */
+========================= */
 
 
 @media(max-width:768px){
+
 
 
 header{
 
-    padding:60px 20px;
-
-}
-
-
-header h1{
-
-    font-size:22px;
-
-}
-
-
-.article-page{
-
-    padding:80px 20px 150px;
-
-}
-
-
-.image-article{
-
-    height:250px;
-
-    margin-bottom:50px;
-
-}
-
-
-.article-page h1{
-
-    font-size:30px;
-
-}
-
-
-.date-article{
-
-    margin-bottom:50px;
-
-}
-
-
-.article-content{
-
-    font-size:16px;
-
-}
-
-
-.article-content p{
-
-    margin-bottom:40px;
-
-}
-
+    height:65px;
 
 }
 
 
 
-/* ==========================
-   ARCHIVES ACTUALITES
-========================== */
+.logo img{
 
-
-.archives-intro{
-
-    padding:220px 20px;
-
-    text-align:center;
-
-}
-
-
-.archives-intro h1{
-
-    max-width:900px;
-
-    margin:auto;
-
-    font-size:42px;
-
-    line-height:1.5;
+    width:45px;
+    height:45px;
 
 }
 
 
 
-
-.archives-list{
-
-    padding:100px 20px 250px;
-
-    max-width:900px;
-
-    margin:auto;
-
-}
-
-
-
-.archive-item{
-
-    text-align:center;
-
-    padding:80px 20px;
-
-    border-bottom:1px solid #ddd;
-
-}
-
-
-
-.archive-date{
-
-    color:#777;
-
-    font-size:17px;
-
-    margin-bottom:30px;
-
-}
-
-
-
-.archive-item h2{
+.menu-btn{
 
     font-size:28px;
 
-    line-height:1.5;
+}
 
-    margin-bottom:50px;
+
+
+.hero-small{
+
+    padding:35px 15px;
 
 }
 
 
 
-.archive-item button{
+.hero-small h1{
 
-    width:250px;
-
-}
-
-
-
-
-footer{
-
-    background:#050505;
-
-    color:white;
-
-    text-align:center;
-
-    padding:80px 20px;
+    font-size:24px;
 
 }
 
 
 
-@media(max-width:768px){
+.news-container{
 
-
-.archives-intro{
-
-    padding:120px 20px;
-
-}
-
-
-.archives-intro h1{
-
-    font-size:30px;
-
-}
-
-
-.archive-item h2{
-
-    font-size:22px;
-
-}
-
-}
-
-
-/* ==========================
-   CERTIFICATIONS 2026 TABLEAU
-========================== */
-
-
-.certification-intro{
-
-    padding:220px 20px;
-
-    text-align:center;
-
-}
-
-
-.certification-intro h1{
-
-    max-width:900px;
-
-    margin:auto;
-
-    font-size:42px;
-
-    line-height:1.5;
-
-    margin-bottom:50px;
-
-}
-
-
-.certification-intro p{
-
-    max-width:750px;
-
-    margin:auto;
-
-    font-size:18px;
+    width:94%;
 
 }
 
 
 
+.news-card{
 
-
-.certification-table-section{
-
-    padding:80px 20px 250px;
-
-    overflow-x:auto;
+    padding:20px 15px;
 
 }
 
 
 
-.certification-table{
-
-    width:90%;
-
-    max-width:1100px;
-
-    margin:auto;
-
-    border-collapse:collapse;
-
-    background:white;
-
-    box-shadow:0 10px 30px rgba(0,0,0,0.08);
-
-}
-
-
-
-.certification-table th{
-
-    background:#050505;
-
-    color:white;
-
-    padding:20px;
-
-    font-size:16px;
-
-}
-
-
-
-.certification-table td{
-
-    padding:20px;
-
-    text-align:center;
-
-    border-bottom:1px solid #ddd;
-
-    font-size:16px;
-
-}
-
-
-
-.certification-table tr:hover{
-
-    background:#f5f5f5;
-
-}
-
-
-
-
-
-@media(max-width:768px){
-
-
-.certification-intro{
-
-    padding:130px 20px;
-
-}
-
-
-.certification-intro h1{
-
-    font-size:30px;
-
-}
-
-
-
-.certification-table{
-
-    width:800px;
-
-}
-
-
-}
-
-
-
-/* ==========================
-   ARTISTES CERTIFIES
-========================== */
-
-
-.artists-intro{
-
-    padding:250px 20px;
-
-    text-align:center;
-
-}
-
-
-
-.artists-intro h1{
-
-    max-width:1000px;
-
-    margin:auto;
-
-    font-size:42px;
-
-    line-height:1.5;
-
-}
-
-
-
-
-.artists-search{
-
-    padding:80px 20px;
-
-    text-align:center;
-
-}
-
-
-
-.artists-search input{
-
-    width:100%;
-
-    max-width:600px;
-
-    padding:20px;
-
-    border-radius:35px;
-
-    border:1px solid #ccc;
+.news-card h2{
 
     font-size:17px;
-
-}
-
-
-
-
-.artists-list{
-
-    padding:120px 20px 250px;
-
-    display:flex;
-
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:40px;
-
-}
-
-
-
-.artists-list a{
-
-    text-decoration:none;
-
-}
-
-
-
-.artists-list button{
-
-    width:300px;
-
-    padding:20px;
-
-}
-
-
-
-
-footer{
-
-    background:#050505;
-
-    color:white;
-
-    text-align:center;
-
-    padding:120px 20px;
 
 }
 
@@ -1250,15 +1081,423 @@ footer{
 
 .footer-links{
 
+    flex-direction:column;
+    gap:15px;
+
+}
+
+
+
+}
+
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6c443;
+    color:#000;
+
+}
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+header{
+
+    height:75px;
+    background:#ffffff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 25px;
+
+}
+
+
+
+.logo img{
+
+    width:55px;
+    height:55px;
+    object-fit:contain;
+
+}
+
+
+
+.menu-btn{
+
+    border:none;
+    background:none;
+    color:#000;
+    font-size:32px;
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* =========================
+   MENU
+========================= */
+
+
+#menu{
+
+    display:none;
+    flex-direction:column;
+    background:#071827;
+
+}
+
+
+
+#menu.active{
+
     display:flex;
 
-    justify-content:center;
+}
 
-    flex-wrap:wrap;
 
-    gap:35px;
 
-    margin-bottom:50px;
+#menu a{
+
+    color:white;
+    text-decoration:none;
+    padding:18px 25px;
+    font-weight:bold;
+    border-bottom:1px solid rgba(255,255,255,0.15);
+
+}
+
+
+
+#menu a:hover{
+
+    background:#102c42;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   PAGE ARTICLE
+========================= */
+
+
+.article-page{
+
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+
+}
+
+
+
+
+
+/* TITRE */
+
+.article-card h1{
+
+    background:white;
+    color:#071827;
+    font-size:36px;
+    font-weight:900;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+
+
+/* IMAGE */
+
+
+.image-article{
+
+    width:100%;
+    display:block;
+    max-height:500px;
+    object-fit:cover;
+    border-radius:18px;
+    margin-bottom:25px;
+
+}
+
+
+
+
+
+
+
+/* CARTE CONTENU */
+
+
+.article-card{
+
+    background:white;
+    border-radius:18px;
+    padding:30px;
+
+}
+
+
+
+
+
+
+.date-article{
+
+    color:#777;
+    font-size:16px;
+    font-weight:bold;
+    margin-bottom:30px;
+
+}
+
+
+
+
+
+.article-content{
+
+    color:#000;
+    font-size:18px;
+    line-height:1.7;
+
+}
+
+
+
+.article-content p{
+
+    margin-bottom:20px;
+
+}
+
+
+
+.article-content h2{
+
+    color:#071827;
+    font-size:24px;
+    text-transform:uppercase;
+    margin:35px 0 15px;
+
+}
+
+
+
+
+
+
+/* SLOGAN */
+
+.valoriser{
+
+    text-align:center;
+    color:#071827;
+    margin-top:35px;
+    font-size:14px;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+    background:#071827;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+    margin-top:50px;
+
+}
+
+
+
+footer p{
+
+    font-size:16px;
+    font-weight:bold;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+header{
+
+    height:65px;
+    padding:10px 15px;
+
+}
+
+
+
+.logo img{
+
+    width:45px;
+    height:45px;
+
+}
+
+
+
+.menu-btn{
+
+    font-size:28px;
+
+}
+
+
+
+/* =========================
+PAGE CERTIFICATION
+========================= */
+
+
+.certification-page{
+
+width:90%;
+max-width:850px;
+margin:40px auto;
+
+}
+
+
+
+.certification-card{
+
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.12);
+
+}
+
+
+
+.certification-card h1{
+
+font-size:32px;
+font-weight:900;
+color:#071827;
+margin-bottom:25px;
+text-align:center;
+
+}
+
+
+
+.certification-card p{
+
+font-size:18px;
+line-height:1.7;
+color:#000;
+margin-bottom:20px;
+
+}
+
+
+
+
+
+.certification-action{
+
+margin:30px auto;
+text-align:center;
+
+}
+
+
+
+.certification-action a{
+
+display:inline-block;
+
+background:#071827;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:bold;
+
+padding:16px 30px;
+
+border-radius:30px;
+
+font-size:17px;
+
+}
+
+
+
+
+
+
+/* FOOTER */
+
+
+.footer-links{
+
+display:flex;
+justify-content:center;
+gap:25px;
+margin-bottom:15px;
 
 }
 
@@ -1266,19 +1505,13 @@ footer{
 
 .footer-links a{
 
-    color:white;
-
-    text-decoration:none;
-
-}
-
-
-
-.footer-links a:hover{
-
-    color:#f5c400;
+color:white;
+text-decoration:none;
+font-weight:bold;
 
 }
+
+
 
 
 
@@ -1287,26 +1520,44 @@ footer{
 @media(max-width:768px){
 
 
-.artists-intro{
+.certification-page{
 
-    padding:140px 20px;
-
-}
-
-
-.artists-intro h1{
-
-    font-size:30px;
+width:94%;
+margin:25px auto;
 
 }
 
 
 
-.artists-list button{
+.certification-card{
 
-    width:100%;
+padding:20px;
+border-radius:15px;
 
-    max-width:320px;
+}
+
+
+
+.certification-card h1{
+
+font-size:24px;
+
+}
+
+
+
+.certification-card p{
+
+font-size:16px;
+
+}
+
+
+
+.footer-links{
+
+flex-direction:column;
+gap:12px;
 
 }
 
@@ -1315,429 +1566,188 @@ footer{
 }
 
 
+/* =========================
+METHODOLOGIE CLASSEMENT
+========================= */
 
-/* ==========================
-   PAGE CLASSEMENTS
-========================== */
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
 
 
-.classements-intro{
+body{
 
-    padding:250px 20px;
+font-family:Arial, Helvetica, sans-serif;
 
-    text-align:center;
+background:#eaf6ff;
+
+color:#111;
 
 }
 
 
 
-.classements-intro h1{
+/* =========================
+   HEADER
+========================= */
 
-    font-size:45px;
 
-    margin-bottom:50px;
+header{
+
+height:90px;
+
+background:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+padding:15px 25px;
+
+}
+
+
+.logo img{
+
+width:65px;
+
+height:65px;
+
+object-fit:contain;
 
 }
 
 
 
-.classements-intro p{
+/* Bouton menu */
 
-    font-size:18px;
+.menu-btn{
 
-}
+background:#061a33;
 
+color:white;
 
+border:none;
 
+font-size:28px;
 
+padding:8px 15px;
 
-.classements-buttons{
+border-radius:8px;
 
-    min-height:700px;
-
-    padding:100px 20px 300px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:80px;
+cursor:pointer;
 
 }
 
 
 
-.classements-buttons a{
+/* =========================
+   MENU DEROULANT
+========================= */
 
-    text-decoration:none;
+
+#menu{
+
+display:none;
+
+position:absolute;
+
+top:90px;
+
+left:0;
+
+width:100%;
+
+background:#061a33;
+
+padding:20px;
+
+z-index:10;
+
+}
+
+
+#menu.active{
+
+display:flex;
+
+flex-direction:column;
+
+}
+
+
+#menu a{
+
+color:white;
+
+text-decoration:none;
+
+padding:15px;
+
+font-size:17px;
+
+border-bottom:1px solid rgba(255,255,255,0.2);
 
 }
 
 
 
-.classements-buttons button{
-
-    width:450px;
-
-    padding:25px;
-
-    font-size:20px;
-
-}
-
-
-
-
-@media(max-width:768px){
-
-
-.classements-intro{
-
-    padding:150px 20px;
-
-}
-
-
-
-.classements-intro h1{
-
-    font-size:32px;
-
-}
-
-
-
-.classements-buttons button{
-
-    width:100%;
-
-    max-width:350px;
-
-}
-
-
-}
-
-
-
-/* ==========================
-   TOP TITRES TABLEAU ADAPTATIF
-========================== */
-
-.top-intro{
-    padding:180px 20px 80px;
-    text-align:center;
-}
-
-.top-intro h1{
-    display:inline-block;
-    background:#e30613;
-    color:black;
-    padding:12px 25px;
-    border-radius:30px;
-    font-size:24px;
-    white-space:nowrap;
-    margin-bottom:40px;
-}
-
-.top-table-section{
-    padding:50px 15px 250px;
-    width:100%;
-    overflow-x:auto;
-}
-
-.top-table{
-    width:100%;
-    border-collapse:collapse;
-    table-layout:fixed;
-    background:#5db8ff; /* Bleu ciel */
-}
-
-.top-table th{
-    background:#000;
-    color:#fff;
-    padding:14px 5px;
-    font-size:14px;
-    text-align:center;
-}
-
-.top-table td{
-    background:#5db8ff; /* Bleu ciel */
-    padding:10px 5px;
-    height:90px;
-    text-align:center;
-    vertical-align:middle;
-    border-bottom:1px solid rgba(255,255,255,.5);
-    font-size:14px;
-    overflow:hidden;
-    text-overflow:ellipsis;
-}
-
-.top-table td img{
-    width:70px;
-    height:70px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-/* Largeur des colonnes */
-
-.top-table th:nth-child(1),
-.top-table td:nth-child(1){
-    width:8%;
-}
-
-.top-table th:nth-child(2),
-.top-table td:nth-child(2){
-    width:18%;
-}
-
-.top-table th:nth-child(3),
-.top-table td:nth-child(3){
-    width:18%;
-}
-
-.top-table th:nth-child(4),
-.top-table td:nth-child(4){
-    width:28%;
-}
-
-.top-table th:nth-child(5),
-.top-table td:nth-child(5){
-    width:28%;
-    white-space:normal;
-    word-break:normal;
-}
-
-@media (max-width:768px){
-
-    .top-intro h1{
-        font-size:18px;
-        padding:10px 18px;
-    }
-
-    .top-table th{
-        font-size:11px;
-        padding:10px 3px;
-    }
-
-    .top-table td{
-        font-size:11px;
-        padding:8px 3px;
-        height:80px;
-    }
-
-    .top-table td img{
-        width:60px;
-        height:60px;
-    }
-
-}
-
-
-
-/* Couleur du tableau des classements */
-
-.top-table {
-
-    background:#E6F4FF;
-
-}
-
-
-/* Lignes du tableau */
-
-.top-table td {
-
-    background:#E6F4FF;
-    color:#111;
-
-}
-
-
-/* En-tête du tableau */
-
-.top-table th {
-
-    background:black;
-    color:white;
-
-}
-
-
-/* Effet au survol */
-
-.top-table tr:hover td {
-
-    background:#7CC4FF;
-
-}
-
-
-
-/* ==========================
-   PAGE METHODOLOGIE
-========================== */
-
-
-.methodologie-intro{
-
-    padding:250px 20px 100px;
-
-    text-align:center;
-
-}
-
-
-
-.methodologie-intro h1{
-
-    display:inline-block;
-
-    background:#e30613;
-
-    color:white;
-
-    padding:12px 30px;
-
-    border-radius:30px;
-
-    font-size:28px;
-
-    margin-bottom:50px;
-
-}
-
-
-
-.methodologie-intro p{
-
-    font-size:18px;
-
-    max-width:700px;
-
-    margin:auto;
-
-}
-
-
-
-
-
-.methodologie-buttons{
-
-    min-height:700px;
-
-    padding:100px 20px 300px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    gap:80px;
-
-}
-
-
-
-.methodologie-buttons a{
-
-    text-decoration:none;
-
-}
-
-
-
-.methodologie-buttons button{
-
-    width:420px;
-
-    padding:20px;
-
-    font-size:20px;
-
-}
-
-
-
-@media(max-width:768px){
-
-
-.methodologie-intro{
-
-    padding:150px 20px 80px;
-
-}
-
-
-.methodologie-intro h1{
-
-    font-size:22px;
-
-}
-
-
-
-.methodologie-buttons button{
-
-    width:320px;
-
-    font-size:17px;
-
-}
-
-
-}
-
-
-
-
-/* ==========================
-   METHODOLOGIE DETAIL
-========================== */
+/* =========================
+   TITRE PAGE
+========================= */
 
 
 .methodologie-detail{
 
-    padding:220px 20px 80px;
+background:white;
 
-    text-align:center;
+margin:40px 20px 20px;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 
 }
 
 
 .methodologie-detail h1{
 
-    display:inline-block;
+font-size:32px;
 
-    background:#e30613;
+font-weight:800;
 
-    color:white;
-
-    padding:15px 30px;
-
-    border-radius:30px;
-
-    font-size:28px;
+color:#061a33;
 
 }
 
 
 
+/* =========================
+   CONTENU
+========================= */
+
 
 .methodologie-content{
 
-    max-width:900px;
+background:white;
 
-    margin:auto;
+margin:20px;
 
-    padding:80px 20px 250px;
+padding:35px;
 
-    text-align:center;
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 
 }
 
@@ -1745,9 +1755,13 @@ footer{
 
 .methodologie-content h2{
 
-    margin-top:80px;
+font-size:26px;
 
-    margin-bottom:30px;
+color:#061a33;
+
+font-weight:800;
+
+margin:35px 0 15px;
 
 }
 
@@ -1755,9 +1769,11 @@ footer{
 
 .methodologie-content h3{
 
-    margin-top:50px;
+font-size:21px;
 
-    color:#0057B8;
+color:#061a33;
+
+margin-top:25px;
 
 }
 
@@ -1765,36 +1781,284 @@ footer{
 
 .methodologie-content p{
 
-    font-size:18px;
+font-size:17px;
 
-    line-height:1.8;
+line-height:1.7;
 
-    margin:20px 0;
-
-}
-
-
-
-.highlight{
-
-    background:#4DA6FF;
-
-    padding:20px;
-
-    border-radius:20px;
-
-    font-weight:bold;
+margin:12px 0;
 
 }
 
 
 
-@media(max-width:768px){
+/* =========================
+   PLATEFORMES
+========================= */
+
+
+.plateformes-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+margin:30px 0;
+
+}
+
+
+
+.plateforme{
+
+background:white;
+
+border-radius:20px;
+
+padding:20px;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+border:1px solid #eee;
+
+}
+
+
+
+.plateforme img{
+
+width:80px;
+
+height:80px;
+
+object-fit:contain;
+
+background:white;
+
+display:block;
+
+margin:auto;
+
+}
+
+
+
+.plateforme p{
+
+font-weight:bold;
+
+font-size:16px;
+
+margin-top:15px;
+
+color:#111;
+
+}
+
+
+/* =========================
+   CARTES METHODOLOGIE
+========================= */
+
+
+.methodologie-card{
+
+background:white;
+
+border-radius:20px;
+
+padding:30px;
+
+margin:25px 20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+
+
+/* Titres principaux */
+
+.methodologie-card h2{
+
+font-size:28px;
+
+font-weight:800;
+
+color:#061a33;
+
+margin-bottom:20px;
+
+}
+
+
+
+/* Sous-titres */
+
+.methodologie-card h3{
+
+font-size:21px;
+
+font-weight:700;
+
+color:#061a33;
+
+margin-top:25px;
+
+margin-bottom:12px;
+
+}
+
+
+
+/* Textes */
+
+.methodologie-card p{
+
+font-size:17px;
+
+color:#111;
+
+line-height:1.7;
+
+margin:12px 0;
+
+}
+
+
+
+/* Mise en valeur des chiffres */
+
+.methodologie-card strong{
+
+font-weight:800;
+
+}
+
+
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+
+@media(max-width:700px){
+
+
+.methodologie-card{
+
+margin:15px 12px;
+
+padding:20px;
+
+border-radius:18px;
+
+}
+
+
+
+.methodologie-card h2{
+
+font-size:22px;
+
+}
+
+
+
+.methodologie-card h3{
+
+font-size:18px;
+
+}
+
+
+
+.methodologie-card p{
+
+font-size:15px;
+
+line-height:1.6;
+
+}
+
+
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+
+footer{
+
+background:#061a33;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+margin-top:40px;
+
+}
+
+
+
+footer p{
+
+font-size:16px;
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:700px){
+
+
+header{
+
+height:80px;
+
+padding:10px 15px;
+
+}
+
+
+
+.logo img{
+
+width:55px;
+
+height:55px;
+
+}
+
+
+
+.menu-btn{
+
+font-size:24px;
+
+}
+
 
 
 .methodologie-detail{
 
-    padding-top:150px;
+margin:25px 12px;
+
+padding:20px;
 
 }
 
@@ -1802,7 +2066,7 @@ footer{
 
 .methodologie-detail h1{
 
-    font-size:21px;
+font-size:23px;
 
 }
 
@@ -1810,7 +2074,73 @@ footer{
 
 .methodologie-content{
 
-    padding-bottom:150px;
+margin:12px;
+
+padding:20px;
+
+}
+
+
+
+.methodologie-content h2{
+
+font-size:22px;
+
+}
+
+
+
+.methodologie-content h3{
+
+font-size:19px;
+
+}
+
+
+
+.methodologie-content p{
+
+font-size:15px;
+
+line-height:1.6;
+
+}
+
+
+
+/* Plateformes mobile */
+
+.plateformes-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:12px;
+
+}
+
+
+
+.plateforme{
+
+padding:15px;
+
+}
+
+
+
+.plateforme img{
+
+width:60px;
+
+height:60px;
+
+}
+
+
+
+.plateforme p{
+
+font-size:14px;
 
 }
 
@@ -1819,111 +2149,219 @@ footer{
 
 
 
-/* =====================================
-   METHODOLOGIE CERTIFICATION IMC
-   STYLE UNIQUE - NE PAS IMPACTER LES AUTRES PAGES
-===================================== */
+/* =========================
+   PAGE DEMANDE CERTIFICATION
+========================= */
 
 
-.certif-page {
-    background:#4DA6FF;
-    padding:80px 8%;
+.form-section{
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
 }
 
 
 
-.certif-hero {
 
-    background:
-    linear-gradient(
-    rgba(0,0,0,0.65),
-    rgba(0,0,0,0.65)
-    ),
-    url("background.jpg");
+.form-section h2{
 
-    background-size:cover;
-    background-position:center;
-
-    color:white;
     text-align:center;
-
-    padding:100px 8%;
-
-}
-
-
-
-.certif-hero h1 {
-
-    font-size:45px;
-    margin-bottom:25px;
-
-}
-
-
-
-.certif-hero p {
-
-    font-size:18px;
-    max-width:800px;
-    margin:auto;
+    font-size:30px;
+    color:#071b33;
+    margin-bottom:30px;
 
 }
 
 
 
 
-.certif-section {
+.form-section h3{
+
+    color:#071b33;
+    font-size:22px;
+    margin-top:35px;
+    margin-bottom:20px;
+
+}
+
+
+
+
+.form-section form{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+
+.form-section label{
+
+    font-weight:bold;
+    color:#111;
+    margin-top:15px;
+    margin-bottom:8px;
+
+}
+
+
+
+
+.form-section input,
+.form-section textarea,
+.form-section select{
+
+
+    width:100%;
+    padding:14px;
+
+    border:1px solid #ccc;
+    border-radius:10px;
+
+    font-size:16px;
 
     background:white;
 
-    max-width:1100px;
-
-    margin:70px auto;
-
-    padding:50px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    box-sizing:border-box;
 
 }
 
 
 
-.certif-section h2 {
+
+.form-section textarea{
+
+    min-height:120px;
+    resize:vertical;
+
+}
+
+
+
+
+
+.form-section input:focus,
+.form-section textarea:focus,
+.form-section select:focus{
+
+
+    outline:none;
+    border-color:#071b33;
+
+}
+
+
+
+
+
+.form-section .checkbox{
+
+
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+
+    margin-top:25px;
+
+    font-weight:normal;
+
+}
+
+
+
+
+.form-section .checkbox input{
+
+
+    width:auto;
+    margin-top:5px;
+
+}
+
+
+
+
+
+.form-section button{
+
+
+    margin-top:35px;
+
+    background:#071b33;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    border-radius:30px;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+
+
+
+.form-section button:hover{
+
+    opacity:0.85;
+
+}
+
+
+
+
+
+
+/* =========================
+   PROCESSUS CERTIFICATION
+========================= */
+
+
+.processus-certification{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:50px auto;
+
+}
+
+
+
+
+.processus-certification h2{
 
     text-align:center;
 
-    font-size:32px;
-
-    margin-bottom:35px;
-
-    color:#111;
+    color:#071b33;
 
 }
 
 
 
-.certif-section p {
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    margin-bottom:25px;
-
-}
 
 
 
-.certif-cards {
 
-    display:flex;
+/* CARTES DES ETAPES */
 
-    justify-content:center;
 
-    flex-wrap:wrap;
+.processus-certification .certif-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
 
     gap:25px;
 
@@ -1931,15 +2369,15 @@ footer{
 
 
 
-.certif-card {
 
-    width:230px;
+.processus-certification .certif-card{
 
-    background:#E6F4FF;
 
-    padding:35px 20px;
+    background:white;
 
-    border-radius:15px;
+    padding:25px;
+
+    border-radius:20px;
 
     text-align:center;
 
@@ -1949,89 +2387,26 @@ footer{
 
 
 
-.certif-card h3 {
 
-    color:#e30613;
-
-    margin-bottom:15px;
-
-}
+.processus-certification .certif-card h3{
 
 
-
-.certif-card p {
-
-    font-size:18px;
-
-}
-
-
-
-
-.certif-section ul {
-
-    margin:25px 0;
-
-    padding-left:25px;
-
-}
-
-
-
-.certif-section li {
+    color:#071b33;
 
     margin-bottom:15px;
 
-    font-size:17px;
-
-}
-
-
-
-.certif-important {
-
-    background:#fff3cd;
-
-    border-left:5px solid #f5c400;
-
-    padding:25px;
-
-    margin-top:30px;
-
-    border-radius:10px;
-
 }
 
 
 
 
-.certif-button {
 
-    display:block;
-
-    width:max-content;
-
-    margin:40px auto;
-
-    padding:15px 35px;
-
-    background:#e30613;
-
-    color:white;
-
-    text-decoration:none;
-
-    border-radius:30px;
-
-    font-size:17px;
-
-}
+.processus-certification .certif-card p{
 
 
+    color:#111;
 
-.certif-button:hover {
-
-    opacity:0.85;
+    line-height:1.6;
 
 }
 
@@ -2039,209 +2414,47 @@ footer{
 
 
 
-@media(max-width:768px){
+
+/* =========================
+   MOBILE
+========================= */
 
 
-.certif-hero {
-
-    padding:70px 6%;
-
-}
-
-
-
-.certif-hero h1 {
-
-    font-size:30px;
-
-}
+@media(max-width:700px){
 
 
 
-.certif-section {
+.form-section,
+.processus-certification{
 
-    padding:30px 20px;
-
-    margin:40px 15px;
+    width:92%;
 
 }
 
 
 
-.certif-section h2 {
+.form-section h2{
 
-    font-size:25px;
-
-}
-
-
-
-.certif-card {
-
-    width:100%;
+    font-size:24px;
 
 }
 
 
 
-}
+.form-section h3{
 
-
-
-/* =====================================
-   PAGE DEMANDE DE CERTIFICATION IMC
-   STYLE UNIQUE
-===================================== */
-
-
-.demande-page {
-
-    background:#4DA6FF;
-    padding:80px 8%;
+    font-size:19px;
 
 }
 
-
-
-.demande-hero {
-
-    background:
-    linear-gradient(
-    rgba(0,0,0,0.65),
-    rgba(0,0,0,0.65)
-    ),
-    url("background.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    color:white;
-    text-align:center;
-
-    padding:100px 8%;
-
-}
-
-
-
-.demande-hero h1 {
-
-    font-size:45px;
-    margin-bottom:25px;
-
-}
-
-
-
-.demande-hero p {
-
-    font-size:18px;
-    max-width:800px;
-    margin:auto;
-
-}
-
-
-
-
-
-.form-section {
-
-    background:#4DA6FF;
-    padding:80px 8%;
-
-}
-
-
-
-.form-section h2 {
-
-    text-align:center;
-    font-size:32px;
-    margin-bottom:50px;
-
-}
-
-
-
-.form-section form {
-
-    max-width:800px;
-
-    margin:auto;
-
-    background:white;
-
-    padding:50px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.15);
-
-}
-
-
-
-.form-section h3 {
-
-    margin-top:35px;
-
-    margin-bottom:20px;
-
-    color:#e30613;
-
-    font-size:22px;
-
-}
-
-
-
-.form-section label {
-
-    display:block;
-
-    margin-top:20px;
-
-    font-weight:bold;
-
-}
 
 
 
 .form-section input,
-.form-section select,
-.form-section textarea {
+.form-section textarea,
+.form-section select{
 
-
-    width:100%;
-
-    padding:15px;
-
-    margin-top:8px;
-
-    border:1px solid #ccc;
-
-    border-radius:10px;
-
-    font-size:16px;
-
-}
-
-
-
-.form-section textarea {
-
-    min-height:130px;
-
-    resize:vertical;
-
-}
-
-
-
-.form-section input[type="file"] {
-
-    background:#f5f5f5;
+    font-size:15px;
 
     padding:12px;
 
@@ -2249,118 +2462,12 @@ footer{
 
 
 
-.form-section button {
 
 
-    display:block;
+.processus-certification .certif-cards{
 
-    margin:40px auto 0;
 
-    padding:16px 35px;
-
-    background:#e30613;
-
-    color:white;
-
-    border:none;
-
-    border-radius:30px;
-
-    font-size:17px;
-
-    cursor:pointer;
-
-}
-
-
-
-.form-section button:hover {
-
-    opacity:0.85;
-
-}
-
-
-
-
-
-
-/* PROCESSUS */
-
-.processus-certification {
-
-
-    background:white;
-
-    max-width:1100px;
-
-    margin:80px auto;
-
-    padding:50px;
-
-    border-radius:20px;
-
-}
-
-
-
-
-.processus-certification .cards {
-
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:25px;
-
-    flex-wrap:wrap;
-
-}
-
-
-
-.processus-certification .card {
-
-
-    background:#E6F4FF;
-
-    width:230px;
-
-    padding:35px 20px;
-
-    border-radius:15px;
-
-    text-align:center;
-
-}
-
-
-
-
-
-@media(max-width:768px){
-
-
-.form-section {
-
-    padding:50px 5%;
-
-}
-
-
-
-.form-section form {
-
-    padding:30px 20px;
-
-}
-
-
-
-.demande-hero h1 {
-
-    font-size:30px;
+    grid-template-columns:1fr;
 
 }
 
@@ -2369,714 +2476,69 @@ footer{
 }
 
 
-/* =====================================
-   PAGE CERTIFICATION IMC
-   STYLE UNIQUE
-===================================== */
 
+.contact-card{
 
-.certification-page {
-
-    background:#4DA6FF;
-    padding:80px 8%;
-
-}
-
-
-
-/* Hero certification */
-
-.certification-hero {
-
-    background:
-    linear-gradient(
-    rgba(0,0,0,0.65),
-    rgba(0,0,0,0.65)
-    ),
-    url("background.jpg");
-
-    background-size:cover;
-    background-position:center;
-
-    color:white;
-    text-align:center;
-
-    padding:100px 8%;
-
-}
-
-
-
-.certification-hero h1 {
-
-    font-size:45px;
-    margin-bottom:25px;
-
-}
-
-
-
-.certification-hero p {
-
-    font-size:18px;
-    max-width:800px;
-    margin:auto;
-
-}
-
-
-
-
-/* Sections */
-
-.certification-info {
-
-    background:white;
-
-    max-width:1000px;
-
-    margin:80px auto;
-
-    padding:50px;
-
-    border-radius:20px;
-
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
-
-}
-
-
-
-.certification-info h2 {
-
-    text-align:center;
-
-    font-size:32px;
-
-    margin-bottom:35px;
-
-}
-
-
-
-.certification-info p {
-
-    font-size:18px;
-
-    line-height:1.8;
-
-    margin-bottom:25px;
-
-}
-
-
-
-
-
-/* Boutons */
-
-.certification-buttons {
-
-    text-align:center;
-
-    margin-top:50px;
-
-}
-
-
-
-.certification-buttons a {
-
-    text-decoration:none;
-
-}
-
-
-
-.certification-buttons button {
-
-    background:#e30613;
-
-    color:white;
-
-    border:none;
-
-    padding:15px 35px;
-
-    border-radius:30px;
-
-    font-size:16px;
-
-    margin:15px;
-
-    cursor:pointer;
-
-}
-
-
-
-.certification-buttons button:hover {
-
-    opacity:0.85;
-
-}
-
-
-
-
-
-/* Footer */
-
-.certification-footer {
-
-    background:#050505;
-
-    color:white;
-
-    text-align:center;
-
-    padding:30px;
-
-}
-
-
-
-
-
-@media(max-width:768px){
-
-
-.certification-hero {
-
-    padding:70px 6%;
-
-}
-
-
-
-.certification-hero h1 {
-
-    font-size:30px;
-
-}
-
-
-
-.certification-info {
-
-    margin:40px 15px;
-
-    padding:30px 20px;
-
-}
-
-
-
-.certification-info h2 {
-
-    font-size:25px;
-
-}
-
-
-
-.certification-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    padding: 80px 20px;
-}
-
-
-.main-button {
-
-    display: block;
-    background: white;
-    color: #111;
-    text-decoration: none;
-
-    padding: 18px 35px;
-
-    border-radius: 30px;
-
-    font-size: 18px;
-    font-weight: bold;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-    width: 280px;
-
-    text-align: center;
-
-}
-
-
-.main-button:hover {
-
-    transform: scale(1.05);
-
-}
-
-
-
-/* PAGE CONTACT */
-
-.contact-page {
-
-    padding: 80px 20px;
-    text-align: center;
-
-}
-
-
-.contact-page h2 {
-
-    font-size: 28px;
-    margin-bottom: 50px;
-
-}
-
-
-
-.contact-box {
-
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-
-}
-
-
-
-.contact-item {
-
-    background: white;
-
-    width: 90%;
-    max-width: 400px;
-
-    padding: 30px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-
-
-.contact-item h3 {
-
-    margin-bottom: 15px;
-
-}
-
-
-
-.contact-button {
-
-    text-align: center;
-
-    padding: 60px 20px;
-
-}
-
-
-
-.contact-button a {
-
-    display: inline-block;
-
-    background: white;
-
-    color: black;
-
-    text-decoration: none;
-
-    padding: 15px 40px;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-
-
-/* PAGE MENTIONS LEGALES */
-
-.mentions-section {
-
-    padding: 80px 20px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 40px;
-
-}
-
-
-
-.mentions-card {
-
-    background: white;
-
-    width: 90%;
-
-    max-width: 800px;
-
-    padding: 40px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-
-}
-
-
-
-.mentions-card h2 {
-
-    text-align: center;
-
-    margin-bottom: 25px;
-
-    font-size: 25px;
-
-}
-
-
-
-.mentions-card p {
-
-    line-height: 1.8;
-
-    text-align: justify;
-
-}
-
-
-
-.contact-mentions {
-
-    text-align: center;
-
-}
-
-
-.contact-mentions a {
-
-    display: inline-block;
-
-    background: white;
-
-    color: black;
-
-    text-decoration: none;
-
-    padding: 15px 45px;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-
-
-/* PAGE MERCI */
-
-.merci-section {
-
-    min-height: 70vh;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-
-    padding: 80px 25px;
-
-}
-
-
-
-.merci-section h1 {
-
-    font-size: 32px;
-
-    margin-bottom: 30px;
-
-}
-
-
-
-.merci-section p {
-
-    max-width: 600px;
-
-    line-height: 1.8;
-
-    font-size: 18px;
-
-    margin-bottom: 50px;
-
-}
-
-
-
-.merci-button {
-
-    display: inline-block;
-
-    background: white;
-
-    color: black;
-
-    text-decoration: none;
-
-    padding: 15px 45px;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-
-
-/* PAGE PARTENAIRES */
-
-
-.partenaires-section {
-
-    padding: 80px 20px;
-
-    text-align: center;
-
-}
-
-
-
-.partenaires-section h2 {
-
-    font-size: 28px;
-
-    margin-bottom: 30px;
-
-}
-
-
-
-.partenaires-section > p {
-
-    max-width: 700px;
-
-    margin: auto;
-
-    line-height: 1.8;
-
-}
-
-
-
-
-.partenaires-cards {
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    gap: 35px;
-
-    margin-top: 60px;
-
-}
-
-
-
-
-.partenaire-card {
-
-    background: white;
-
-    width: 90%;
-
-    max-width: 500px;
-
-    padding: 35px;
-
-    border-radius: 20px;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
-
-}
-
-
-
-.partenaire-card h3 {
-
-    font-size: 24px;
-
-    margin-bottom: 20px;
-
-}
-
-
-
-.partenaire-card strong {
-
-    display: block;
-
-    margin-bottom: 20px;
-
-}
-
-
-
-.partenaire-card p {
-
-    line-height: 1.8;
-
-}
-
-
-
-
-
-.devenir-partenaire {
-
-    padding-top: 40px;
-
-}
-
-
-
-.devenir-partenaire a {
-
-    display: inline-block;
-
-    margin-top: 40px;
-
-    padding: 15px 45px;
-
-    background: white;
-
-    color: black;
-
-    text-decoration: none;
-
-    border-radius: 30px;
-
-    font-weight: bold;
-
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-
-}
-
-
-
-/* Plateformes */
-
-.plateformes-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-gap:20px;
-margin-top:25px;
-}
-
-.plateforme{
-background:#ffffff;
-border-radius:12px;
-padding:15px;
+background:white;
+padding:25px;
+margin:20px 0;
+border-radius:20px;
 text-align:center;
-box-shadow:0 2px 8px rgba(0,0,0,.1);
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
 }
 
-.plateforme img{
-width:60px;
-height:60px;
+
+.contact-card h3{
+
+color:#071b33;
+font-size:20px;
+
+}
+
+
+.contact-card p{
+
+color:#111;
+font-size:16px;
+
+}
+
+
+.partner-card{
+
+background:white;
+padding:25px;
+margin-top:25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+}
+
+
+.partner-card img{
+
+width:150px;
+height:150px;
 object-fit:contain;
-margin-bottom:10px;
-}
+background:white;
+margin-bottom:15px;
 
-.plateforme p{
-font-weight:bold;
-color:#003366;
-font-size:15px;
-margin:0;
 }
 
 
+.partner-card h3{
 
-.partner-logo{
-width:90px;
-height:90px;
-object-fit:contain;
-display:block;
-margin:0 auto 15px;
+color:#071b33;
+font-size:22px;
+
 }
 
 
+.partner-card p{
 
-.cover{
-    width:50px;
-    height:50px;
-    object-fit:cover;
-    border-radius:6px;
-}
+color:#111;
+line-height:1.6;
 
-
-.top-badge{
-    display:inline-block;
-    background:#2bbcff;
-    color:black;
-    padding:10px 24px;
-    border-radius:30px;
-    font-size:18px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-    margin-bottom:18px;
-}
-
-
-
-.up{
-    color:#16a34a;
-    font-weight:bold;
-}
-
-.down{
-    color:#dc2626;
-    font-weight:bold;
-}
-
-.same{
-    color:#666;
-    font-weight:bold;
-}
-
-.new{
-    color:#0066cc;
-    font-weight:bold;
 }
