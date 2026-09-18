@@ -1,5 +1,0 @@
-User-agent: *
-
-Allow: /
-
-Sitemap: https://institutmusicalcongolais.org/sitemap.xml
