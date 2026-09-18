@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>L’IMC recherche ses premiers partenaires</title>
+
+    <meta
+        name="description"
+        content="L’Institut Musical Congolais ouvre ses portes aux entreprises, médias, labels et organisations souhaitant accompagner le développement de ses activités."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+
+</head>
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <div class="logo">
+            <img src="logo-imc.png" alt="Logo IMC">
+        </div>
+
+        <button
+            class="menu-btn"
+            id="menuButton"
+            type="button"
+            onclick="toggleMenu()"
+            aria-label="Ouvrir le menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<nav class="main-menu" id="mainMenu">
+
+    <a href="index.html" class="menu-link">
+        Accueil
+    </a>
+
+
+    <button
+        class="menu-dropdown-button"
+        id="topsButton"
+        type="button"
+        aria-expanded="false"
+    >
+        <span>Les Tops IMC</span>
+        <span class="arrow" id="topsArrow">⌄</span>
+    </button>
+
+    <div class="submenu" id="topsSubmenu">
+
+        <a href="top-albums.html">
+            Top Albums
+        </a>
+
+        <a href="top-titres.html">
+            Top Titres
+        </a>
+
+        <a href="a-propos-tops.html">
+            À propos des Tops IMC
+        </a>
+
+    </div>
+
+
+    <button
+        class="menu-dropdown-button"
+        id="certificationsButton"
+        type="button"
+        aria-expanded="false"
+    >
+        <span>Les certifications IMC</span>
+        <span class="arrow" id="certificationsArrow">⌄</span>
+    </button>
+
+    <div class="submenu" id="certificationsSubmenu">
+
+        <a href="certification.html">
+            Certification IMC
+        </a>
+
+        <a href="certification-export-africa.html">
+            Certification IMC Export Africa
+        </a>
+
+        <a href="certification-export-world.html">
+            Certification IMC Export World
+        </a>
+
+    </div>
+
+
+    <a href="apropos.html" class="menu-link">
+        À propos de l’IMC
+    </a>
+
+</nav>
+
+
+<main class="article-page">
+
+    <article class="article-container">
+
+
+        <div class="article-header">
+
+            <div class="article-category">
+                PARTENARIATS
+            </div>
+
+            <div class="article-date">
+                18 septembre 2026
+            </div>
+
+            <h1>
+                L’IMC recherche ses premiers partenaires
+            </h1>
+
+            <p class="article-lead">
+                L’Institut Musical Congolais ouvre ses portes aux
+                entreprises, médias, labels et organisations souhaitant
+                accompagner le développement de ses activités.
+            </p>
+
+        </div>
+
+
+        <div class="article-content">
+
+            <p>
+                L’Institut Musical Congolais (IMC) ouvre aujourd’hui
+                ses portes aux partenaires.
+            </p>
+
+
+            <p>
+                Pour accompagner le développement de ses activités,
+                l’IMC recherche des <strong>entreprises, médias, labels
+                et organisations</strong> souhaitant s’associer à une
+                initiative dédiée à la mesure et à la valorisation des
+                performances musicales en République démocratique du Congo.
+            </p>
+
+
+            <p>
+                Les modalités du partenariat ainsi que les avantages
+                accordés au partenaire seront définis
+                <strong>d’un commun accord entre les parties</strong>,
+                selon les objectifs et les besoins de chaque collaboration.
+            </p>
+
+
+            <p>
+                Vous souhaitez devenir partenaire de l’IMC ?
+                <strong>Contactez-nous dès aujourd’hui.</strong>
+            </p>
+
+        </div>
+
+
+        <div class="article-highlight">
+
+            <div class="highlight-title">
+                À RETENIR
+            </div>
+
+            <div class="highlight-items">
+
+                <div class="highlight-item">
+
+                    <span>Recherche</span>
+
+                    <strong>
+                        Premiers partenaires
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span>Profils recherchés</span>
+
+                    <strong>
+                        Entreprises, médias, labels et organisations
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span>Partenariat</span>
+
+                    <strong>
+                        Définition d’un commun accord
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span>Objectif</span>
+
+                    <strong>
+                        Développer les activités de l’IMC
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="article-navigation">
+
+            <a
+                href="actualites.html"
+                class="back-news"
+            >
+                ← Toutes les actualités
+            </a>
+
+        </div>
+
+
+    </article>
+
+</main>
+
+
+<section class="bottom">
+
+    <p class="bottom-name">
+        INSTITUT MUSICAL CONGOLAIS
+    </p>
+
+    <p class="bottom-motto">
+        Mesurer. Certifier. Valoriser.
+    </p>
+
+    <p class="copyright">
+        © 2026 Institut Musical Congolais
+    </p>
+
+</section>
+
+
+<script>
+
+function toggleMenu() {
+
+    document
+        .getElementById("mainMenu")
+        .classList.toggle("active");
+
+}
+
+
+const topsButton =
+    document.getElementById("topsButton");
+
+const topsSubmenu =
+    document.getElementById("topsSubmenu");
+
+const topsArrow =
+    document.getElementById("topsArrow");
+
+
+topsButton.addEventListener("click", function () {
+
+    const isOpen =
+        topsSubmenu.classList.toggle("active");
+
+    topsButton.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+    topsArrow.classList.toggle(
+        "open",
+        isOpen
+    );
+
+});
+
+
+const certificationsButton =
+    document.getElementById("certificationsButton");
+
+const certificationsSubmenu =
+    document.getElementById("certificationsSubmenu");
+
+const certificationsArrow =
+    document.getElementById("certificationsArrow");
+
+
+certificationsButton.addEventListener("click", function () {
+
+    const isOpen =
+        certificationsSubmenu.classList.toggle("active");
+
+    certificationsButton.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+    certificationsArrow.classList.toggle(
+        "open",
+        isOpen
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>

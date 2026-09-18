@@ -1,0 +1,1639 @@
+/* =========================================================
+   INSTITUT MUSICAL CONGOLAIS — À PROPOS DES TOPS IMC
+   FEUILLE DE STYLE SPÉCIFIQUE
+========================================================= */
+
+
+/* =========================================================
+   VARIABLES
+========================================================= */
+
+:root {
+
+    --imc-blue: #0757a0;
+    --imc-blue-dark: #063b70;
+    --imc-blue-light: #eaf4ff;
+
+    --imc-gold: #d6a52c;
+    --imc-gold-light: #fff7df;
+
+    --imc-red: #c62828;
+    --imc-red-light: #fff0f0;
+
+    --imc-green: #16834b;
+
+    --imc-dark: #172033;
+    --imc-text: #3f4654;
+    --imc-muted: #707887;
+
+    --imc-white: #ffffff;
+    --imc-light: #f5f8fc;
+    --imc-border: #dce5ef;
+
+    --imc-radius: 18px;
+
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.site-header {
+
+    width: 100%;
+    background: var(--imc-white);
+    border-bottom: 1px solid var(--imc-border);
+
+    position: relative;
+    z-index: 1000;
+
+}
+
+
+.header-inner {
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.logo-link {
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+
+}
+
+
+.logo {
+
+    width: 90px;
+    height: auto;
+
+    display: block;
+
+}
+
+
+.menu-button {
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: var(--imc-blue);
+    color: var(--imc-white);
+
+    font-size: 25px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+
+}
+
+
+.menu-button:hover {
+
+    background: var(--imc-blue-dark);
+
+}
+
+
+.menu-button:active {
+
+    transform: scale(0.96);
+
+}
+
+
+/* =========================================================
+   MENU PRINCIPAL
+========================================================= */
+
+.main-menu {
+
+    display: none;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    padding: 0 24px 20px;
+
+}
+
+
+.main-menu.active {
+
+    display: block;
+
+}
+
+
+.main-menu > a,
+.menu-group-button {
+
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 14px 16px;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-decoration: none;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    color: var(--imc-dark);
+
+    background: transparent;
+
+    border: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+
+}
+
+
+.main-menu > a:hover,
+.menu-group-button:hover {
+
+    background: var(--imc-blue-light);
+    color: var(--imc-blue);
+
+}
+
+
+.menu-group {
+
+    width: 100%;
+
+}
+
+
+/* =========================================================
+   BOUTON CERTIFICATIONS
+========================================================= */
+
+.menu-group-button {
+
+    text-align: left;
+
+}
+
+
+.menu-group-button.active {
+
+    background: var(--imc-blue-light);
+    color: var(--imc-blue);
+
+}
+
+
+.menu-arrow {
+
+    margin-left: 15px;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    color: var(--imc-blue);
+
+    flex-shrink: 0;
+
+}
+
+
+/* =========================================================
+   SOUS-MENU CERTIFICATIONS
+   CACHÉ PAR DÉFAUT
+========================================================= */
+
+.menu-submenu {
+
+    display: none;
+
+    width: 100%;
+
+    padding: 4px 0 8px 18px;
+
+    box-sizing: border-box;
+
+}
+
+
+.menu-submenu.active {
+
+    display: block;
+
+}
+
+
+.menu-submenu a {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 12px 16px;
+
+    margin-bottom: 4px;
+
+    box-sizing: border-box;
+
+    border-left: 3px solid var(--imc-gold);
+
+    border-radius: 0 10px 10px 0;
+
+    background: var(--imc-light);
+
+    color: var(--imc-text);
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+}
+
+
+.menu-submenu a:hover {
+
+    background: var(--imc-gold-light);
+    color: var(--imc-blue);
+
+    border-left-color: var(--imc-blue);
+
+}
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.top-imc-page {
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: var(--imc-white);
+
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.top-imc-hero {
+
+    width: 100%;
+
+    padding: 90px 24px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--imc-blue-dark),
+            var(--imc-blue)
+        );
+
+    position: relative;
+
+}
+
+
+.top-imc-hero::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -80px;
+    top: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(214, 165, 44, 0.18);
+
+}
+
+
+.top-imc-hero-content {
+
+    width: 100%;
+    max-width: 1050px;
+
+    margin: 0 auto;
+
+    position: relative;
+    z-index: 1;
+
+}
+
+
+.top-imc-eyebrow {
+
+    margin: 0 0 15px;
+
+    color: var(--imc-gold);
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.top-imc-hero h1 {
+
+    margin: 0;
+
+    max-width: 800px;
+
+    color: var(--imc-white);
+
+    font-size: clamp(38px, 6vw, 68px);
+
+    line-height: 1.05;
+
+}
+
+
+.top-imc-hero-text {
+
+    max-width: 700px;
+
+    margin: 24px 0 0;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 19px;
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+.top-imc-section {
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 80px 24px;
+
+    box-sizing: border-box;
+
+}
+
+
+.top-imc-section-heading {
+
+    max-width: 800px;
+
+    margin-bottom: 42px;
+
+}
+
+
+.top-imc-section-kicker {
+
+    margin: 0 0 10px;
+
+    color: var(--imc-blue);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.top-imc-section-heading h2 {
+
+    margin: 0;
+
+    color: var(--imc-dark);
+
+    font-size: clamp(30px, 4vw, 46px);
+
+    line-height: 1.15;
+
+}
+
+
+.top-imc-section-intro {
+
+    max-width: 800px;
+
+    margin: -20px 0 40px;
+
+    color: var(--imc-muted);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.top-imc-introduction {
+
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+
+.top-imc-introduction p {
+
+    margin: 0 0 22px;
+
+    color: var(--imc-text);
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+}
+
+
+.top-imc-introduction p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   RANKINGS
+========================================================= */
+
+.top-imc-ranking-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 24px;
+
+}
+
+
+.top-imc-ranking-card {
+
+    padding: 34px;
+
+    border-radius: var(--imc-radius);
+
+    background: var(--imc-white);
+
+    border: 1px solid var(--imc-border);
+
+    box-shadow: 0 12px 35px rgba(20, 45, 75, 0.08);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.top-imc-ranking-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 5px;
+
+}
+
+
+.albums-card::before {
+
+    background: var(--imc-blue);
+
+}
+
+
+.titres-card::before {
+
+    background: var(--imc-gold);
+
+}
+
+
+.top-imc-ranking-label {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    color: var(--imc-muted);
+
+}
+
+
+.top-imc-ranking-card h3 {
+
+    margin: 0 0 15px;
+
+    color: var(--imc-dark);
+
+    font-size: 27px;
+
+}
+
+
+.top-imc-ranking-card p {
+
+    margin: 0 0 25px;
+
+    color: var(--imc-text);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+.top-imc-card-link {
+
+    color: var(--imc-blue);
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+}
+
+
+.top-imc-card-link:hover {
+
+    color: var(--imc-gold);
+
+}
+
+
+/* =========================================================
+   PURPOSE
+========================================================= */
+
+.top-imc-purpose-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.top-imc-purpose-card {
+
+    padding: 26px 22px;
+
+    border-radius: 16px;
+
+    background: var(--imc-light);
+
+    border: 1px solid var(--imc-border);
+
+}
+
+
+.top-imc-purpose-icon {
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: var(--imc-blue);
+
+    color: var(--imc-white);
+
+    font-size: 14px;
+    font-weight: 800;
+
+}
+
+
+.top-imc-purpose-card:nth-child(2)
+.top-imc-purpose-icon {
+
+    background: var(--imc-gold);
+    color: var(--imc-dark);
+
+}
+
+
+.top-imc-purpose-card:nth-child(3)
+.top-imc-purpose-icon {
+
+    background: var(--imc-green);
+
+}
+
+
+.top-imc-purpose-card:nth-child(4)
+.top-imc-purpose-icon {
+
+    background: var(--imc-red);
+
+}
+
+
+.top-imc-purpose-card h3 {
+
+    margin: 0 0 10px;
+
+    color: var(--imc-dark);
+
+    font-size: 21px;
+
+}
+
+
+.top-imc-purpose-card p {
+
+    margin: 0;
+
+    color: var(--imc-text);
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+}
+
+
+/* =========================================================
+   PLATEFORMES
+========================================================= */
+
+.top-imc-platforms-section {
+
+    background: var(--imc-light);
+
+}
+
+
+.top-imc-platforms-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.top-imc-platform-card {
+
+    aspect-ratio: 1 / 1;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    border-radius: var(--imc-radius);
+
+    background: var(--imc-white);
+
+    border: 1px solid var(--imc-border);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(20, 45, 75, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.top-imc-platform-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 16px 35px rgba(20, 45, 75, 0.12);
+
+}
+
+
+.top-imc-platform-logo {
+
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+
+    margin-bottom: 18px;
+
+}
+
+
+.top-imc-platform-card h3 {
+
+    margin: 0;
+
+    color: var(--imc-dark);
+
+    font-size: 18px;
+
+}
+
+
+/* =========================================================
+   MÉTHODOLOGIE
+========================================================= */
+
+.top-imc-methodology {
+
+    background: var(--imc-white);
+
+}
+
+
+.top-imc-methodology-block {
+
+    margin-bottom: 25px;
+
+    padding: 28px;
+
+    border-radius: var(--imc-radius);
+
+    background: var(--imc-light);
+
+    border: 1px solid var(--imc-border);
+
+}
+
+
+.top-imc-methodology-block:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.top-imc-methodology-title {
+
+    margin-bottom: 20px;
+
+    color: var(--imc-blue);
+
+    font-size: 21px;
+    font-weight: 800;
+
+}
+
+
+.top-imc-percentage-list {
+
+    display: grid;
+
+    gap: 10px;
+
+}
+
+
+.top-imc-percentage-item {
+
+    min-height: 55px;
+
+    padding: 12px 18px;
+
+    box-sizing: border-box;
+
+    border-radius: 12px;
+
+    background: var(--imc-white);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+}
+
+
+.top-imc-percentage-item span {
+
+    color: var(--imc-text);
+
+    font-size: 16px;
+
+}
+
+
+.top-imc-percentage-item strong {
+
+    color: var(--imc-blue);
+
+    font-size: 18px;
+
+}
+
+
+/* =========================================================
+   PREMIUM
+========================================================= */
+
+.top-imc-premium-section {
+
+    max-width: none;
+
+    padding-left: 24px;
+    padding-right: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--imc-gold-light),
+            var(--imc-white)
+        );
+
+}
+
+
+.top-imc-premium-content {
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+
+.top-imc-premium-content h2 {
+
+    margin: 0 0 25px;
+
+    color: var(--imc-dark);
+
+    font-size: clamp(30px, 4vw, 45px);
+
+    line-height: 1.2;
+
+}
+
+
+.top-imc-premium-content p:not(.top-imc-section-kicker) {
+
+    margin: 0 0 20px;
+
+    color: var(--imc-text);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.top-imc-premium-content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   PUBLICATION
+========================================================= */
+
+.top-imc-publication-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.top-imc-publication-card {
+
+    padding: 30px;
+
+    border-radius: var(--imc-radius);
+
+    background: var(--imc-white);
+
+    border: 1px solid var(--imc-border);
+
+    box-shadow: 0 10px 28px rgba(20, 45, 75, 0.07);
+
+}
+
+
+.top-imc-publication-day {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    padding: 7px 12px;
+
+    border-radius: 50px;
+
+    background: var(--imc-blue-light);
+
+    color: var(--imc-blue);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.top-imc-publication-card h3 {
+
+    margin: 0 0 12px;
+
+    color: var(--imc-dark);
+
+    font-size: 22px;
+
+}
+
+
+.top-imc-publication-card p {
+
+    margin: 0;
+
+    color: var(--imc-text);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* =========================================================
+   COMPARAISON TOPS / CERTIFICATIONS
+========================================================= */
+
+.top-imc-comparison-section {
+
+    background: var(--imc-light);
+
+}
+
+
+.top-imc-comparison-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.top-imc-comparison-card {
+
+    padding: 32px;
+
+    border-radius: var(--imc-radius);
+
+    background: var(--imc-white);
+
+    border: 1px solid var(--imc-border);
+
+}
+
+
+.tops-comparison {
+
+    border-top: 5px solid var(--imc-blue);
+
+}
+
+
+.certification-comparison {
+
+    border-top: 5px solid var(--imc-gold);
+
+}
+
+
+.top-imc-comparison-label {
+
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: var(--imc-muted);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.top-imc-comparison-card h3 {
+
+    margin: 0 0 12px;
+
+    color: var(--imc-dark);
+
+    font-size: 24px;
+
+}
+
+
+.top-imc-comparison-card p {
+
+    margin: 0;
+
+    color: var(--imc-text);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+
+}
+
+
+.top-imc-important-note {
+
+    margin-top: 25px;
+
+    padding: 20px 22px;
+
+    border-radius: 14px;
+
+    background: var(--imc-gold-light);
+
+    border-left: 5px solid var(--imc-gold);
+
+    color: var(--imc-text);
+
+    line-height: 1.6;
+
+}
+
+
+.top-imc-important-note strong {
+
+    color: var(--imc-dark);
+
+}
+
+
+/* =========================================================
+   OBJECTIF
+========================================================= */
+
+.top-imc-objective-section {
+
+    max-width: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--imc-blue-light),
+            var(--imc-white)
+        );
+
+}
+
+
+.top-imc-objective-content {
+
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto;
+
+}
+
+
+.top-imc-objective-content h2 {
+
+    margin: 0 0 25px;
+
+    color: var(--imc-dark);
+
+    font-size: clamp(30px, 4vw, 45px);
+
+    line-height: 1.2;
+
+}
+
+
+.top-imc-objective-content p:not(.top-imc-section-kicker) {
+
+    margin: 0 0 20px;
+
+    color: var(--imc-text);
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+}
+
+
+.top-imc-objective-content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+/* =========================================================
+   ACCÈS AUX CLASSEMENTS
+========================================================= */
+
+.top-imc-access {
+
+    text-align: center;
+
+}
+
+
+.top-imc-access .top-imc-section-heading {
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.top-imc-access-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+}
+
+
+.top-imc-button {
+
+    min-height: 58px;
+
+    padding: 16px 25px;
+
+    box-sizing: border-box;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 800;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+
+}
+
+
+.top-imc-button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(20, 45, 75, 0.14);
+
+}
+
+
+.top-imc-button-blue {
+
+    background: var(--imc-blue);
+
+    color: var(--imc-white);
+
+}
+
+
+.top-imc-button-gold {
+
+    background: var(--imc-gold);
+
+    color: var(--imc-dark);
+
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.bottom {
+
+    width: 100%;
+
+    padding: 45px 24px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    background: var(--imc-dark);
+
+}
+
+
+.bottom-name {
+
+    margin: 0 0 8px;
+
+    color: var(--imc-white);
+
+    font-size: 15px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.bottom-motto {
+
+    margin: 0 0 15px;
+
+    color: var(--imc-gold);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+}
+
+
+.copyright {
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================================
+   TABLETTE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .top-imc-purpose-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .header-inner {
+
+        padding: 13px 16px;
+
+    }
+
+
+    .logo {
+
+        width: 78px;
+
+    }
+
+
+    .menu-button {
+
+        width: 44px;
+        height: 44px;
+
+        font-size: 23px;
+
+    }
+
+
+    .main-menu {
+
+        padding-left: 16px;
+        padding-right: 16px;
+
+    }
+
+
+    .top-imc-hero {
+
+        padding: 65px 20px;
+
+    }
+
+
+    .top-imc-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .top-imc-hero-text {
+
+        font-size: 16px;
+
+    }
+
+
+    .top-imc-section {
+
+        padding: 60px 20px;
+
+    }
+
+
+    .top-imc-section-heading {
+
+        margin-bottom: 32px;
+
+    }
+
+
+    .top-imc-ranking-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .top-imc-purpose-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+
+    }
+
+
+    .top-imc-purpose-card {
+
+        padding: 22px 17px;
+
+    }
+
+
+    .top-imc-platforms-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .top-imc-platform-card {
+
+        padding: 16px;
+
+    }
+
+
+    .top-imc-platform-logo {
+
+        width: 62px;
+        height: 62px;
+
+        margin-bottom: 12px;
+
+    }
+
+
+    .top-imc-platform-card h3 {
+
+        font-size: 15px;
+
+    }
+
+
+    .top-imc-publication-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .top-imc-comparison-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .top-imc-access-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .top-imc-methodology-block {
+
+        padding: 20px 16px;
+
+    }
+
+
+    .top-imc-percentage-item {
+
+        padding: 11px 14px;
+
+    }
+
+
+    .top-imc-premium-section,
+    .top-imc-objective-section {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+
+    .bottom {
+
+        padding: 38px 20px;
+
+    }
+
+}
+
+
+/* =========================================================
+   PETIT MOBILE
+========================================================= */
+
+@media (max-width: 430px) {
+
+    .top-imc-purpose-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .top-imc-hero h1 {
+
+        font-size: 35px;
+
+    }
+
+
+    .top-imc-section-heading h2 {
+
+        font-size: 30px;
+
+    }
+
+
+    .top-imc-platform-logo {
+
+        width: 55px;
+        height: 55px;
+
+    }
+
+
+    .top-imc-platform-card h3 {
+
+        font-size: 14px;
+
+    }
+
+
+    .top-imc-ranking-card,
+    .top-imc-publication-card,
+    .top-imc-comparison-card {
+
+        padding: 24px 20px;
+
+    }
+
+}

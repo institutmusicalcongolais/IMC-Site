@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /demander-certification.html
+Disallow: /demande-affiliation.html
+Disallow: /demande-partenaire.html
+Disallow: /merci.html
+
+Sitemap: https://institutmusicalcongolais.org/sitemap.xml

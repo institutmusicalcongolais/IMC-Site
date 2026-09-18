@@ -1,0 +1,1509 @@
+/* =========================================================
+   INSTITUT MUSICAL CONGOLAIS — CERTIFICATION IMC
+   STYLE FIDÈLE À L'IDENTITÉ VISUELLE IMC
+========================================================= */
+
+
+/* =========================================================
+   1. RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   2. EN-TÊTE
+========================================================= */
+
+.site-header {
+    width: 100%;
+
+    background: #ffffff;
+
+    position: relative;
+
+    z-index: 1000;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.header-inner {
+    width: min(1100px, 90%);
+
+    min-height: 105px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.site-header .logo {
+    display: block;
+}
+
+.site-header .logo img {
+    width: 160px;
+
+    max-width: 45vw;
+
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   3. BOUTON MENU
+========================================================= */
+
+.site-header .menu-btn {
+    border: none;
+
+    background: #55BFEF;
+
+    color: #ffffff;
+
+    padding: 12px 24px;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.site-header .menu-btn:hover {
+    background: #3CAEDC;
+
+    transform: translateY(-1px);
+}
+
+.site-header .menu-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   4. MENU PRINCIPAL
+========================================================= */
+
+.main-menu {
+    display: none;
+
+    width: min(320px, 90%);
+
+    margin: 15px auto 0;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 8px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+    padding: 8px 0;
+
+    overflow: hidden;
+}
+
+.main-menu.active {
+    display: block;
+}
+
+
+/* LIENS */
+
+.main-menu .menu-link {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 20px;
+
+    color: #111111;
+
+    background: #ffffff;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: 0.2s ease;
+}
+
+.main-menu .menu-link:hover {
+    background: #F3FAFD;
+
+    color: #55BFEF;
+}
+
+
+/* BOUTONS DÉROULANTS */
+
+.main-menu .menu-dropdown-button {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 14px 20px;
+
+    border: none;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.main-menu .menu-dropdown-button:hover {
+    background: #F3FAFD;
+
+    color: #55BFEF;
+}
+
+
+/* FLÈCHE */
+
+.arrow {
+    font-size: 18px;
+
+    line-height: 1;
+
+    transition: transform 0.25s ease;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+
+/* SOUS-MENUS */
+
+.submenu {
+    display: none;
+
+    background: #F7FBFD;
+
+    border-top: 1px solid #eeeeee;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.submenu.active {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+
+    padding: 12px 20px 12px 35px;
+
+    color: #444444;
+
+    font-size: 14px;
+
+    font-weight: 500;
+
+    transition: 0.2s ease;
+}
+
+.submenu a:hover {
+    background: #EAF8FE;
+
+    color: #55BFEF;
+}
+
+
+/* =========================================================
+   5. HERO CERTIFICATION
+========================================================= */
+
+.hero-small {
+    width: 100%;
+
+    padding: 75px 7% 70px;
+
+    background: #ffffff;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.hero-small::before {
+    content: "🏆";
+
+    position: absolute;
+
+    top: 35px;
+
+    right: 8%;
+
+    font-size: 65px;
+
+    opacity: 0.10;
+}
+
+.hero-small::after {
+    content: "🎵";
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 8%;
+
+    font-size: 48px;
+
+    opacity: 0.08;
+}
+
+.hero-small-content {
+    max-width: 760px;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.hero-small h1 {
+    margin-bottom: 20px;
+
+    color: #111111;
+
+    font-size: clamp(36px, 7vw, 60px);
+
+    line-height: 1.1;
+
+    font-weight: 800;
+}
+
+.hero-small h1::before {
+    content: "🏅 ";
+
+    color: #F9B233;
+
+    font-size: 0.55em;
+
+    vertical-align: middle;
+}
+
+.hero-small p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #444444;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   6. CONTENEUR
+========================================================= */
+
+.content-container {
+    width: min(1100px, 90%);
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   7. TITRES DE SECTIONS
+========================================================= */
+
+.certification-intro h2,
+.certification-levels h2,
+.thresholds-section h2,
+.methodology-section h2,
+.platforms-section h2,
+.proofs-section h2,
+.fees-section h2,
+.request-section h2,
+.export-section h2 {
+    margin-bottom: 15px;
+
+    color: #111111;
+
+    font-size: clamp(26px, 4vw, 38px);
+
+    line-height: 1.2;
+
+    font-weight: 800;
+}
+
+.certification-intro h2::after,
+.certification-levels h2::after,
+.thresholds-section h2::after,
+.methodology-section h2::after,
+.platforms-section h2::after,
+.proofs-section h2::after,
+.fees-section h2::after,
+.export-section h2::after {
+    content: "";
+
+    display: block;
+
+    width: 48px;
+
+    height: 4px;
+
+    margin-top: 10px;
+
+    background: #55BFEF;
+
+    border-radius: 5px;
+}
+
+.section-intro {
+    max-width: 720px;
+
+    margin-bottom: 35px;
+
+    color: #555555;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   8. INTRODUCTION
+========================================================= */
+
+.certification-intro {
+    padding: 75px 0;
+
+    background: #F7FBFD;
+}
+
+.certification-intro .content-container {
+    max-width: 900px;
+}
+
+.certification-intro p {
+    margin-bottom: 16px;
+
+    color: #444444;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.certification-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.certification-intro p:first-of-type {
+    padding-left: 18px;
+
+    border-left: 4px solid #55BFEF;
+}
+
+
+/* =========================================================
+   9. NIVEAUX DE CERTIFICATION
+========================================================= */
+
+.certification-levels {
+    padding: 75px 0;
+
+    background: #ffffff;
+}
+
+.levels-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.level-card {
+    position: relative;
+
+    min-height: 230px;
+
+    padding: 30px 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.25s ease,
+                box-shadow 0.25s ease;
+}
+
+.level-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+
+/* BARRE SUPÉRIEURE */
+
+.level-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    height: 5px;
+
+    border-radius: 12px 12px 0 0;
+}
+
+.level-card.silver::before {
+    background: #9EA7AD;
+}
+
+.level-card.gold::before {
+    background: #F9B233;
+}
+
+.level-card.platinum::before {
+    background: #55BFEF;
+}
+
+.level-card.diamond::before {
+    background: #E53935;
+}
+
+
+/* ICÔNE */
+
+.level-icon {
+    margin-bottom: 18px;
+
+    font-size: 30px;
+
+    color: #F9B233;
+}
+
+.level-card.silver .level-icon {
+    color: #8B949A;
+}
+
+.level-card.platinum .level-icon {
+    color: #55BFEF;
+}
+
+.level-card.diamond .level-icon {
+    color: #E53935;
+}
+
+.level-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 24px;
+
+    line-height: 1.2;
+}
+
+.level-card.silver h3 {
+    color: #727B81;
+}
+
+.level-card.gold h3 {
+    color: #C58A00;
+}
+
+.level-card.platinum h3 {
+    color: #299BCB;
+}
+
+.level-card.diamond h3 {
+    color: #D52E2E;
+}
+
+.level-card p {
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   10. SEUILS
+========================================================= */
+
+.thresholds-section {
+    padding: 75px 0;
+
+    background: #F7F7F7;
+}
+
+.threshold-columns {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.threshold-box {
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.threshold-box:first-child {
+    border-top: 5px solid #55BFEF;
+}
+
+.threshold-box:last-child {
+    border-top: 5px solid #F9B233;
+}
+
+.threshold-box h3 {
+    margin-bottom: 22px;
+
+    font-size: 25px;
+
+    line-height: 1.2;
+}
+
+.threshold-box:first-child h3 {
+    color: #55BFEF;
+}
+
+.threshold-box:last-child h3 {
+    color: #D89A0A;
+}
+
+.threshold-row {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    padding: 14px 0;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.threshold-row:last-child {
+    border-bottom: none;
+}
+
+.threshold-name {
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+.threshold-row strong {
+    font-size: 15px;
+
+    font-weight: 800;
+}
+
+.threshold-box:first-child .threshold-row strong {
+    color: #299BCB;
+}
+
+.threshold-box:last-child .threshold-row strong {
+    color: #C58A00;
+}
+
+
+/* =========================================================
+   11. MÉTHODOLOGIE
+========================================================= */
+
+.methodology-section {
+    padding: 75px 0;
+
+    background: #ffffff;
+}
+
+.methodology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.method-card {
+    position: relative;
+
+    min-height: 145px;
+
+    padding: 30px 25px 25px;
+
+    background: #F7FBFD;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+
+    transition: 0.25s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-4px);
+
+    border-color: #55BFEF;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+}
+
+.method-number {
+    position: absolute;
+
+    top: -10px;
+    left: 20px;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #55BFEF;
+
+    color: #ffffff;
+
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.method-card:nth-child(2) .method-number,
+.method-card:nth-child(4) .method-number,
+.method-card:nth-child(6) .method-number {
+    background: #F9B233;
+
+    color: #111111;
+}
+
+.method-card p {
+    color: #444444;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.method-card strong {
+    color: #111111;
+}
+
+
+/* =========================================================
+   12. PLATEFORMES
+========================================================= */
+
+.platforms-section {
+    padding: 75px 0;
+
+    background: #F7FBFD;
+}
+
+.platforms-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.platform-card {
+    min-height: 180px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    transition: 0.25s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #55BFEF;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.platform-logo {
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+}
+
+.platform-logo img {
+    max-width: 75px;
+    max-height: 75px;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.platform-card p {
+    color: #222222;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   13. PREUVES
+========================================================= */
+
+.proofs-section {
+    padding: 75px 0;
+
+    background: #ffffff;
+}
+
+.proofs-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.proof-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    padding: 18px 20px;
+
+    background: #F7FBFD;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.proof-item:hover {
+    border-color: #55BFEF;
+
+    background: #F3FAFD;
+}
+
+.proof-item span {
+    flex: 0 0 auto;
+
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1px;
+
+    border-radius: 50%;
+
+    background: #55BFEF;
+
+    color: #ffffff;
+
+    font-size: 12px;
+
+    font-weight: 800;
+}
+
+.proof-item p {
+    color: #444444;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   14. NOTE DE VÉRIFICATION
+========================================================= */
+
+.verification-note {
+    margin-top: 25px;
+
+    padding: 22px 25px;
+
+    background: #FFF8E8;
+
+    border-left: 5px solid #F9B233;
+
+    border-radius: 10px;
+}
+
+.verification-note strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #A87500;
+
+    font-size: 15px;
+}
+
+.verification-note strong::before {
+    content: "🔎 ";
+
+}
+
+.verification-note p {
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   15. FRAIS
+========================================================= */
+
+.fees-section {
+    padding: 75px 0;
+
+    background: #F7F7F7;
+}
+
+.fees-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.fee-card {
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    text-align: center;
+
+    transition: 0.25s ease;
+}
+
+.fee-card:hover {
+    transform: translateY(-4px);
+}
+
+.fee-card:first-child {
+    border-top: 5px solid #55BFEF;
+}
+
+.fee-card:last-child {
+    border-top: 5px solid #F9B233;
+}
+
+.fee-card h3 {
+    margin-bottom: 10px;
+
+    color: #111111;
+
+    font-size: 22px;
+}
+
+.fee-price {
+    margin-bottom: 10px;
+
+    color: #55BFEF;
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    font-weight: 800;
+}
+
+.fee-card:last-child .fee-price {
+    color: #D89A0A;
+}
+
+.fee-card p {
+    color: #666666;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   16. ARTISTES AFFILIÉS
+========================================================= */
+
+.affiliated-note {
+    padding: 28px 30px;
+
+    background: #F3FAF6;
+
+    border: 1px solid #D8EEE1;
+
+    border-left: 5px solid #16834B;
+
+    border-radius: 12px;
+}
+
+.affiliated-note h3 {
+    margin-bottom: 12px;
+
+    color: #16834B;
+
+    font-size: 22px;
+}
+
+.affiliated-note h3::before {
+    content: "✅ ";
+
+}
+
+.affiliated-note p {
+    margin-bottom: 10px;
+
+    color: #444444;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.affiliated-note p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   17. DEMANDE DE CERTIFICATION
+========================================================= */
+
+.request-section {
+    padding: 80px 0;
+
+    background: #55BFEF;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.request-section::before {
+    content: "🏆";
+
+    position: absolute;
+
+    top: 25px;
+    left: 8%;
+
+    font-size: 70px;
+
+    opacity: 0.12;
+}
+
+.request-section::after {
+    content: "🎵";
+
+    position: absolute;
+
+    right: 8%;
+    bottom: 15px;
+
+    font-size: 65px;
+
+    opacity: 0.12;
+}
+
+.request-section .content-container {
+    position: relative;
+
+    z-index: 2;
+}
+
+.request-section h2 {
+    color: #ffffff;
+
+    margin-bottom: 15px;
+}
+
+.request-section h2::after {
+    display: none;
+}
+
+.request-section p {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 16px;
+}
+
+.request-button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 13px 25px;
+
+    background: #ffffff;
+
+    color: #111111;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    transition: 0.25s ease;
+}
+
+.request-button::before {
+    content: "📩";
+
+    margin-right: 8px;
+}
+
+.request-button:hover {
+    background: #F9B233;
+
+    color: #111111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   18. CERTIFICATIONS EXPORT
+========================================================= */
+
+.export-section {
+    padding: 75px 0;
+
+    background: #ffffff;
+}
+
+.export-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.export-card {
+    display: block;
+
+    min-height: 210px;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    transition: 0.25s ease;
+}
+
+.export-card:hover {
+    transform: translateY(-5px);
+}
+
+.export-card:first-child {
+    background: #F3FAFD;
+
+    border: 1px solid #D8EFF9;
+
+    border-top: 5px solid #55BFEF;
+}
+
+.export-card:last-child {
+    background: #FFF4F4;
+
+    border: 1px solid #F1D5D5;
+
+    border-top: 5px solid #E53935;
+}
+
+.export-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 22px;
+
+    line-height: 1.3;
+}
+
+.export-card:first-child h3 {
+    color: #299BCB;
+}
+
+.export-card:last-child h3 {
+    color: #D52E2E;
+}
+
+.export-card p {
+    margin-bottom: 20px;
+
+    color: #555555;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+.export-card span {
+    font-size: 13px;
+
+    font-weight: 800;
+}
+
+.export-card:first-child span {
+    color: #299BCB;
+}
+
+.export-card:last-child span {
+    color: #D52E2E;
+}
+
+
+/* =========================================================
+   19. BAS DE PAGE
+========================================================= */
+
+.imc-bottom {
+    padding: 35px 20px;
+
+    background: #111111;
+
+    color: #ffffff;
+
+    text-align: center;
+}
+
+.imc-bottom h3 {
+    margin-bottom: 7px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.imc-bottom .motto {
+    margin-bottom: 10px;
+
+    color: #F9B233;
+
+    font-size: 14px;
+}
+
+.imc-bottom p {
+    color: #AAAAAA;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   20. TABLETTE
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .levels-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .platforms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .methodology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proofs-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   21. MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .header-inner {
+        width: 90%;
+
+        min-height: 90px;
+    }
+
+    .site-header .logo img {
+        width: 140px;
+    }
+
+    .site-header .menu-btn {
+        padding: 10px 20px;
+
+        font-size: 12px;
+    }
+
+
+    .hero-small {
+        padding: 65px 6% 60px;
+    }
+
+    .hero-small h1 {
+        font-size: 36px;
+    }
+
+    .hero-small p {
+        font-size: 16px;
+    }
+
+
+    .certification-intro,
+    .certification-levels,
+    .thresholds-section,
+    .methodology-section,
+    .platforms-section,
+    .proofs-section,
+    .fees-section,
+    .export-section {
+        padding: 60px 0;
+    }
+
+
+    .levels-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .level-card {
+        min-height: auto;
+    }
+
+
+    .threshold-columns {
+        grid-template-columns: 1fr;
+    }
+
+
+    .methodology-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .platforms-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .fees-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .export-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .threshold-box,
+    .fee-card,
+    .export-card {
+        padding: 25px 20px;
+    }
+
+
+    .content-container {
+        width: 88%;
+    }
+
+}
+
+
+/* =========================================================
+   22. PETITS ÉCRANS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .site-header .logo img {
+        width: 125px;
+    }
+
+    .hero-small h1 {
+        font-size: 32px;
+    }
+
+    .platforms-grid {
+        gap: 12px;
+    }
+
+    .platform-card {
+        min-height: 155px;
+
+        padding: 18px 10px;
+    }
+
+    .platform-logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .platform-logo img {
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    .threshold-row {
+        gap: 10px;
+    }
+
+    .threshold-row strong {
+        text-align: right;
+    }
+
+}

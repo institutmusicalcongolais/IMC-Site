@@ -1,344 +1,663 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Institut Musical Congolais | IMC</title>
+    <title>Institut Musical Congolais — IMC</title>
 
-<link rel="icon" type="image/png" href="logo-imc.png">
-<link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="L'Institut Musical Congolais est une initiative privée et indépendante qui mesure et certifie les performances musicales en République démocratique du Congo."
+    >
 
-<meta name="description" content="Institut Musical Congolais - Certification et classements de la musique en République Démocratique du Congo.">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+    <!-- ==============================
+         EN-TÊTE
+    =============================== -->
+
+    <header class="header">
+
+        <a
+            href="index.html"
+            class="logo-link"
+        >
+
+            <img
+                src="logo-imc.png"
+                alt="Institut Musical Congolais"
+                class="logo"
+            >
+
+        </a>
+
+        <button
+            class="menu-button"
+            id="menuButton"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mainMenu"
+        >
+            MENU
+        </button>
+
+        <!-- MENU PRINCIPAL -->
+
+        <nav
+            class="main-menu"
+            id="mainMenu"
+        >
+
+            <a
+                href="index.html"
+                class="menu-link"
+            >
+                Accueil
+            </a>
+
+            <a
+                href="actualites.html"
+                class="menu-link"
+            >
+                Actualités IMC
+            </a>
+
+            <!-- LES TOPS -->
+
+            <button
+                class="menu-dropdown-button"
+                id="topsButton"
+                type="button"
+                aria-expanded="false"
+            >
+
+                <span>
+                    Les Tops IMC
+                </span>
+
+                <span
+                    class="arrow"
+                    id="topsArrow"
+                >
+                    ⌄
+                </span>
+
+            </button>
 
-<header>
+            <div
+                class="submenu"
+                id="topsSubmenu"
+            >
 
-<button class="menu-btn" onclick="toggleMenu()">
-☰
-</button>
+                <a href="top-albums.html">
+                    Top Albums
+                </a>
 
-<div class="logo">
-<img src="logo-imc.png" alt="Logo IMC">
-</div>
+                <a href="top-titres.html">
+                    Top Titres
+                </a>
 
-</header>
+                <a href="a-propos-tops.html">
+                    À propos des Tops IMC
+                </a>
 
-<!-- ================= MENU ================= -->
+            </div>
 
-<nav id="menu">
+            <!-- CERTIFICATIONS -->
 
-<a href="top-albums.html">
-Les Tops RDC de la semaine
-</a>
+            <button
+                class="menu-dropdown-button"
+                id="certificationsButton"
+                type="button"
+                aria-expanded="false"
+            >
 
-<a href="actualites.html">
-Actualités IMC
-</a>
+                <span>
+                    Les Certifications IMC
+                </span>
 
-<a href="certification.html">
-La certification IMC
-</a>
+                <span
+                    class="arrow"
+                    id="certificationsArrow"
+                >
+                    ⌄
+                </span>
 
-<a href="a-propos.html">
-À propos de l'IMC
-</a>
+            </button>
 
-</nav>
+            <div
+                class="submenu"
+                id="certificationsSubmenu"
+            >
 
-<!-- ================= CONTENU ================= -->
+                <a href="certification.html">
+                    Certification IMC
+                </a>
 
-<main>
+                <a href="certification-export-africa.html">
+                    Certification IMC Export Africa
+                </a>
 
-<!-- ================= TOP ALBUMS ================= -->
+                <a href="certification-export-world.html">
+                    Certification IMC Export World
+                </a>
 
-<section class="card">
+            </div>
 
-<h2>
-Top Albums RDC de la semaine
-</h2>
+            <!-- À PROPOS -->
 
-<table class="mini-ranking">
+            <a
+                href="a-propos.html"
+                class="menu-link"
+            >
+                À propos de l'IMC
+            </a>
 
-<thead>
+        </nav>
 
-<tr>
+    </header>
 
-<th>#</th>
-<th>-</th>
-<th>Pochette</th>
-<th>Album</th>
-<th>Artiste</th>
 
-</tr>
+    <main>
 
-</thead>
+        <!-- ==============================
+             PRÉSENTATION
+        =============================== -->
 
-<tbody>
+        <section class="presentation">
 
-<tr>
+            <p class="eyebrow">
+                INSTITUT MUSICAL CONGOLAIS
+            </p>
 
-<td>1</td>
+            <h1>
+                Mesurer. Certifier. Valoriser.
+            </h1>
 
-<td class="same">➖</td>
+            <p class="presentation-text">
 
-<td>
-<img src="xx.jpg" class="mini-cover" alt="">
-</td>
+                L'IMC est une initiative privée et indépendante
+                qui mesure et certifie les performances musicales
+                en République démocratique du Congo.
 
-<td>XX</td>
+            </p>
 
-<td>Fally Ipupa</td>
+            <p class="mission">
 
-</tr>
+                Valoriser les performances qui façonnent
+                la musique congolaise.
 
-<tr>
+            </p>
 
-<td>2</td>
+        </section>
 
-<td class="up">⬆ +1</td>
 
-<td>
-<img src="beyah.jpg" class="mini-cover" alt="BEYAH">
-</td>
+        <!-- ==============================
+             LES TOPS
+        =============================== -->
 
-<td>BĒYĀH</td>
+        <section class="tops-section">
 
-<td>Damso</td>
+            <div class="section-container">
 
-</tr>
+                <h2>
+                    LES TOPS IMC
+                </h2>
 
-<td>3</td>
+                <p class="section-description">
 
-<td class="up">⬆ +6</td>
+                    Découvrez les performances musicales les mieux
+                    classées en République démocratique du Congo.
 
-<td>
-  <img src="money.jpg" alt="M$NEY" class="cover">
-  </td>
-<td>M$NEY</td>
+                </p>
 
-<td>Asake</td>
+                <div class="tops-buttons">
 
-</tr>
+                    <a
+                        href="top-albums.html"
+                        class="top-card top-albums"
+                    >
 
-<tr>
+                        <span>
+                            TOP ALBUMS
+                        </span>
 
-<td>4</td>
+                    </a>
 
+                    <a
+                        href="top-titres.html"
+                        class="top-card top-titres"
+                    >
 
-<td class="new">new</td>
+                        <span>
+                            TOP TITRES
+                        </span>
 
-<td>
-<img src="starrgirl.jpg" class="mini-cover" alt="STARRGIRL">
-</td>
+                    </a>
 
-<td>STARRGIRL</td>
+                </div>
 
-<td>Ayra Starr</td>
+            </div>
 
-</tr>
-  
+        </section>
 
-<tr>
 
-<td>5</td>
+        <!-- ==============================
+             CERTIFICATIONS
+        =============================== -->
 
-<td class="up">⬆ +2</td>
+        <section class="certifications-section">
 
-<td><img src="mils4.jpg" alt="MILS 4" class="cover"></td>
-<td>M.I.L.S 4</td>
-<td>Ninho</td>
-</tr>
+            <div class="section-container">
 
-</tbody>
+                <h2>
+                    LES CERTIFICATIONS IMC
+                </h2>
 
-</table>
+                <p class="section-description">
 
-<a href="top-albums.html" class="btn">
-Voir le Top complet
-</a>
+                    L'IMC délivre trois types de certifications
+                    musicales selon le territoire de performance
+                    pris en compte.
 
-</section>
+                </p>
 
+                <div class="certification-buttons">
 
-<!-- ================= TOP TITRES ================= -->
+                    <a
+                        href="certification.html"
+                        class="certification-card certification-imc"
+                    >
 
-<section class="card">
+                        CERTIFICATION IMC
 
-<h2>
-Top Titres RDC de la semaine
-</h2>
+                    </a>
 
-<table class="mini-ranking">
+                    <a
+                        href="certification-export-africa.html"
+                        class="certification-card certification-africa"
+                    >
 
-<thead>
+                        CERTIFICATION IMC EXPORT AFRICA
 
-<tr>
+                    </a>
 
-<th>#</th>
-<th>-</th>
-<th>Pochette</th>
-<th>Titre</th>
-<th>Artiste</th>
+                    <a
+                        href="certification-export-world.html"
+                        class="certification-card certification-world"
+                    >
 
-</tr>
+                        CERTIFICATION IMC EXPORT WORLD
 
+                    </a>
 
-</thead>
+                </div>
 
-<tbody>
+            </div>
 
-<tr>
+        </section>
 
-<tr>
-<td>1</td>
-<td class="up">⬆ +1</td>
-<td><img src="xx.jpg" alt="LOST" class="cover"></td>
-<td>LOST</td>
-<td>Fally Ipupa</td>
-</tr>
 
+        <!-- ==============================
+             SEUILS
+        =============================== -->
 
-<tr>
-<td>2</td>
-<td class="down">⬇ -1</td>
-<td><img src="xxdelirium.jpg" alt="KITAMATA" class="cover"></td>
-<td>KITAMATA</td>
-<td>Fally Ipupa</td>
-</tr>
+        <section class="thresholds-section">
 
+            <div class="section-container">
 
-<tr>
-<td>3</td>
-<td class="same">➖</td>
-<td><img src="xx.jpg" alt="PÉPÉLÉ" class="cover"></td>
-<td>PÉPÉLÉ</td>
-<td>Fally Ipupa & Guy2BezBar</td>
-</tr>
+                <h2>
+                    SEUILS DE CERTIFICATION
+                </h2>
 
+                <p class="section-description">
 
-<tr>
-<td>4</td>
-<td class="up">⬆ +6</td>
-<td><img src="ndenatingamo.jpg" alt="NDE NA TINGAMO" class="cover"></td>
-<td>NDE NA TINGAMO</td>
-<td>Transco Léopard</td>
-</tr>
+                    Les certifications IMC sont déterminées selon
+                    une méthodologie fondée sur les performances
+                    musicales enregistrées sur les plateformes
+                    suivies par l'IMC.
 
+                </p>
 
-<tr>
-<td>5</td>
-<td class="up">⬆ +3</td>
-<td><img src="spirits.jpg" alt="SPIRITS" class="cover"></td>
-<td>SPIRITS</td>
-<td>Pson</td>
-</tr>
+                <div class="thresholds-grid">
 
-</tbody>
+                    <!-- ALBUM -->
 
-</table>
+                    <div class="threshold-card album-card">
 
-<a href="top-titres.html" class="btn">
-Voir le Top complet
-</a>
+                        <h3>
+                            ALBUM
+                        </h3>
 
-</section>
+                        <p class="conversion">
+                            1 500 IES = 1 IEV
+                        </p>
 
-<!-- ================= ACTUALITÉ ================= -->
+                        <p class="definition">
+                            IEV — IMC ÉQUIVALENTS VENTES
+                        </p>
 
-<section class="card">
+                        <div class="threshold-list">
 
-<img class="image-article"
-src="mise-a-jour-methode.jpg"
-alt="L'IMC met à jour ses seuils de certification et sa méthodologie">
+                            <div class="threshold-row">
 
-<h2 class="news-title">
+                                <span>
+                                    ARGENT
+                                </span>
 
-L'IMC met à jour ses seuils de certification et sa méthodologie
+                                <strong>
+                                    2 500 IEV
+                                </strong>
 
-</h2>
+                            </div>
 
-<p class="news-date">
+                            <div class="threshold-row">
 
-15 Août 2026
+                                <span>
+                                    OR
+                                </span>
 
-</p>
+                                <strong>
+                                    5 000 IEV
+                                </strong>
 
-<p class="news-text">
+                            </div>
 
-À la suite d'une nouvelle analyse du marché musical et des habitudes de consommation légale de musique en République Démocratique du Congo, l'Institut Musical Congolais (IMC) annonce une mise à jour...
+                            <div class="threshold-row">
 
-</p>
+                                <span>
+                                    PLATINE
+                                </span>
 
-<a href="miseajourmethode.html" class="btn">
+                                <strong>
+                                    10 000 IEV
+                                </strong>
 
-Voir plus
+                            </div>
 
-</a>
+                            <div class="threshold-row">
 
-</section>
+                                <span>
+                                    DIAMANT
+                                </span>
 
-<!-- ================= A PROPOS ================= -->
+                                <strong>
+                                    50 000 IEV
+                                </strong>
 
-<section class="card">
+                            </div>
 
-<h2>
+                        </div>
 
-À propos de l'IMC
+                    </div>
 
-</h2>
 
-<p>
+                    <!-- SINGLE -->
 
-L'Institut Musical Congolais (IMC) est une initiative privée et indépendante dédiée à la mesure et à la certification des performances musicales en RDC.
+                    <div class="threshold-card single-card">
 
-</p>
+                        <h3>
+                            SINGLE
+                        </h3>
 
-</section>
+                        <p class="conversion">
+                            1 stream = 1 IES
+                        </p>
 
-</main>
+                        <p class="definition">
+                            IES — IMC ÉQUIVALENTS STREAMS
+                        </p>
 
-<!-- ================= FOOTER ================= -->
+                        <div class="threshold-list">
 
-<footer>
+                            <div class="threshold-row">
 
-<a href="contact.html">
-Contact
-</a>
+                                <span>
+                                    OR
+                                </span>
 
-<a href="partenaires.html">
-Partenaires
-</a>
+                                <strong>
+                                    750 000 IES
+                                </strong>
 
-<a href="mentions-legales.html">
-Mentions légales
-</a>
+                            </div>
 
-<p>
-© Institut Musical Congolais - IMC
-</p>
+                            <div class="threshold-row">
 
-</footer>
+                                <span>
+                                    PLATINE
+                                </span>
 
-<!-- ================= SCRIPT ================= -->
+                                <strong>
+                                    1 500 000 IES
+                                </strong>
 
-<script>
+                            </div>
 
-function toggleMenu(){
+                            <div class="threshold-row">
 
-document.getElementById("menu").classList.toggle("active");
+                                <span>
+                                    DIAMANT
+                                </span>
 
-}
+                                <strong>
+                                    7 500 000 IES
+                                </strong>
 
-</script>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             DERNIÈRE ACTUALITÉ
+        =============================== -->
+
+        <section class="latest-news-section">
+
+            <div class="section-container">
+
+                <h2>
+                    DERNIÈRE ACTUALITÉ
+                </h2>
+
+                <p class="section-description">
+
+                    Retrouvez la dernière actualité publiée
+                    par l'Institut Musical Congolais.
+
+                </p>
+
+                <article class="latest-news-card">
+
+                    <div class="latest-news-image">
+
+                        <img
+                            src="images/news-18sept2026.jpg"
+                            alt="Dernière actualité de l'IMC"
+                        >
+
+                    </div>
+
+                    <div class="latest-news-content">
+
+                        <p class="latest-news-date">
+                            ACTUALITÉS IMC
+                        </p>
+
+                        <h3>
+                            Retrouvez les dernières informations de l'IMC
+                        </h3>
+
+                        <p>
+
+                            Découvrez les dernières informations,
+                            annonces et évolutions de l'Institut Musical
+                            Congolais.
+
+                        </p>
+
+                        <a
+                            href="actualites.html"
+                            class="latest-news-button"
+                        >
+
+                            LIRE L'ACTUALITÉ
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             PARTENAIRES ET AFFILIÉS
+        =============================== -->
+
+        <section class="partners-section">
+
+            <div class="section-container">
+
+                <h2>
+                    NOS PARTENAIRES
+                </h2>
+
+                <p class="section-description">
+
+                    L'IMC remercie ses partenaires pour leur
+                    contribution au développement et à la visibilité
+                    de la mesure des performances musicales en RDC.
+
+                </p>
+
+                <div class="partner-logos">
+
+                    <!-- MUSIC METRICS RDC -->
+
+                    <div class="partner-card">
+
+                        <img
+                            src="images/music-metrics-rdc.png"
+                            alt="Music Metrics RDC"
+                            class="partner-logo"
+                        >
+
+                    </div>
+
+                </div>
+
+                <div class="partner-buttons">
+
+                    <a
+                        href="partenaires.html"
+                        class="partner-button"
+                    >
+
+                        DEVENIR PARTENAIRE
+
+                    </a>
+
+                    <a
+                        href="affiliation.html"
+                        class="affiliate-button"
+                    >
+
+                        PROGRAMME D'AFFILIATION
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==============================
+             CONTACT
+        =============================== -->
+
+        <section class="contact-section">
+
+            <div class="section-container">
+
+                <h2>
+                    CONTACTER L'IMC
+                </h2>
+
+                <p class="contact-text">
+
+                    Pour toute demande d'information, de certification
+                    ou de partenariat, contactez l'Institut Musical Congolais.
+
+                </p>
+
+                <a
+                    href="mailto:institutmusicalcongolais@gmail.com"
+                    class="email"
+                >
+
+                    institutmusicalcongolais@gmail.com
+
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="contact-button"
+                >
+
+                    NOUS CONTACTER
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==============================
+         TOUT EN BAS
+    =============================== -->
+
+    <section class="bottom">
+
+        <p class="bottom-name">
+            INSTITUT MUSICAL CONGOLAIS
+        </p>
+
+        <p class="bottom-motto">
+            Mesurer. Certifier. Valoriser.
+        </p>
+
+        <p class="copyright">
+            © 2026 Institut Musical Congolais
+        </p>
+
+    </section>
+
+
+    <script src="script.js"></script>
 
 </body>
-
 </html>

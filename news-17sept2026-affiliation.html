@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>L’IMC met en place un programme d’affiliation des artistes</title>
+
+    <meta
+        name="description"
+        content="L’Institut Musical Congolais met en place un programme d’affiliation destiné aux artistes afin de permettre un suivi régulier de leurs performances musicales."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article.css">
+
+</head>
+
+<body>
+
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <div class="logo">
+            <img src="logo-imc.png" alt="Logo IMC">
+        </div>
+
+        <button
+            class="menu-btn"
+            id="menuButton"
+            type="button"
+            onclick="toggleMenu()"
+            aria-label="Ouvrir le menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<nav class="main-menu" id="mainMenu">
+
+    <a href="index.html" class="menu-link">
+        Accueil
+    </a>
+
+
+    <button
+        class="menu-dropdown-button"
+        id="topsButton"
+        type="button"
+        aria-expanded="false"
+    >
+        <span>Les Tops IMC</span>
+        <span class="arrow" id="topsArrow">⌄</span>
+    </button>
+
+    <div class="submenu" id="topsSubmenu">
+
+        <a href="top-albums.html">
+            Top Albums
+        </a>
+
+        <a href="top-titres.html">
+            Top Titres
+        </a>
+
+        <a href="a-propos-tops.html">
+            À propos des Tops IMC
+        </a>
+
+    </div>
+
+
+    <button
+        class="menu-dropdown-button"
+        id="certificationsButton"
+        type="button"
+        aria-expanded="false"
+    >
+        <span>Les certifications IMC</span>
+        <span class="arrow" id="certificationsArrow">⌄</span>
+    </button>
+
+    <div class="submenu" id="certificationsSubmenu">
+
+        <a href="certification.html">
+            Certification IMC
+        </a>
+
+        <a href="certification-export-africa.html">
+            Certification IMC Export Africa
+        </a>
+
+        <a href="certification-export-world.html">
+            Certification IMC Export World
+        </a>
+
+    </div>
+
+
+    <a href="apropos.html" class="menu-link">
+        À propos de l’IMC
+    </a>
+
+</nav>
+
+
+<main class="article-page">
+
+    <article class="article-container">
+
+
+        <div class="article-header">
+
+            <div class="article-category">
+                CERTIFICATIONS
+            </div>
+
+            <div class="article-date">
+                17 septembre 2026
+            </div>
+
+            <h1>
+                L’IMC met en place un programme d’affiliation des artistes
+            </h1>
+
+            <p class="article-lead">
+                L’Institut Musical Congolais met en place un programme
+                d’affiliation destiné aux artistes afin de permettre un
+                suivi plus régulier de leurs performances musicales.
+            </p>
+
+        </div>
+
+
+        <div class="article-content">
+
+            <p>
+                L’Institut Musical Congolais met en place un
+                <strong>programme d’affiliation destiné aux artistes</strong>,
+                afin de permettre un suivi plus régulier de leurs performances
+                musicales et de faciliter l’identification des œuvres
+                susceptibles d’être éligibles à une certification IMC.
+            </p>
+
+
+            <p>
+                Les artistes affiliés pourront ainsi bénéficier d’un suivi
+                de leurs performances par l’IMC. Les artistes non affiliés
+                pourront quant à eux continuer à effectuer une demande de
+                certification en fournissant les éléments nécessaires à la
+                vérification de leurs performances.
+            </p>
+
+
+            <p>
+                Les modalités et conditions du programme d’affiliation sont
+                disponibles sur le site officiel de l’IMC.
+            </p>
+
+
+            <p>
+                Pour toute question ou demande d’information complémentaire,
+                les artistes et professionnels peuvent contacter l’IMC via
+                <strong>institutmusicalcongolais@gmail.com</strong> ou
+                ses réseaux sociaux officiels.
+            </p>
+
+        </div>
+
+
+        <div class="article-highlight">
+
+            <div class="highlight-title">
+                À RETENIR
+            </div>
+
+            <div class="highlight-items">
+
+                <div class="highlight-item">
+
+                    <span>Nouveau programme</span>
+
+                    <strong>
+                        Affiliation des artistes
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span>Objectif</span>
+
+                    <strong>
+                        Suivi des performances
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span>Informations</span>
+
+                    <strong>
+                        Site officiel de l’IMC
+                    </strong>
+
+                </div>
+
+
+                <div class="highlight-item">
+
+                    <span>Contact</span>
+
+                    <strong>
+                        Email & réseaux sociaux
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="article-navigation">
+
+            <a
+                href="actualites.html"
+                class="back-news"
+            >
+                ← Toutes les actualités
+            </a>
+
+        </div>
+
+
+    </article>
+
+</main>
+
+
+<section class="bottom">
+
+    <p class="bottom-name">
+        INSTITUT MUSICAL CONGOLAIS
+    </p>
+
+    <p class="bottom-motto">
+        Mesurer. Certifier. Valoriser.
+    </p>
+
+    <p class="copyright">
+        © 2026 Institut Musical Congolais
+    </p>
+
+</section>
+
+
+<script>
+
+function toggleMenu() {
+
+    document
+        .getElementById("mainMenu")
+        .classList.toggle("active");
+
+}
+
+
+const topsButton =
+    document.getElementById("topsButton");
+
+const topsSubmenu =
+    document.getElementById("topsSubmenu");
+
+const topsArrow =
+    document.getElementById("topsArrow");
+
+
+topsButton.addEventListener("click", function () {
+
+    const isOpen =
+        topsSubmenu.classList.toggle("active");
+
+    topsButton.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+    topsArrow.classList.toggle(
+        "open",
+        isOpen
+    );
+
+});
+
+
+const certificationsButton =
+    document.getElementById("certificationsButton");
+
+const certificationsSubmenu =
+    document.getElementById("certificationsSubmenu");
+
+const certificationsArrow =
+    document.getElementById("certificationsArrow");
+
+
+certificationsButton.addEventListener("click", function () {
+
+    const isOpen =
+        certificationsSubmenu.classList.toggle("active");
+
+    certificationsButton.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+    certificationsArrow.classList.toggle(
+        "open",
+        isOpen
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>

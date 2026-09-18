@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Actualités — Classements | IMC</title>
+
+    <meta
+        name="description"
+        content="Retrouvez les actualités liées aux classements de l’Institut Musical Congolais."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     EN-TÊTE
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <div class="logo">
+
+            <img
+                src="logo-imc.png"
+                alt="Logo IMC"
+            >
+
+        </div>
+
+
+        <button
+            class="menu-btn"
+            id="menuButton"
+            type="button"
+            onclick="toggleMenu()"
+            aria-label="Ouvrir le menu"
+        >
+            ☰
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MENU
+========================================================= -->
+
+<nav class="main-menu" id="mainMenu">
+
+
+    <a
+        href="index.html"
+        class="menu-link"
+    >
+        Accueil
+    </a>
+
+
+    <!-- LES TOPS IMC -->
+
+    <button
+        class="menu-dropdown-button"
+        id="topsButton"
+        type="button"
+        aria-expanded="false"
+    >
+
+        <span>
+            Les Tops IMC
+        </span>
+
+        <span
+            class="arrow"
+            id="topsArrow"
+        >
+            ⌄
+        </span>
+
+    </button>
+
+
+    <div
+        class="submenu"
+        id="topsSubmenu"
+    >
+
+        <a href="top-albums.html">
+            Top Albums
+        </a>
+
+        <a href="top-titres.html">
+            Top Titres
+        </a>
+
+        <a href="a-propos-tops.html">
+            À propos des Tops IMC
+        </a>
+
+    </div>
+
+
+    <!-- LES CERTIFICATIONS IMC -->
+
+    <button
+        class="menu-dropdown-button"
+        id="certificationsButton"
+        type="button"
+        aria-expanded="false"
+    >
+
+        <span>
+            Les certifications IMC
+        </span>
+
+        <span
+            class="arrow"
+            id="certificationsArrow"
+        >
+            ⌄
+        </span>
+
+    </button>
+
+
+    <div
+        class="submenu"
+        id="certificationsSubmenu"
+    >
+
+        <a href="certification.html">
+            Certification IMC
+        </a>
+
+        <a href="certification-export-africa.html">
+            Certification IMC Export Africa
+        </a>
+
+        <a href="certification-export-world.html">
+            Certification IMC Export World
+        </a>
+
+    </div>
+
+
+    <!-- À PROPOS -->
+
+    <a
+        href="apropos.html"
+        class="menu-link"
+    >
+        À propos de l’IMC
+    </a>
+
+
+</nav>
+
+
+<!-- =========================================================
+     PAGE ACTUALITÉS — CLASSEMENTS
+========================================================= -->
+
+<main class="news-category-page">
+
+
+    <!-- EN-TÊTE -->
+
+    <section class="news-category-header">
+
+        <div class="news-category-label">
+            ACTUALITÉS
+        </div>
+
+
+        <h1>
+            Actualités liées aux classements
+        </h1>
+
+
+        <p>
+            Retrouvez les annonces et les évolutions liées
+            aux classements de l’Institut Musical Congolais.
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         LISTE DES ARTICLES
+    ====================================================== -->
+
+    <section class="news-list">
+
+
+        <!-- ARTICLE 1 -->
+
+        <article class="news-card">
+
+            <div class="news-card-category">
+                CLASSEMENTS
+            </div>
+
+
+            <div class="news-card-date">
+                18 septembre 2026
+            </div>
+
+
+            <h2>
+                L’IMC élargit ses classements
+            </h2>
+
+
+            <p>
+                Les classements Top Albums RDC et Top Titres
+                RDC de l’Institut Musical Congolais passent
+                du Top 50 au Top 100.
+            </p>
+
+
+            <a
+                href="news-top100.html"
+                class="news-card-link"
+            >
+                Lire l’article →
+            </a>
+
+        </article>
+
+
+        <!-- ARTICLE 2 -->
+
+        <article class="news-card">
+
+            <div class="news-card-category">
+                CLASSEMENTS
+            </div>
+
+
+            <div class="news-card-date">
+                30 août 2026
+            </div>
+
+
+            <h2>
+                Mise à jour des classements RDC :
+                communiqué officiel
+            </h2>
+
+
+            <p>
+                En raison d’un problème technique, l’IMC
+                annonce une interruption temporaire de la
+                mise à jour habituelle de ses classements RDC.
+            </p>
+
+
+            <a
+                href="mise-a-jour-classements-rdc.html"
+                class="news-card-link"
+            >
+                Lire l’article →
+            </a>
+
+        </article>
+
+
+    </section>
+
+
+    <!-- =====================================================
+         NAVIGATION
+    ====================================================== -->
+
+    <div class="news-category-navigation">
+
+        <a
+            href="actualites.html"
+            class="back-news"
+        >
+            ← Toutes les actualités
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<!-- =========================================================
+     BAS DE PAGE
+========================================================= -->
+
+<section class="bottom">
+
+    <p class="bottom-name">
+        INSTITUT MUSICAL CONGOLAIS
+    </p>
+
+
+    <p class="bottom-motto">
+        Mesurer. Certifier. Valoriser.
+    </p>
+
+
+    <p class="copyright">
+        © 2026 Institut Musical Congolais
+    </p>
+
+</section>
+
+
+<!-- =========================================================
+     JAVASCRIPT MENU
+========================================================= -->
+
+<script>
+
+function toggleMenu() {
+
+    document
+        .getElementById("mainMenu")
+        .classList.toggle("active");
+
+}
+
+
+const topsButton =
+    document.getElementById("topsButton");
+
+const topsSubmenu =
+    document.getElementById("topsSubmenu");
+
+const topsArrow =
+    document.getElementById("topsArrow");
+
+
+topsButton.addEventListener("click", function () {
+
+    const isOpen =
+        topsSubmenu.classList.toggle("active");
+
+
+    topsButton.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+
+    topsArrow.classList.toggle(
+        "open",
+        isOpen
+    );
+
+});
+
+
+const certificationsButton =
+    document.getElementById("certificationsButton");
+
+const certificationsSubmenu =
+    document.getElementById("certificationsSubmenu");
+
+const certificationsArrow =
+    document.getElementById("certificationsArrow");
+
+
+certificationsButton.addEventListener("click", function () {
+
+    const isOpen =
+        certificationsSubmenu.classList.toggle("active");
+
+
+    certificationsButton.setAttribute(
+        "aria-expanded",
+        isOpen
+    );
+
+
+    certificationsArrow.classList.toggle(
+        "open",
+        isOpen
+    );
+
+});
+
+</script>
+
+
+</body>
+
+</html>

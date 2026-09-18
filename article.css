@@ -1,0 +1,470 @@
+/* =========================================================
+   ARTICLE IMC
+   Institut Musical Congolais
+========================================================= */
+
+
+/* =========================================================
+   PAGE ARTICLE
+========================================================= */
+
+.article-page {
+    width: 100%;
+    padding: 70px 0 90px;
+    background: #ffffff;
+}
+
+
+/* =========================================================
+   CONTENEUR
+========================================================= */
+
+.article-container {
+    width: min(900px, 90%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   EN-TÊTE DE L'ARTICLE
+========================================================= */
+
+.article-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 45px;
+}
+
+
+/* Catégorie */
+
+.article-category {
+    display: inline-block;
+
+    margin-bottom: 14px;
+
+    padding: 7px 14px;
+
+    background: #F7FBFD;
+
+    border: 1px solid #55BFEF;
+
+    border-radius: 30px;
+
+    color: #55BFEF;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+/* Date */
+
+.article-date {
+    margin-bottom: 18px;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* Titre */
+
+.article-header h1 {
+    margin: 0 auto 22px;
+
+    color: #111111;
+
+    font-size: clamp(32px, 5vw, 52px);
+
+    line-height: 1.12;
+
+    font-weight: 800;
+
+    letter-spacing: -1px;
+}
+
+
+/* Introduction */
+
+.article-lead {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #555555;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   IMAGE PRINCIPALE
+========================================================= */
+
+.article-image {
+    width: 100%;
+
+    margin-bottom: 50px;
+}
+
+
+.article-image-placeholder {
+    width: 100%;
+
+    min-height: 360px;
+
+    padding: 50px 30px;
+
+    box-sizing: border-box;
+
+    background: #F7FBFD;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Petit texte */
+
+.article-image-placeholder span {
+    margin-bottom: 15px;
+
+    color: #55BFEF;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* TOP 100 */
+
+.article-image-placeholder strong {
+    display: block;
+
+    color: #111111;
+
+    font-size: clamp(55px, 10vw, 100px);
+
+    line-height: 1;
+
+    font-weight: 900;
+
+    letter-spacing: -4px;
+}
+
+
+/* Description */
+
+.article-image-placeholder small {
+    margin-top: 18px;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CONTENU DE L'ARTICLE
+========================================================= */
+
+.article-content {
+    max-width: 760px;
+
+    margin: 0 auto;
+}
+
+
+/* Paragraphes */
+
+.article-content p {
+    margin: 0 0 28px;
+
+    color: #333333;
+
+    font-size: 17px;
+
+    line-height: 1.85;
+}
+
+
+/* Premier paragraphe */
+
+.article-content p:first-child {
+    color: #222222;
+
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   ENCADRÉ "À RETENIR"
+========================================================= */
+
+.article-highlight {
+    margin: 45px 0;
+
+    padding: 28px;
+
+    background: #F7FBFD;
+
+    border-left: 4px solid #55BFEF;
+
+    border-radius: 10px;
+}
+
+
+/* Titre de l'encadré */
+
+.highlight-title {
+    margin-bottom: 22px;
+
+    color: #55BFEF;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* Éléments */
+
+.highlight-items {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Élément */
+
+.highlight-item {
+    padding: 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #eeeeee;
+
+    border-radius: 9px;
+}
+
+
+/* Nom */
+
+.highlight-item span {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: #555555;
+
+    font-size: 14px;
+}
+
+
+/* Valeur */
+
+.highlight-item strong {
+    display: block;
+
+    color: #111111;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   NAVIGATION ARTICLE
+========================================================= */
+
+.article-navigation {
+    max-width: 760px;
+
+    margin: 55px auto 0;
+
+    padding-top: 30px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.back-news {
+    display: inline-flex;
+
+    align-items: center;
+
+    color: #55BFEF;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+
+.back-news:hover {
+    color: #3CAEDC;
+
+    transform: translateX(-3px);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+
+    .article-page {
+        padding: 50px 0 70px;
+    }
+
+
+    .article-header {
+        margin-bottom: 35px;
+    }
+
+
+    .article-header h1 {
+        font-size: 34px;
+
+        letter-spacing: -0.5px;
+    }
+
+
+    .article-lead {
+        font-size: 16px;
+
+        line-height: 1.65;
+    }
+
+
+    .article-image {
+        margin-bottom: 38px;
+    }
+
+
+    .article-image-placeholder {
+        min-height: 260px;
+
+        padding: 35px 20px;
+    }
+
+
+    .article-image-placeholder strong {
+        font-size: 65px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .article-content p {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+
+    .article-content p:first-child {
+        font-size: 17px;
+    }
+
+
+    .article-highlight {
+        margin: 35px 0;
+
+        padding: 22px;
+    }
+
+
+    .highlight-items {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+
+    .highlight-item strong {
+        font-size: 18px;
+    }
+
+}
+
+
+/* =========================================================
+   PETITS ÉCRANS
+========================================================= */
+
+@media (max-width: 420px) {
+
+
+    .article-header h1 {
+        font-size: 30px;
+    }
+
+
+    .article-category {
+        font-size: 11px;
+    }
+
+
+    .article-date {
+        font-size: 13px;
+    }
+
+
+    .article-image-placeholder {
+        min-height: 220px;
+    }
+
+
+    .article-image-placeholder strong {
+        font-size: 52px;
+    }
+
+
+    .article-image-placeholder small {
+        font-size: 10px;
+    }
+
+
+}

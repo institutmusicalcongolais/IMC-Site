@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top Albums RDC | Institut Musical Congolais</title>
+
+<link rel="icon" type="image/png" href="logo-imc.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- HEADER -->
+
+<header>
+
+<button class="menu-btn" onclick="toggleMenu()">
+☰
+</button>
+
+
+<div class="logo">
+
+<img src="logo-imc.png" alt="Logo IMC">
+
+</div>
+
+
+</header>
+
+
+
+
+
+<!-- MENU PRINCIPAL -->
+
+<nav id="menu">
+
+
+<a href="index.html">
+Accueil
+</a>
+
+
+<a href="actualites.html">
+Actualités IMC
+</a>
+
+
+<a href="certification.html">
+La certification IMC
+</a>
+
+
+<a href="apropos.html">
+À propos de l'IMC
+</a>
+
+
+</nav>
+
+
+
+
+
+
+<!-- SELECTEUR DES TOPS -->
+
+
+<section class="top-selector">
+
+
+<button onclick="toggleTopMenu()">
+
+Records Top 1 Top Titres ▼
+
+</button>
+
+
+
+<div id="top-menu">
+
+
+<a href="records-top-10-titres.html">
+Records Top 10 Top Titres
+</a>
+
+
+<a href="records-top-1-albums.html">
+Records Top 1 Top Albums
+</a>
+
+
+<a href="records-top-10-albums.html">
+Records Top 10 Top Albums
+</a>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- INFORMATIONS CLASSEMENT -->
+
+
+<section class="ranking-info">
+
+
+<p>
+
+<strong>Titres ayant passé le plus grand nombre de semaines à la 1ère place :</strong>
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- TABLEAU TOP ALBUMS -->
+
+
+<section class="top-table-section">
+
+
+<table class="top-table">
+
+
+<thead>
+
+
+<tr>
+
+<th>#</th>
+<th>Pochette</th>
+<th>Titre</th>
+<th>Artiste</th>
+<th>Semaines</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+<tbody>
+  
+
+<tr>
+<td>1</td>
+<td class="same">➖</td>
+<td><img src="xx.jpg" alt="XX" class="cover"></td>
+<td>XX</td>
+<td>Fally Ipupa</td>
+</tr>
+
+
+<tr>
+<td>2</td>
+<td class="same">➖</td>
+<td><img src="prototypeindusa.jpg" alt="PROTOTYPE" class="cover"></td>
+<td>PROTOTYPE (Indusa)</td>
+<td>Gaz Mawete</td>
+</tr>
+
+
+<tr>
+<td>3</td>
+<td class="up">⬆ +2</td>
+<td><img src="beyah.jpg" alt="BEYAH" class="cover"></td>
+<td>BĒYĀH</td>
+<td>Damso</td>
+</tr>
+
+
+<tr>
+<td>4</td>
+<td class="up">⬆ +5</td>
+<td><img src="destinee.jpg" alt="DESTINÉE SUPREMACY" class="cover"></td>
+<td>DESTINÉE SUPREMACY</td>
+<td>Aya Nakamura</td>
+</tr>
+
+
+<tr>
+<td>5</td>
+<td class="up">⬆ +2</td>
+<td><img src="hatelove.jpg" alt="HATELOVE" class="cover"></td>
+<td>HATELOVE</td>
+<td>Joé Dwèt Filé</td>
+</tr>
+
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+
+
+<section class="ranking-description">
+
+<p>
+Titres ayant passé le plus grand nombre de semaines à la 1ère place
+</p>
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+© Institut Musical Congolais - IMC
+</p>
+
+</footer>
+
+
+
+
+
+
+<script>
+
+function toggleMenu(){
+
+document.getElementById("menu").classList.toggle("active");
+
+}
+
+
+
+function toggleTopMenu(){
+
+document.getElementById("top-menu").classList.toggle("active");
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>

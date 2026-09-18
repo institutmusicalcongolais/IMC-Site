@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Demander une certification — Institut Musical Congolais</title>
+
+    <meta
+        name="description"
+        content="Soumettez une demande de certification auprès de l'Institut Musical Congolais."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     EN-TÊTE
+========================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="logo">
+            <img
+                src="logo-imc.png"
+                alt="Institut Musical Congolais"
+            >
+        </a>
+
+    </div>
+
+
+    <!-- =====================================================
+         MENU
+    ====================================================== -->
+
+    <nav class="main-menu" id="mainMenu">
+
+        <a href="index.html">
+            Accueil
+        </a>
+
+        <a href="actualites.html">
+            Actualités IMC
+        </a>
+
+
+        <button
+            class="menu-dropdown-button"
+            type="button"
+        >
+            Les Tops IMC
+            <span class="arrow">⌄</span>
+        </button>
+
+        <div class="submenu">
+
+            <a href="top-albums.html">
+                Top Albums
+            </a>
+
+            <a href="top-titres.html">
+                Top Titres
+            </a>
+
+            <a href="a-propos-tops.html">
+                À propos des Tops IMC
+            </a>
+
+        </div>
+
+
+        <button
+            class="menu-dropdown-button"
+            type="button"
+        >
+            Les Certifications IMC
+            <span class="arrow">⌄</span>
+        </button>
+
+        <div class="submenu">
+
+            <a href="certification.html">
+                Certification IMC RDC
+            </a>
+
+            <a href="certification-export-africa.html">
+                Export Africa
+            </a>
+
+            <a href="certification-export-world.html">
+                Export World
+            </a>
+
+        </div>
+
+
+        <a
+            href="demander-certification.html"
+            class="active"
+        >
+            Demander une certification
+        </a>
+
+
+        <a href="a-propos.html">
+            À propos de l'IMC
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="cert-request-hero">
+
+    <div class="cert-request-container">
+
+        <span class="section-label">
+            CERTIFICATION
+        </span>
+
+        <h1>
+            Demander une certification
+        </h1>
+
+        <p>
+            Soumettez votre demande de certification et transmettez
+            les éléments nécessaires à la vérification des performances
+            de votre œuvre.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FORMULAIRE
+========================================================= -->
+
+<main class="cert-request-page">
+
+<form
+    action="https://formsubmit.co/institutmusicalcongolais@gmail.com"
+    method="POST"
+    enctype="multipart/form-data"
+    class="cert-request-form"
+>
+
+
+    <!-- =====================================================
+         PARAMÈTRES FORMSUBMIT
+    ====================================================== -->
+
+    <input
+        type="hidden"
+        name="_subject"
+        value="Nouvelle demande de certification — IMC"
+    >
+
+    <input
+        type="hidden"
+        name="_captcha"
+        value="false"
+    >
+
+    <input
+        type="hidden"
+        name="_template"
+        value="table"
+    >
+
+    <input
+        type="hidden"
+        name="_next"
+        value="https://institutmusicalcongolais.org/merci.html"
+    >
+
+
+
+    <!-- =====================================================
+         01 — TYPE DE CERTIFICATION
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>01</span>
+
+            <h2>
+                Type de certification
+            </h2>
+
+            <p>
+                Sélectionnez la certification que vous souhaitez demander.
+            </p>
+
+        </div>
+
+
+        <div class="choice-grid">
+
+
+            <label class="choice-card">
+
+                <input
+                    type="radio"
+                    name="certification"
+                    value="Certification IMC RDC"
+                    required
+                >
+
+                <span>
+                    Certification IMC RDC
+                </span>
+
+            </label>
+
+
+            <label class="choice-card">
+
+                <input
+                    type="radio"
+                    name="certification"
+                    value="Certification IMC Export Africa"
+                >
+
+                <span>
+                    Certification IMC Export Africa
+                </span>
+
+            </label>
+
+
+            <label class="choice-card">
+
+                <input
+                    type="radio"
+                    name="certification"
+                    value="Certification IMC Export World"
+                >
+
+                <span>
+                    Certification IMC Export World
+                </span>
+
+            </label>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         02 — TYPE DE L'ŒUVRE
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>02</span>
+
+            <h2>
+                Type de l'œuvre
+            </h2>
+
+            <p>
+                Sélectionnez le type d'œuvre concerné.
+            </p>
+
+        </div>
+
+
+        <div class="choice-grid choice-grid-small">
+
+
+            <label class="choice-card">
+
+                <input
+                    type="radio"
+                    name="type_oeuvre"
+                    value="Single"
+                    required
+                >
+
+                <span>
+                    Single
+                </span>
+
+            </label>
+
+
+            <label class="choice-card">
+
+                <input
+                    type="radio"
+                    name="type_oeuvre"
+                    value="Album"
+                >
+
+                <span>
+                    Album
+                </span>
+
+            </label>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         03 — INFORMATIONS SUR L'ŒUVRE
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>03</span>
+
+            <h2>
+                Informations sur l'œuvre
+            </h2>
+
+        </div>
+
+
+        <div class="form-grid">
+
+
+            <div class="form-group">
+
+                <label for="artiste">
+                    Nom de l'artiste
+                </label>
+
+                <input
+                    type="text"
+                    id="artiste"
+                    name="artiste"
+                    placeholder="Nom de l'artiste"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="titre">
+                    Titre de l'œuvre
+                </label>
+
+                <input
+                    type="text"
+                    id="titre"
+                    name="titre_oeuvre"
+                    placeholder="Titre du single ou de l'album"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="date-sortie">
+                    Date de sortie
+                </label>
+
+                <input
+                    type="date"
+                    id="date-sortie"
+                    name="date_sortie"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="label">
+                    Label / indépendant
+                </label>
+
+                <input
+                    type="text"
+                    id="label"
+                    name="label"
+                    placeholder="Nom du label ou indépendant"
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         04 — POCHETTE
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>04</span>
+
+            <h2>
+                Pochette de l'œuvre
+            </h2>
+
+            <p>
+                Ajoutez la pochette officielle du single ou de l'album.
+            </p>
+
+        </div>
+
+
+        <div class="file-group">
+
+            <label for="pochette">
+                Pochette officielle
+            </label>
+
+            <input
+                type="file"
+                id="pochette"
+                name="pochette"
+                accept="image/jpeg,image/png,image/webp"
+                required
+            >
+
+            <small>
+                Formats acceptés : JPG, PNG ou WEBP.
+            </small>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         05 — DOSSIER DE PREUVES
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>05</span>
+
+            <h2>
+                Dossier de preuves
+            </h2>
+
+            <p>
+                Fournissez un lien Google Drive ou Dropbox vers un
+                fichier ou dossier contenant les éléments nécessaires
+                à la vérification des performances.
+            </p>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="preuves">
+                Lien Google Drive ou Dropbox
+            </label>
+
+            <input
+                type="url"
+                id="preuves"
+                name="lien_preuves"
+                placeholder="https://drive.google.com/... ou https://dropbox.com/..."
+                required
+            >
+
+            <small>
+                Le dossier peut contenir des captures d'écran,
+                captures vidéo, images, relevés et autres preuves
+                utiles à la vérification.
+            </small>
+
+        </div>
+
+
+        <p class="form-note">
+            L'œuvre pourra être recherchée manuellement à partir du
+            nom de l'artiste et du titre. Des liens supplémentaires
+            pourront être demandés si nécessaire.
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         06 — COORDONNÉES DU DEMANDEUR
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>06</span>
+
+            <h2>
+                Coordonnées du demandeur
+            </h2>
+
+            <p>
+                Ces informations permettront à l'IMC de vous contacter
+                concernant votre demande.
+            </p>
+
+        </div>
+
+
+        <div class="form-grid">
+
+
+            <div class="form-group">
+
+                <label for="nom">
+                    Nom complet
+                </label>
+
+                <input
+                    type="text"
+                    id="nom"
+                    name="nom_complet"
+                    placeholder="Votre nom complet"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    Adresse e-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="votre@email.com"
+                    required
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="telephone">
+                    Téléphone / WhatsApp
+                </label>
+
+                <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    placeholder="+243 ..."
+                    required
+                >
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         07 — INFORMATIONS COMPLÉMENTAIRES
+    ====================================================== -->
+
+    <section class="form-section">
+
+        <div class="form-heading">
+
+            <span>07</span>
+
+            <h2>
+                Informations complémentaires
+            </h2>
+
+            <p>
+                Ajoutez toute information que vous estimez utile
+                concernant votre demande.
+            </p>
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="message">
+                Message
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                placeholder="Informations complémentaires..."
+            ></textarea>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         DÉCLARATION
+    ====================================================== -->
+
+    <div class="declaration">
+
+        <input
+            type="checkbox"
+            id="declaration"
+            name="declaration"
+            value="Acceptée"
+            required
+        >
+
+        <label for="declaration">
+            J'atteste que les informations et documents transmis
+            dans cette demande sont exacts et authentiques.
+        </label>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BOUTON
+    ====================================================== -->
+
+    <button
+        type="submit"
+        class="cert-submit"
+    >
+        Envoyer la demande
+    </button>
+
+
+</form>
+
+
+
+<!-- =========================================================
+     PROCESSUS APRÈS L'ENVOI
+========================================================= -->
+
+<section class="cert-process">
+
+
+    <div class="cert-process-card">
+
+        <span class="cert-process-number">
+            01
+        </span>
+
+        <h3>
+            Confirmation de réception
+        </h3>
+
+        <p>
+            Après l'envoi de votre demande, vous recevrez une
+            confirmation indiquant que votre dossier a bien été reçu.
+        </p>
+
+    </div>
+
+
+    <div class="cert-process-card">
+
+        <span class="cert-process-number">
+            02
+        </span>
+
+        <h3>
+            Frais de vérification
+        </h3>
+
+        <p>
+            Avant le début de la vérification, les coordonnées
+            officielles de paiement et les instructions nécessaires
+            vous seront communiquées directement.
+        </p>
+
+    </div>
+
+
+    <div class="cert-process-card">
+
+        <span class="cert-process-number">
+            03
+        </span>
+
+        <h3>
+            Vérification du dossier
+        </h3>
+
+        <p>
+            La vérification commence après confirmation du paiement.
+            Des informations, liens ou documents supplémentaires
+            peuvent être demandés si nécessaire.
+        </p>
+
+    </div>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- =========================================================
+     BAS DE PAGE
+========================================================= -->
+
+<section class="bottom">
+
+    <div class="bottom-name">
+        INSTITUT MUSICAL CONGOLAIS
+    </div>
+
+    <div class="bottom-motto">
+        Mesurer. Certifier. Valoriser.
+    </div>
+
+    <div class="copyright">
+        © 2026 Institut Musical Congolais
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT EXISTANT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
