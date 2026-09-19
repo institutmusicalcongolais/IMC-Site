@@ -1637,3 +1637,367 @@
     }
 
 }
+
+
+
+/* =========================================================
+   PAGE — ALBUMS : TOP 100 RDC
+========================================================= */
+
+
+/* =========================================================
+   1. EN-TÊTE DU CLASSEMENT
+========================================================= */
+
+.top-albums-page {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+
+.top-albums-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+.top-albums-header h1 {
+    margin: 0;
+    color: var(--imc-blue);
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+
+.top-albums-period {
+    margin: 12px 0 0;
+    color: var(--imc-muted);
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   2. TABLEAU
+========================================================= */
+
+.top-albums-ranking {
+    width: 100%;
+}
+
+
+.top-albums-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: var(--imc-white);
+    border: 1px solid var(--imc-border);
+    border-radius: var(--imc-radius);
+    box-shadow: 0 8px 25px rgba(7, 87, 160, 0.08);
+}
+
+
+.top-albums-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+
+/* =========================================================
+   3. LARGEURS DES COLONNES
+========================================================= */
+
+.top-albums-table th:nth-child(1),
+.top-albums-table td:nth-child(1) {
+    width: 70px;
+}
+
+
+.top-albums-table th:nth-child(2),
+.top-albums-table td:nth-child(2) {
+    width: 100px;
+}
+
+
+.top-albums-table th:nth-child(3),
+.top-albums-table td:nth-child(3) {
+    width: 110px;
+}
+
+
+.top-albums-table th:nth-child(4),
+.top-albums-table td:nth-child(4) {
+    width: auto;
+}
+
+
+.top-albums-table th:nth-child(5),
+.top-albums-table td:nth-child(5) {
+    width: 190px;
+}
+
+
+/* =========================================================
+   4. EN-TÊTE DU TABLEAU
+========================================================= */
+
+.top-albums-table thead {
+    background: var(--imc-blue);
+}
+
+
+.top-albums-table th {
+    padding: 15px 12px;
+    color: var(--imc-white);
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   5. LIGNES
+========================================================= */
+
+.top-albums-table tbody tr {
+    border-bottom: 1px solid var(--imc-border);
+    transition: background 0.2s ease;
+}
+
+
+.top-albums-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+
+.top-albums-table tbody tr:hover {
+    background: var(--imc-blue-light);
+}
+
+
+.top-albums-table td {
+    padding: 10px 12px;
+    color: var(--imc-text);
+    font-size: 0.92rem;
+    vertical-align: middle;
+}
+
+
+/* =========================================================
+   6. PLACE
+========================================================= */
+
+.top-albums-table td:nth-child(1) {
+    color: var(--imc-blue);
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+/* =========================================================
+   7. ÉVOLUTION
+========================================================= */
+
+.top-albums-table td:nth-child(2) {
+    color: var(--imc-muted);
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/* =========================================================
+   8. POCHETTES
+========================================================= */
+
+.top-albums-table td:nth-child(3) {
+    text-align: center;
+}
+
+
+.album-cover {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid var(--imc-border);
+    background: var(--imc-light);
+}
+
+
+/* =========================================================
+   9. NOM DE L'ŒUVRE
+========================================================= */
+
+.top-albums-table td:nth-child(4) {
+    color: var(--imc-dark);
+    font-weight: 700;
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   10. ARTISTE
+========================================================= */
+
+.top-albums-table td:nth-child(5) {
+    color: var(--imc-text);
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+
+/* =========================================================
+   11. VERSION ANDROID / MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .top-albums-page {
+        padding: 25px 8px 40px;
+    }
+
+
+    .top-albums-header {
+        margin-bottom: 25px;
+    }
+
+
+    .top-albums-header h1 {
+        font-size: 1.45rem;
+    }
+
+
+    .top-albums-period {
+        font-size: 0.8rem;
+    }
+
+
+    .top-albums-table-wrapper {
+        width: 100%;
+        overflow-x: hidden;
+        border-radius: 12px;
+    }
+
+
+    .top-albums-table {
+        width: 100%;
+        min-width: 0;
+        table-layout: fixed;
+    }
+
+
+    /* PLACE */
+
+    .top-albums-table th:nth-child(1),
+    .top-albums-table td:nth-child(1) {
+        width: 35px;
+    }
+
+
+    /* ÉVOLUTION */
+
+    .top-albums-table th:nth-child(2),
+    .top-albums-table td:nth-child(2) {
+        width: 45px;
+    }
+
+
+    /* POCHETTE */
+
+    .top-albums-table th:nth-child(3),
+    .top-albums-table td:nth-child(3) {
+        width: 65px;
+    }
+
+
+    /* ŒUVRE */
+
+    .top-albums-table th:nth-child(4),
+    .top-albums-table td:nth-child(4) {
+        width: auto;
+    }
+
+
+    /* ARTISTE */
+
+    .top-albums-table th:nth-child(5),
+    .top-albums-table td:nth-child(5) {
+        width: 90px;
+    }
+
+
+    .top-albums-table th {
+        padding: 10px 3px;
+        font-size: 0.58rem;
+        white-space: normal;
+    }
+
+
+    .top-albums-table td {
+        padding: 7px 3px;
+        font-size: 0.72rem;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    .album-cover {
+        width: 52px;
+        height: 52px;
+        border-radius: 6px;
+    }
+
+
+    .top-albums-table td:nth-child(1) {
+        font-size: 0.8rem;
+    }
+
+
+    .top-albums-table td:nth-child(2) {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* =========================================================
+   12. TRÈS PETITS ÉCRANS
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .top-albums-page {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    .top-albums-header h1 {
+        font-size: 1.3rem;
+    }
+
+
+    .top-albums-table th {
+        font-size: 0.52rem;
+    }
+
+
+    .top-albums-table td {
+        font-size: 0.68rem;
+    }
+
+
+    .album-cover {
+        width: 48px;
+        height: 48px;
+    }
+
+}

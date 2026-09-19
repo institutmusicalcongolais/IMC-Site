@@ -3,14 +3,37 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-<title>Top Albums RDC | Institut Musical Congolais</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-<link rel="icon" type="image/png" href="logo-imc.png">
+    <title>
+        Albums : Top 100 RDC — Institut Musical Congolais
+    </title>
 
-<link rel="stylesheet" href="style.css">
+    <meta
+        name="description"
+        content="Albums : Top 100 RDC — classement des albums musicaux en République démocratique du Congo."
+    >
+
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo-imc.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="top-imc.css"
+    >
 
 </head>
 
@@ -18,677 +41,1244 @@
 <body>
 
 
-<!-- HEADER -->
+    <!-- =========================
+         EN-TÊTE
+    ========================== -->
 
-<header>
+    <header class="site-header">
 
-<button class="menu-btn" onclick="toggleMenu()">
-☰
-</button>
+        <div class="header-inner">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+
+                <img
+                    src="logo-imc.png"
+                    alt="Institut Musical Congolais - IMC"
+                >
+
+            </a>
 
 
-<div class="logo">
+            <button
+                class="menu-btn"
+                id="menuButton"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+            >
 
-<img src="logo-imc.png" alt="Logo IMC">
+                ☰
 
-</div>
+            </button>
 
+        </div>
+
+
+        <!-- =========================
+             MENU PRINCIPAL
+        ========================== -->
+
+        <nav
+            class="main-menu"
+            id="mainMenu"
+        >
+
+
+            <!-- ACCUEIL -->
+
+            <a
+                href="index.html"
+                class="menu-link"
+            >
+
+                Accueil
+
+            </a>
+            
+            
+            <a
+                href="actualites.html"
+                class="menu-link"
+            >
+                Actualités IMC
+            </a>
+
+
+
+            <!-- =========================
+                 LES TOPS IMC
+            ========================== -->
+
+            <button
+                class="menu-dropdown-button"
+                id="topsButton"
+                type="button"
+                aria-expanded="false"
+            >
+
+                <span>
+                    Les Tops IMC
+                </span>
+
+                <span
+                    class="arrow"
+                    id="topsArrow"
+                >
+                    ⌄
+                </span>
+
+            </button>
+
+
+            <div
+                class="submenu"
+                id="topsSubmenu"
+            >
+
+                <a href="top-albums.html">
+                    Top Albums
+                </a>
+
+                <a href="top-titres.html">
+                    Top Titres
+                </a>
+
+                <a href="a-propos-tops.html">
+                    À propos des Tops IMC
+                </a>
+
+            </div>
+
+
+
+            <!-- =========================
+                 LES CERTIFICATIONS IMC
+            ========================== -->
+
+            <button
+                class="menu-dropdown-button"
+                id="certificationsButton"
+                type="button"
+                aria-expanded="false"
+            >
+
+                <span>
+                    Les certifications IMC
+                </span>
+
+                <span
+                    class="arrow"
+                    id="certificationsArrow"
+                >
+                    ⌄
+                </span>
+
+            </button>
+
+
+            <div
+                class="submenu"
+                id="certificationsSubmenu"
+            >
+
+                <a href="certification.html">
+                    Certification IMC
+                </a>
+
+                <a href="certification-export-africa.html">
+                    Certification IMC Export Africa
+                </a>
+
+                <a href="certification-export-world.html">
+                    Certification IMC Export World
+                </a>
+
+            </div>
+
+
+
+            <!-- À PROPOS -->
+
+            <a
+                href="a-propos.html"
+                class="menu-link"
+            >
+
+                À propos de l'IMC
+
+            </a>
+
+
+        </nav>
 
 </header>
 
 
+<main class="top-albums-page">
+
+    <section class="top-albums-header">
+
+        <h1>
+            ALBUMS : TOP 100 RDC
+        </h1>
+
+        <p class="top-albums-period">
+            Classement du 11 au 17 septembre 2026
+        </p>
+
+    </section>
 
 
+    <section class="top-albums-ranking">
 
-<!-- MENU PRINCIPAL -->
+        <div class="top-albums-table-wrapper">
 
-<nav id="menu">
+            <table class="top-albums-table">
+
+                <thead>
+                    <tr>
+                        <th>PLACE</th>
+                        <th>ÉVOLUTION</th>
+                        <th>POCHETTE</th>
+                        <th>NOM DE L’ŒUVRE</th>
+                        <th>ARTISTE</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/xx.jpg" alt="XX" class="album-cover">
+                        </td>
+                        <td>XX</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/arena way.jpg" alt="ARENA WAY" class="album-cover">
+                        </td>
+                        <td>ARENA WAY</td>
+                        <td>Innoss'B</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/24.5 mhz.jpg" alt="24.5 MHz" class="album-cover">
+                        </td>
+                        <td>24.5 MHz</td>
+                        <td>Multi-interprètes</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/m$ney.jpg" alt="M$NEY" class="album-cover">
+                        </td>
+                        <td>M$NEY</td>
+                        <td>Asake</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/m.i.l.s 4.jpg" alt="M.I.L.S 4" class="album-cover">
+                        </td>
+                        <td>M.I.L.S 4</td>
+                        <td>Ninho</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/bdlm vol 1.jpg" alt="BDLM vol 1" class="album-cover">
+                        </td>
+                        <td>BDLM vol 1</td>
+                        <td>Tiakola</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/bēyāh.jpg" alt="BĒYĀH" class="album-cover">
+                        </td>
+                        <td>BĒYĀH</td>
+                        <td>Damso</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/l'undertaker, pt 2.jpg" alt="L'UNDERTAKER, pt 2" class="album-cover">
+                        </td>
+                        <td>L'UNDERTAKER, pt 2</td>
+                        <td>Mauvais Djo</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/prototype (indusa).jpg" alt="PROTOTYPE (Indusa)" class="album-cover">
+                        </td>
+                        <td>PROTOTYPE (Indusa)</td>
+                        <td>Gaz Mawete</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/xx délirium.jpg" alt="XX DÉLIRIUM" class="album-cover">
+                        </td>
+                        <td>XX DÉLIRIUM</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/hatelove.jpg" alt="HATELOVE" class="album-cover">
+                        </td>
+                        <td>HATELOVE</td>
+                        <td>Joé Dwèt Filé</td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/number one.jpg" alt="NUMBER ONE" class="album-cover">
+                        </td>
+                        <td>NUMBER ONE</td>
+                        <td>Moise Mbiye</td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/arsenal des belles mélodies.jpg" alt="ARSENAL DES BELLES MÉLODIES" class="album-cover">
+                        </td>
+                        <td>ARSENAL DES BELLES MÉLODIES</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/lost radio-ep.jpg" alt="LOST RADIO - EP" class="album-cover">
+                        </td>
+                        <td>LOST RADIO - EP</td>
+                        <td>David Okit</td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/ipseite.jpg" alt="IPSEITE" class="album-cover">
+                        </td>
+                        <td>IPSEITE</td>
+                        <td>Damso</td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/droit chemin.jpg" alt="DROIT CHEMIN" class="album-cover">
+                        </td>
+                        <td>DROIT CHEMIN</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/formule 7.jpg" alt="FORMULE 7" class="album-cover">
+                        </td>
+                        <td>FORMULE 7</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/jeunesse dorée.jpg" alt="JEUNESSE DORÉE" class="album-cover">
+                        </td>
+                        <td>JEUNESSE DORÉE</td>
+                        <td>Guy2BezBar</td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/iceman.jpg" alt="ICEMAN" class="album-cover">
+                        </td>
+                        <td>ICEMAN</td>
+                        <td>Drake</td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/diamant noir.jpg" alt="DIAMANT NOIR" class="album-cover">
+                        </td>
+                        <td>DIAMANT NOIR</td>
+                        <td>Werenoi</td>
+                    </tr>
+
+                    <tr>
+                        <td>21</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/sorry i'm bad.jpg" alt="SORRY I'M BAD" class="album-cover">
+                        </td>
+                        <td>SORRY I'M BAD</td>
+                        <td>Himra</td>
+                    </tr>
+
+                    <tr>
+                        <td>22</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/destinée supremacy.jpg" alt="DESTINÉE SUPREMACY" class="album-cover">
+                        </td>
+                        <td>DESTINÉE SUPREMACY</td>
+                        <td>Aya Nakamura</td>
+                    </tr>
+
+                    <tr>
+                        <td>23</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/starlife.jpg" alt="STARLIFE" class="album-cover">
+                        </td>
+                        <td>STARLIFE</td>
+                        <td>Victony</td>
+                    </tr>
+
+                    <tr>
+                        <td>24</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/404.jpg" alt="404" class="album-cover">
+                        </td>
+                        <td>404</td>
+                        <td>Triangle des Bermudes</td>
+                    </tr>
+
+                    <tr>
+                        <td>25</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/poison ou antidote.jpg" alt="POISON OU ANTIDOTE" class="album-cover">
+                        </td>
+                        <td>POISON OU ANTIDOTE</td>
+                        <td>Dadju</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>26</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/lithopedion.jpg" alt="LITHOPEDION" class="album-cover">
+                        </td>
+                        <td>LITHOPEDION</td>
+                        <td>Damso</td>
+                    </tr>
+
+                    <tr>
+                        <td>27</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/energy.jpg" alt="ENERGY" class="album-cover">
+                        </td>
+                        <td>ENERGY</td>
+                        <td>Franglish & Keblack</td>
+                    </tr>
+
+                    <tr>
+                        <td>28</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/tokooos.jpg" alt="TOKOOOS" class="album-cover">
+                        </td>
+                        <td>TOKOOOS</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>29</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/gentleman 2.0.jpg" alt="GENTLEMAN 2.0" class="album-cover">
+                        </td>
+                        <td>GENTLEMAN 2.0</td>
+                        <td>Dadju</td>
+                    </tr>
+
+                    <tr>
+                        <td>30</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/starrgirl.jpg" alt="STARRGIRL" class="album-cover">
+                        </td>
+                        <td>STARRGIRL</td>
+                        <td>Ayra Starr</td>
+                    </tr>
+
+                    <tr>
+                        <td>31</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/mélo.jpg" alt="MÉLO" class="album-cover">
+                        </td>
+                        <td>MÉLO</td>
+                        <td>Tiakoka</td>
+                    </tr>
+
+                    <tr>
+                        <td>32</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/jefe.jpg" alt="JEFE" class="album-cover">
+                        </td>
+                        <td>JEFE</td>
+                        <td>Ninho</td>
+                    </tr>
+
+                    <tr>
+                        <td>33</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/nouvelle école saison 5 pt 1.jpg" alt="NOUVELLE ÉCOLE | Saison 5 pt 1" class="album-cover">
+                        </td>
+                        <td>NOUVELLE ÉCOLE | Saison 5 pt 1</td>
+                        <td>Nouvelle École</td>
+                    </tr>
+
+                    <tr>
+                        <td>34</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/à la vie à la mort.jpg" alt="À LA VIE À LA MORT" class="album-cover">
+                        </td>
+                        <td>À LA VIE À LA MORT</td>
+                        <td>Sdm</td>
+                    </tr>
+
+                    <tr>
+                        <td>35</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/héros.jpg" alt="HÉROS" class="album-cover">
+                        </td>
+                        <td>HÉROS</td>
+                        <td>Moïse Mbiye</td>
+                    </tr>
+
+                    <tr>
+                        <td>36</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/control.jpg" alt="CONTROL" class="album-cover">
+                        </td>
+                        <td>CONTROL</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>37</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/dachiba koumgba tchaiba.jpg" alt="DACHIBA KOUMGBA TCHAIBA" class="album-cover">
+                        </td>
+                        <td>DACHIBA KOUMGBA TCHAIBA</td>
+                        <td>Himra</td>
+                    </tr>
+
+                    <tr>
+                        <td>38</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/ni.jpg" alt="NI" class="album-cover">
+                        </td>
+                        <td>NI</td>
+                        <td>Ninho</td>
+                    </tr>
+
+                    <tr>
+                        <td>39</td>
+                        <td>—</td>
+                        <td>
+                            <img src='images/power kosa leka vol 1.jpg' alt='POWER "KOSA LEKA" vol 1' class="album-cover">
+                        </td>
+                        <td>POWER "KOSA LEKA" vol 1</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>40</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/tokooos ii gold.jpg" alt="TOKOOOS II GOLD" class="album-cover">
+                        </td>
+                        <td>TOKOOOS II GOLD</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>41</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/ocho (deluxe).jpg" alt="OCHO (deluxe)" class="album-cover">
+                        </td>
+                        <td>OCHO (deluxe)</td>
+                        <td>Sdm</td>
+                    </tr>
+
+                    <tr>
+                        <td>42</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/triomphe.jpg" alt="TRIOMPHE" class="album-cover">
+                        </td>
+                        <td>TRIOMPHE</td>
+                        <td>Moïse Mbiye</td>
+                    </tr>
+
+                    <tr>
+                        <td>43</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/entre nous-deux.jpg" alt="ENTRE NOUS/DEUX" class="album-cover">
+                        </td>
+                        <td>ENTRE NOUS/DEUX</td>
+                        <td>Adam La Nuit</td>
+                    </tr>
+
+                    <tr>
+                        <td>44</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/m.i.l.s 3.jpg" alt="M.I.L.S 3" class="album-cover">
+                        </td>
+                        <td>M.I.L.S 3</td>
+                        <td>Ninho</td>
+                    </tr>
+
+                    <tr>
+                        <td>45</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/destin.jpg" alt="DESTIN" class="album-cover">
+                        </td>
+                        <td>DESTIN</td>
+                        <td>Ninho</td>
+                    </tr>
+
+                    <tr>
+                        <td>46</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/le culte.jpg" alt="LE CULTE" class="album-cover">
+                        </td>
+                        <td>LE CULTE</td>
+                        <td>Athoms & Nadège</td>
+                    </tr>
+
+                    <tr>
+                        <td>47</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/nouvelle école saison 5 pt 2.jpg" alt="NOUVELLE ÉCOLE | Saison 5 pt 2" class="album-cover">
+                        </td>
+                        <td>NOUVELLE ÉCOLE | Saison 5 pt 2</td>
+                        <td>Nouvelle École</td>
+                    </tr>
+
+                    <tr>
+                        <td>48</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/amour éternel.jpg" alt="AMOUR ÉTERNEL" class="album-cover">
+                        </td>
+                        <td>AMOUR ÉTERNEL</td>
+                        <td>G.A.E.L</td>
+                    </tr>
+
+                    <tr>
+                        <td>49</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/23 jours plus tard.jpg" alt="23 JOURS PLUS TARD" class="album-cover">
+                        </td>
+                        <td>23 JOURS PLUS TARD</td>
+                        <td>Jolagreen23</td>
+                    </tr>
+
+                    <tr>
+                        <td>50</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/qalf infinity.jpg" alt="QALF INFINITY" class="album-cover">
+                        </td>
+                        <td>QALF INFINITY</td>
+                        <td>Damso</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>51</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/westside whimsy.jpg" alt="WESTSIDE WHIMSY" class="album-cover">
+                        </td>
+                        <td>WESTSIDE WHIMSY</td>
+                        <td>Jhené Aiko</td>
+                    </tr>
+
+                    <tr>
+                        <td>52</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/goty édition.jpg" alt="GOTY ÉDITION" class="album-cover">
+                        </td>
+                        <td>GOTY ÉDITION</td>
+                        <td>Jolagreen23</td>
+                    </tr>
+
+                    <tr>
+                        <td>53</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/psaumes.jpg" alt="PSAUMES" class="album-cover">
+                        </td>
+                        <td>PSAUMES</td>
+                        <td>Athoms & Nadège</td>
+                    </tr>
+
+                    <tr>
+                        <td>54</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/commando.jpg" alt="COMMANDO" class="album-cover">
+                        </td>
+                        <td>COMMANDO</td>
+                        <td>Niska</td>
+                    </tr>
+
+                    <tr>
+                        <td>55</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/goat.jpg" alt="GOAT" class="album-cover">
+                        </td>
+                        <td>GOAT</td>
+                        <td>Ninho & Niska</td>
+                    </tr>
+
+                    <tr>
+                        <td>56</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/lumière.jpg" alt="LUMIÈRE" class="album-cover">
+                        </td>
+                        <td>LUMIÈRE</td>
+                        <td>Zakalara</td>
+                    </tr>
+
+                    <tr>
+                        <td>57</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/liens du 100.jpg" alt="LIENS DU 100" class="album-cover">
+                        </td>
+                        <td>LIENS DU 100</td>
+                        <td>Sdm</td>
+                    </tr>
+
+                    <tr>
+                        <td>58</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/la mélo est gangx.jpg" alt="LA MÉLO EST GANGX" class="album-cover">
+                        </td>
+                        <td>LA MÉLO EST GANGX</td>
+                        <td>Gazo & Tiakola</td>
+                    </tr>
+
+                    <tr>
+                        <td>59</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/sola gratia.jpg" alt="SOLA GRATIA" class="album-cover">
+                        </td>
+                        <td>SOLA GRATIA</td>
+                        <td>Nk Divine</td>
+                    </tr>
+
+                    <tr>
+                        <td>60</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/amour & moi.jpg" alt="AMOUR & MOI" class="album-cover">
+                        </td>
+                        <td>AMOUR & MOI</td>
+                        <td>Gally Garvey</td>
+                    </tr>
+
+                    <tr>
+                        <td>61</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/psaumes 2026.jpg" alt="PSAUMES 2026" class="album-cover">
+                        </td>
+                        <td>PSAUMES 2026</td>
+                        <td>David Ize</td>
+                    </tr>
+
+                    <tr>
+                        <td>62</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/2026 golden run.jpg" alt="2026 GOLDEN RUN" class="album-cover">
+                        </td>
+                        <td>2026 GOLDEN RUN</td>
+                        <td>Trk</td>
+                    </tr>
+
+                    <tr>
+                        <td>63</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/un jour nouveau.jpg" alt="UN JOUR NOUVEAU" class="album-cover">
+                        </td>
+                        <td>UN JOUR NOUVEAU</td>
+                        <td>Jonathan C. Gambela</td>
+                    </tr>
+
+                    <tr>
+                        <td>64</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/numéro d'écrou.jpg" alt="NUMÉRO D'ÉCROU" class="album-cover">
+                        </td>
+                        <td>NUMÉRO D'ÉCROU</td>
+                        <td>La Rvfleuse</td>
+                    </tr>
+
+                    <tr>
+                        <td>65</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/point de non-retour.jpg" alt="POINT DE NON-RETOUR" class="album-cover">
+                        </td>
+                        <td>POINT DE NON-RETOUR</td>
+                        <td>Jonathan C. Gambela</td>
+                    </tr>
+
+                    <tr>
+                        <td>66</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/dancing in the rain.jpg" alt="DANCING IN THE RAIN" class="album-cover">
+                        </td>
+                        <td>DANCING IN THE RAIN</td>
+                        <td>63 Kluf</td>
+                    </tr>
+
+                    <tr>
+                        <td>67</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/monde arabe.jpg" alt="MONDE ARABE" class="album-cover">
+                        </td>
+                        <td>MONDE ARABE</td>
+                        <td>Koffi Olomide</td>
+                    </tr>
+
+                    <tr>
+                        <td>68</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/love ya balabala.jpg" alt="LOVE YA BALABALA" class="album-cover">
+                        </td>
+                        <td>LOVE YA BALABALA</td>
+                        <td>Jaguaman</td>
+                    </tr>
+
+                    <tr>
+                        <td>69</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/le prix de l'impact.jpg" alt="LE PRIX DE L'IMPACT" class="album-cover">
+                        </td>
+                        <td>LE PRIX DE L'IMPACT</td>
+                        <td>El Georges</td>
+                    </tr>
+
+                    <tr>
+                        <td>70</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/héritage.jpg" alt="HÉRITAGE" class="album-cover">
+                        </td>
+                        <td>HÉRITAGE</td>
+                        <td>Dadju & Tayc</td>
+                    </tr>
+
+                    <tr>
+                        <td>71</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/loyembo ya motema.jpg" alt="LOYEMBO YA MOTEMA" class="album-cover">
+                        </td>
+                        <td>LOYEMBO YA MOTEMA</td>
+                        <td>Rosny Kayiba</td>
+                    </tr>
+
+                    <tr>
+                        <td>72</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/kidjiba.jpg" alt="KIDJIBA" class="album-cover">
+                        </td>
+                        <td>KIDJIBA</td>
+                        <td>Transco Léopard</td>
+                    </tr>
+
+                    <tr>
+                        <td>73</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/classik (gold).jpg" alt="CLASSIK (Gold)" class="album-cover">
+                        </td>
+                        <td>CLASSIK (Gold)</td>
+                        <td>Pson</td>
+                    </tr>
+
+                    <tr>
+                        <td>74</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/c'est mon temps.jpg" alt="C'EST MON TEMPS" class="album-cover">
+                        </td>
+                        <td>C'EST MON TEMPS</td>
+                        <td>Eunice Manyanga</td>
+                    </tr>
+
+                    <tr>
+                        <td>75</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/the last wun.jpg" alt="THE LAST WUN" class="album-cover">
+                        </td>
+                        <td>THE LAST WUN</td>
+                        <td>Gunna</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>76</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/v12.jpg" alt="V12" class="album-cover">
+                        </td>
+                        <td>V12</td>
+                        <td>Koffi Olomide</td>
+                    </tr>
+
+                    <tr>
+                        <td>77</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/joÿa.jpg" alt="JOŸA" class="album-cover">
+                        </td>
+                        <td>JOŸA</td>
+                        <td>Tayc</td>
+                    </tr>
+
+                    <tr>
+                        <td>78</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/j'ai menti.jpg" alt="J'AI MENTI." class="album-cover">
+                        </td>
+                        <td>J'AI MENTI.</td>
+                        <td>Damso</td>
+                    </tr>
+
+                    <tr>
+                        <td>79</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/kairos.jpg" alt="KAIROS" class="album-cover">
+                        </td>
+                        <td>KAIROS</td>
+                        <td>Christian Mukuna</td>
+                    </tr>
+
+                    <tr>
+                        <td>80</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/mon cœur avait raison.jpg" alt="MON CŒUR AVAIT RAISON" class="album-cover">
+                        </td>
+                        <td>MON CŒUR AVAIT RAISON</td>
+                        <td>Gims</td>
+                    </tr>
+
+                    <tr>
+                        <td>81</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/batterie faible.jpg" alt="BATTERIE FAIBLE" class="album-cover">
+                        </td>
+                        <td>BATTERIE FAIBLE</td>
+                        <td>Damso</td>
+                    </tr>
+
+                    <tr>
+                        <td>82</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/power kosa leka vol 2.jpg" alt="POWER KOSA LEKA vol 2" class="album-cover">
+                        </td>
+                        <td>POWER KOSA LEKA vol 2</td>
+                        <td>Fally Ipupa</td>
+                    </tr>
+
+                    <tr>
+                        <td>83</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/destinée chapitre ii.jpg" alt="DESTINÉE CHAPITRE II" class="album-cover">
+                        </td>
+                        <td>DESTINÉE CHAPITRE II</td>
+                        <td>Nk Divine</td>
+                    </tr>
+
+                    <tr>
+                        <td>84</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/génération gang.jpg" alt="GÉNÉRATION GANG" class="album-cover">
+                        </td>
+                        <td>GÉNÉRATION GANG</td>
+                        <td>Bogo TheGoat</td>
+                    </tr>
+
+                    <tr>
+                        <td>85</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/mmmcxii.jpg" alt="MMMCXII" class="album-cover">
+                        </td>
+                        <td>MMMCXII</td>
+                        <td>Marioo</td>
+                    </tr>
+
+                    <tr>
+                        <td>86</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/le nord s'en souvient.jpg" alt="LE NORD S'EN SOUVIENT" class="album-cover">
+                        </td>
+                        <td>LE NORD S'EN SOUVIENT</td>
+                        <td>Gims</td>
+                    </tr>
+
+                    <tr>
+                        <td>87</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/cdr acoustic ii.jpg" alt="CDR acoustic II" class="album-cover">
+                        </td>
+                        <td>CDR acoustic II</td>
+                        <td>Les Citoyens du Royaume</td>
+                    </tr>
+
+                    <tr>
+                        <td>88</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/consécration.jpg" alt="CONSÉCRATION" class="album-cover">
+                        </td>
+                        <td>CONSÉCRATION</td>
+                        <td>Fast Food Music</td>
+                    </tr>
+
+                    <tr>
+                        <td>89</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/royal.jpg" alt="ROYAL" class="album-cover">
+                        </td>
+                        <td>ROYAL</td>
+                        <td>Moïse Mbiye</td>
+                    </tr>
+
+                    <tr>
+                        <td>90</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/aksanti mungu (live).jpg" alt="AKSANTI MUNGU (live)" class="album-cover">
+                        </td>
+                        <td>AKSANTI MUNGU (live)</td>
+                        <td>Faveur Mukoko</td>
+                    </tr>
+
+                    <tr>
+                        <td>91</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/it's yemi alade.jpg" alt="IT'S YEMI ALADE" class="album-cover">
+                        </td>
+                        <td>IT'S YEMI ALADE</td>
+                        <td>Yemi Alade</td>
+                    </tr>
+
+                    <tr>
+                        <td>92</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/big aka 4 aka kai.jpg" alt="BIG AKA 4 AKA KAI" class="album-cover">
+                        </td>
+                        <td>BIG AKA 4 AKA KAI</td>
+                        <td>Himra</td>
+                    </tr>
+
+                    <tr>
+                        <td>93</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/cullinan.jpg" alt="CULLINAN" class="album-cover">
+                        </td>
+                        <td>CULLINAN</td>
+                        <td>Dadju</td>
+                    </tr>
+
+                    <tr>
+                        <td>94</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/mr sal.jpg" alt="MR SAL" class="album-cover">
+                        </td>
+                        <td>MR SAL</td>
+                        <td>Niska</td>
+                    </tr>
+
+                    <tr>
+                        <td>95</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/capitale du crime vol 2.jpg" alt="CAPITALE DU CRIME vol 2" class="album-cover">
+                        </td>
+                        <td>CAPITALE DU CRIME vol 2</td>
+                        <td>La Fouine</td>
+                    </tr>
+
+                    <tr>
+                        <td>96</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/jeune prince pt 1.jpg" alt="JEUNE PRINCE pt 1" class="album-cover">
+                        </td>
+                        <td>JEUNE PRINCE pt 1</td>
+                        <td>Rsko</td>
+                    </tr>
+
+                    <tr>
+                        <td>97</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/effrakata.jpg" alt="EFFRAKATA" class="album-cover">
+                        </td>
+                        <td>EFFRAKATA</td>
+                        <td>Koffi Olomide</td>
+                    </tr>
+
+                    <tr>
+                        <td>98</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/le monde est méchant.jpg" alt="LE MONDE EST MÉCHANT" class="album-cover">
+                        </td>
+                        <td>LE MONDE EST MÉCHANT</td>
+                        <td>Niska</td>
+                    </tr>
+
+                    <tr>
+                        <td>99</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/échangeur de limete (live).jpg" alt="ÉCHANGEUR DE LIMETE (live)" class="album-cover">
+                        </td>
+                        <td>ÉCHANGEUR DE LIMETE (live)</td>
+                        <td>Christian Mukuna</td>
+                    </tr>
+
+                    <tr>
+                        <td>100</td>
+                        <td>—</td>
+                        <td>
+                            <img src="images/sublime parfum qui chante.jpg" alt="SUBLIME PARFUM QUI CHANTE" class="album-cover">
+                        </td>
+                        <td>SUBLIME PARFUM QUI CHANTE</td>
+                        <td>G.A.E.L</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
 
 
-<a href="index.html">
-Accueil
-</a>
+<section class="bottom" id="7pytw9">
 
+    <p class="bottom-name">
+        INSTITUT MUSICAL CONGOLAIS
+    </p>
 
-<a href="actualites.html">
-Actualités IMC
-</a>
+    <p class="bottom-motto">
+        Mesurer. Certifier. Valoriser.
+    </p>
 
-
-<a href="certification.html">
-La certification IMC
-</a>
-
-
-<a href="apropos.html">
-À propos de l'IMC
-</a>
-
-
-</nav>
-
-
-
-
-
-
-<!-- SELECTEUR DES TOPS -->
-
-
-<section class="top-selector">
-
-
-<button onclick="toggleTopMenu()">
-
-Top Albums RDC ▼
-
-</button>
-
-
-
-<div id="top-menu">
-
-
-<a href="top-albums.html">
-Top Albums RDC de la semaine
-</a>
-
-
-<a href="top-titres.html">
-Top Titres RDC de la semaine
-</a>
-
-
-<a href="methodologie-classement.html">
-À propos du Top RDC
-</a>
-
-
-</div>
-
+    <p class="copyright">
+        © 2026 Institut Musical Congolais
+    </p>
 
 </section>
 
 
-
-
-
-
-
-
-<!-- INFORMATIONS CLASSEMENT -->
-
-
-<section class="ranking-info">
-
-
-<p>
-
-<strong>Classement de la semaine :</strong>
-14 - 20 Août 2026
-
-</p>
-
-
-
-<p>
-
-<strong>Prochaine mise à jour :</strong>
-Vendredi 28 août 2026
-
-</p>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- TABLEAU TOP ALBUMS -->
-
-
-<section class="top-table-section">
-
-
-<table class="top-table">
-
-
-<thead>
-
-
-<tr>
-
-<th>#</th>
-
-<th>-</th>
-
-<th>Pochette</th>
-
-<th>Album</th>
-
-<th>Artiste</th>
-
-
-</tr>
-
-
-</thead>
-
-
-
-<tbody>
-  
-
-<tr>
-<td>1</td>
-<td class="same">➖</td>
-<td><img src="xx.jpg" alt="XX" class="cover"></td>
-<td>XX</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>2</td>
-<td class="up">⬆ +1</td>
-<td><img src="beyah.jpg" alt="BEYAH" class="cover"></td>
-<td>BĒYĀH</td>
-<td>Damso</td>
-</tr>
-
-
-<tr>
-<td>3</td>
-<td class="up">⬆ +6</td>
-<td><img src="money.jpg" alt="MONEY" class="cover"></td>
-<td>M$NEY</td>
-<td>Asake</td>
-</tr>
-
-
-<tr>
-<td>4</td>
-<td class="new">new</td>
-<td><img src="starrgirl.jpg" alt="STARRGIRL" class="cover"></td>
-<td>STARRGIRL</td>
-<td>Ayra Starr</td>
-</tr>
-
-
-<tr>
-<td>5</td>
-<td class="up">⬆ +2</td>
-<td><img src="mils4.jpg" alt="M.I.L.S 4" class="cover"></td>
-<td>M.I.L.S 4</td>
-<td>Ninho</td>
-</tr>
-
-
-<tr>
-<td>6</td>
-<td class="up">⬆ +4</td>
-<td><img src="xxdelirium.jpg" alt="XX DÉLIRIUM" class="cover"></td>
-<td>XX DÉLIRIUM</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>7</td>
-<td class="up">⬆ +6</td>
-<td><img src="numberone.jpg" alt="NUMBER ONE" class="cover"></td>
-<td>NUMBER ONE</td>
-<td>Moïse Mbiye</td>
-</tr>
-
-
-<tr>
-<td>8</td>
-<td class="down">⬇ -3</td>
-<td><img src="hatelove.jpg" alt="HATELOVE" class="cover"></td>
-<td>HATELOVE</td>
-<td>Joé Dwèt Filé</td>
-</tr>
-
-
-<tr>
-<td>9</td>
-<td class="down">⬇ -7</td>
-<td><img src="prototypeindusa.jpg" alt="PROTOTYPE" class="cover"></td>
-<td>PROTOTYPE (Indusa)</td>
-<td>Gaz Mawete</td>
-</tr>
-
-
-<tr>
-<td>10</td>
-<td class="up">⬆ +4</td>
-<td><img src="iceman.jpg" alt="ICEMAN" class="cover"></td>
-<td>ICEMAN</td>
-<td>Drake</td>
-</tr>
-
-
-<tr>
-<td>11</td>
-<td class="down">⬇ -3</td>
-<td><img src="bdlmvol1.jpg" alt="BDLM VOL 1" class="cover"></td>
-<td>BDLM vol 1</td>
-<td>Tiakola</td>
-</tr>
-
-
-<tr>
-<td>12</td>
-<td class="up">⬆ +4</td>
-<td><img src="ipseite.jpg" alt="IPSEITE" class="cover"></td>
-<td>IPSEITE</td>
-<td>Damso</td>
-</tr>
-
-
-<tr>
-<td>13</td>
-<td class="up">⬆ +4</td>
-<td><img src="jeunessedoree.jpg" alt="JEUNESSE DORÉE" class="cover"></td>
-<td>JEUNESSE DORÉE</td>
-<td>Guy2BezBar</td>
-</tr>
-
-
-<tr>
-<td>14</td>
-<td class="down">⬇ -10</td>
-<td><img src="destinee.jpg" alt="DESTINÉE SUPREMACY" class="cover"></td>
-<td>DESTINÉE SUPREMACY</td>
-<td>Aya Nakamura</td>
-</tr>
-
-
-<tr>
-<td>15</td>
-<td class="up">⬆ +4</td>
-<td><img src="404.jpg" alt="404" class="cover"></td>
-<td>404</td>
-<td>Triangle Des Bermudes</td>
-</tr>
-
-
-<tr>
-<td>16</td>
-<td class="down">⬇ -10</td>
-<td><img src="sorryimbad.jpg" alt="SORRY I'M BAD" class="cover"></td>
-<td>SORRY I'M BAD</td>
-<td>Himra</td>
-</tr>
-
-
-<tr>
-<td>17</td>
-<td class="up">⬆ +6</td>
-<td><img src="arsenaldesbellesmelodies.jpg" alt="ARSENAL DES BELLES MÉLODIES" class="cover"></td>
-<td>ARSENAL DES BELLES MÉLODIES</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>18</td>
-<td class="up">⬆ +3</td>
-<td><img src="formule7.jpg" alt="FORMULE 7" class="cover"></td>
-<td>FORMULE 7</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>19</td>
-<td class="up">⬆ +6</td>
-<td><img src="droitchemin.jpg" alt="DROIT CHEMIN" class="cover"></td>
-<td>DROIT CHEMIN</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>20</td>
-<td class="up">⬆ +12</td>
-<td><img src="lithopedion.jpg" alt="LITHOPEDION" class="cover"></td>
-<td>LITHOPEDION</td>
-<td>Damso</td>
-</tr>
-
-
-<tr>
-<td>21</td>
-<td class="down">⬇ -9</td>
-<td><img src="leprixdelimpact.jpg" alt="LE PRIX DE L'IMPACT" class="cover"></td>
-<td>LE PRIX DE L'IMPACT</td>
-<td>El Georges</td>
-</tr>
-
-
-<tr>
-<td>22</td>
-<td class="new">new</td>
-<td><img src="entrenousdeux.jpg" alt="ENTRE NOUS DEUX" class="cover"></td>
-<td>ENTRE NOUS/DEUX</td>
-<td>Adam La Nuit</td>
-</tr>
-
-
-<tr>
-<td>23</td>
-<td class="up">⬆ +12</td>
-<td><img src="heros.jpg" alt="HEROS" class="cover"></td>
-<td>HÉROS</td>
-<td>Moïse Mbiye</td>
-</tr>
-
-
-<tr>
-<td>24</td>
-<td class="up">⬆ +12</td>
-<td><img src="melo.jpg" alt="MÉLO" class="cover"></td>
-<td>MÉLO</td>
-<td>Tiakola</td>
-</tr>
-
-
-<tr>
-<td>25</td>
-<td class="new">new</td>
-<td><img src="leculte.jpg" alt="LE CULTE" class="cover"></td>
-<td>LE CULTE</td>
-<td>Athoms & Nadège</td>
-</tr>
-
-
-<tr>
-<td>26</td>
-<td class="up">⬆ +3</td>
-<td><img src="tokooos.jpg" alt="TOKOOOS" class="cover"></td>
-<td>TOKOOOS</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>27</td>
-<td class="up">⬆ +10</td>
-<td><img src="jefe.jpg" alt="JEFE" class="cover"></td>
-<td>JEFE</td>
-<td>Ninho</td>
-</tr>
-
-
-<tr>
-<td>28</td>
-<td class="down">⬇ -17</td>
-<td><img src="lumiere.jpg" alt="LUMIÈRE" class="cover"></td>
-<td>LUMIÈRE</td>
-<td>Zakalara</td>
-</tr>
-
-
-<tr>
-<td>29</td>
-<td class="down">⬇ -14</td>
-<td><img src="loveyabalabala.jpg" alt="LOVE YA BALABALA" class="cover"></td>
-<td>LOVE YA BALABALA</td>
-<td>Jaguaman</td>
-</tr>
-
-
-<tr>
-<td>30</td>
-<td class="up">⬆ +4</td>
-<td><img src="diamantnoir.jpg" alt="DIAMANT NOIR" class="cover"></td>
-<td>DIAMANT NOIR</td>
-<td>Werenoi</td>
-</tr>
-
-
-<tr>
-<td>31</td>
-<td class="up">⬆ +15</td>
-<td><img src="destin.jpg" alt="DESTIN" class="cover"></td>
-<td>DESTIN</td>
-<td>Ninho</td>
-</tr>
-
-
-<tr>
-<td>32</td>
-<td class="new">new</td>
-<td><img src="poisonouantidote.jpg" alt="POISON OU ANTIDOTE" class="cover"></td>
-<td>POISON OU ANTIDOTE</td>
-<td>Dadju</td>
-</tr>
-
-
-<tr>
-<td>33</td>
-<td class="up">⬆ +10</td>
-<td><img src="tokooos2gold.jpg" alt="TOKOOOS II GOLD" class="cover"></td>
-<td>TOKOOOS II GOLD</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>34</td>
-<td class="up">⬆ +10</td>
-<td><img src="triomphe.jpg" alt="TRIOMPHE" class="cover"></td>
-<td>TRIOMPHE</td>
-<td>Moïse Mbiye</td>
-</tr>
-
-
-<tr>
-<td>35</td>
-<td class="new">new</td>
-<td><img src="ni.jpg" alt="NI" class="cover"></td>
-<td>NI</td>
-<td>Ninho</td>
-</tr>
-
-
-<tr>
-<td>36</td>
-<td class="down">⬇ -10</td>
-<td><img src="dachiba.jpg" alt="DACHIBA" class="cover"></td>
-<td>DACHIBA KOUMGBA TCHAIBA</td>
-<td>Himra</td>
-</tr>
-
-
-<tr>
-<td>37</td>
-<td class="down">⬇ -17</td>
-<td><img src="kidjiba.jpg" alt="KIDJIBA" class="cover"></td>
-<td>KIDJIBA</td>
-<td>Transco Léopard</td>
-</tr>
-
-
-<tr>
-<td>38</td>
-<td class="down">⬇ -16</td>
-<td><img src="loyemboyamotema.jpg" alt="LOYEMBO YA MOTEMA" class="cover"></td>
-<td>LOYEMBO YA MOTEMA</td>
-<td>Rosny Kayiba</td>
-</tr>
-
-
-<tr>
-<td>39</td>
-<td class="new">new</td>
-<td><img src="gentleman20.jpg" alt="GENTLEMAN 2.0" class="cover"></td>
-<td>GENTLEMAN 2.0</td>
-<td>Dadju</td>
-</tr>
-
-
-<tr>
-<td>40</td>
-<td class="down">⬇ -22</td>
-<td><img src="mmmcxii.jpg" alt="MMMCXII" class="cover"></td>
-<td>MMMCXII</td>
-<td>Marioo</td>
-</tr>
-
-
-<tr>
-<td>41</td>
-<td class="down">⬇ -14</td>
-<td><img src="classik.jpg" alt="CLASSIK GOLD" class="cover"></td>
-<td>CLASSIK (GOLD)</td>
-<td>Pson</td>
-</tr>
-
-
-<tr>
-<td>42</td>
-<td class="down">⬇ -30</td>
-<td><img src="kairos.jpg" alt="KAIROS" class="cover"></td>
-<td>KAIROS</td>
-<td>Christian Mukuna</td>
-</tr>
-
-
-<tr>
-<td>43</td>
-<td class="up">⬆ +5</td>
-<td><img src="mils3.jpg" alt="M.I.L.S 3" class="cover"></td>
-<td>M.I.L.S 3</td>
-<td>Ninho</td>
-</tr>
-
-
-<tr>
-<td>44</td>
-<td class="down">⬇ -3</td>
-<td><img src="amoureternel.jpg" alt="AMOUR ETERNEL" class="cover"></td>
-<td>AMOUR ÉTERNEL</td>
-<td>Adorons L'Éternel</td>
-</tr>
-
-
-<tr>
-<td>45</td>
-<td class="new">new</td>
-<td><img src="alaviealamort.jpg" alt="À LA VIE À LA MORT" class="cover"></td>
-<td>À LA VIE À LA MORT</td>
-<td>SDM</td>
-</tr>
-
-
-<tr>
-<td>46</td>
-<td class="down">⬇ -1</td>
-<td><img src="control.jpg" alt="CONTROL" class="cover"></td>
-<td>CONTROL</td>
-<td>Fally Ipupa</td>
-</tr>
-
-
-<tr>
-<td>47</td>
-<td class="new">new</td>
-<td><img src="power1.jpg" alt="POWER 1" class="cover"></td>
-<td>POWER "KOSA LEKA" Vol 1</td>
-<td>Fally Ipupap</td>
-</tr>
-
-
-<tr>
-<td>48</td>
-<td class="down">⬇ -18</td>
-<td><img src="goat.jpg" alt="GOAT" class="cover"></td>
-<td>GOAT</td>
-<td>Ninho & Niska</td>
-</tr>
-
-
-<tr>
-<td>49</td>
-<td class="down">⬇ -16</td>
-<td><img src="generationgang.jpg" alt="GENERATION GANG" class="cover"></td>
-<td>GENERATION GANG</td>
-<td>Bogo TheGoat</td>
-</tr>
-
-
-<tr>
-<td>50</td>
-<td class="down">⬇ -19</td>
-<td><img src="joya.jpg" alt="JOŸA" class="cover"></td>
-<td>JOŸA</td>
-<td>Tayc</td>
-</tr>
-
-
-
-</tbody>
-
-</table>
-
-</section>
-
-
-
-
-
-<section class="ranking-description">
-
-<p>
-Le classement officiel des tendances musicales en République Démocratique du Congo
-</p>
-
-</section>
-
-
-
-
-
-
-<footer>
-
-<p>
-© Institut Musical Congolais - IMC
-</p>
-
-</footer>
-
-
-
-
-
-
-<script>
-
-function toggleMenu(){
-
-document.getElementById("menu").classList.toggle("active");
-
-}
-
-
-
-function toggleTopMenu(){
-
-document.getElementById("top-menu").classList.toggle("active");
-
-}
-
-
-</script>
-
-
+<script src="script.js"></script>
 
 </body>
 
