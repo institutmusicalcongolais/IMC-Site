@@ -2,6 +2,7 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta
@@ -18,72 +19,168 @@
         content="Titres : Top 100 RDC — classement des titres musicaux en République démocratique du Congo."
     >
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="top-imc.css">
+    <link
+        rel="icon"
+        type="image/png"
+        href="logo-imc.png"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="top-imc.css"
+    >
+
 </head>
+
 
 <body>
 
-<header class="site-header">
 
-    <div class="header-inner">
+    <!-- =========================
+         EN-TÊTE
+    ========================== -->
 
-        <a
-            href="index.html"
-            class="logo-link"
-            aria-label="Accueil"
-        >
-            <img
-                src="logo-imc.png"
-                alt="Institut Musical Congolais"
+    <header class="site-header">
+
+        <div class="header-inner">
+
+            <a
+                href="index.html"
                 class="logo"
             >
-        </a>
 
-        <button
-            class="menu-button"
-            id="menuButton"
-            type="button"
-            aria-label="Ouvrir le menu"
-            aria-expanded="false"
-            aria-controls="mainMenu"
-        >
-            ☰
-        </button>
+                <img
+                    src="logo-imc.png"
+                    alt="Institut Musical Congolais - IMC"
+                >
 
-    </div>
+            </a>
 
-    <nav
-        class="main-menu"
-        id="mainMenu"
-        aria-label="Navigation principale"
-    >
-
-        <a href="index.html">Accueil</a>
-
-        <a href="actualites.html">Actualités</a>
-
-        <div class="menu-group">
 
             <button
-                class="menu-group-button"
+                class="menu-btn"
+                id="menuButton"
+                type="button"
+                aria-label="Ouvrir le menu"
+                aria-expanded="false"
+            >
+
+                ☰
+
+            </button>
+
+        </div>
+
+
+        <!-- =========================
+             MENU PRINCIPAL
+        ========================== -->
+
+        <nav
+            class="main-menu"
+            id="mainMenu"
+        >
+
+
+            <!-- ACCUEIL -->
+
+            <a
+                href="index.html"
+                class="menu-link"
+            >
+
+                Accueil
+
+            </a>
+            
+            
+            <a
+                href="actualites.html"
+                class="menu-link"
+            >
+                Actualités IMC
+            </a>
+
+
+
+            <!-- =========================
+                 LES TOPS IMC
+            ========================== -->
+
+            <button
+                class="menu-dropdown-button"
+                id="topsButton"
+                type="button"
+                aria-expanded="false"
+            >
+
+                <span>
+                    Les Tops IMC
+                </span>
+
+                <span
+                    class="arrow"
+                    id="topsArrow"
+                >
+                    ⌄
+                </span>
+
+            </button>
+
+
+            <div
+                class="submenu"
+                id="topsSubmenu"
+            >
+
+                <a href="top-albums.html">
+                    Top Albums
+                </a>
+
+                <a href="top-titres.html">
+                    Top Titres
+                </a>
+
+                <a href="a-propos-tops.html">
+                    À propos des Tops IMC
+                </a>
+
+            </div>
+
+
+
+            <!-- =========================
+                 LES CERTIFICATIONS IMC
+            ========================== -->
+
+            <button
+                class="menu-dropdown-button"
                 id="certificationsButton"
                 type="button"
                 aria-expanded="false"
-                aria-controls="certificationsSubmenu"
             >
-                <span>Les certifications IMC</span>
+
+                <span>
+                    Les certifications IMC
+                </span>
 
                 <span
-                    class="menu-arrow"
+                    class="arrow"
                     id="certificationsArrow"
                 >
                     ⌄
                 </span>
+
             </button>
 
+
             <div
-                class="menu-submenu"
+                class="submenu"
                 id="certificationsSubmenu"
             >
 
@@ -91,23 +188,31 @@
                     Certification IMC
                 </a>
 
-                <a href="certification-export-afrique.html">
-                    Certification IMC Export Afrique
+                <a href="certification-export-africa.html">
+                    Certification IMC Export Africa
                 </a>
 
-                <a href="certification-export-monde.html">
-                    Certification IMC Export Monde
+                <a href="certification-export-world.html">
+                    Certification IMC Export World
                 </a>
 
             </div>
 
-        </div>
 
-        <a href="a-propos.html">
-            À propos de l’IMC
-        </a>
 
-    </nav>
+            <!-- À PROPOS -->
+
+            <a
+                href="a-propos.html"
+                class="menu-link"
+            >
+
+                À propos de l'IMC
+
+            </a>
+
+
+        </nav>
 
 </header>
 
@@ -121,7 +226,7 @@
         </h1>
 
         <p class="top-albums-period">
-            Classement du 14 au 20 septembre 2026
+            Classement du 11 au 17 septembre 2026
         </p>
 
     </section>
